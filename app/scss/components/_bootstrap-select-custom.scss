@@ -1,0 +1,24 @@
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: #282627;
+    padding: 10px 24.7px;
+    background: antiquewhite;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid red;
+  
+    &:hover{
+        color :$color-red;
+        transition: 0.3s all ease-in-out;
+    }
+    @media (min-width: 992px) { 
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: 300;
+        color: $color-lightblack;
+      background-color: $color-white;
+      border: transparent;
+    }
+    @media (min-width: 1200px) {  padding: 10px 28.7px; }
+}

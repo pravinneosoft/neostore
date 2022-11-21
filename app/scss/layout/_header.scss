@@ -1,0 +1,62 @@
+.header{
+  
+  &__top{
+    background-color: $color-red;
+color: $color-white;
+
+h3{
+  text-align: center;
+  margin: 0;
+  padding: 12px 0;
+  font-weight: 700;
+font-size: 16px;
+}
+a{
+  color: $color-white;
+}
+  }
+  &__form{
+    position: relative;
+    max-width: 160px;
+
+    .form-control{
+      background-color:$color-light ;
+      border-radius: 5px;
+      &:focus{
+        box-shadow: none;
+      }
+      &::placeholder{
+        font-size: 14px;
+        color: $color-lightblack;
+        font-weight: 300;
+      }
+
+    }
+    button{
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__icons{
+    display: inline-flex;
+    li{
+      padding-left: 21px;
+    }
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   top: 0;
+   width: 100%;
+    @media (min-width: 992px) { 
+      position: initial;
+      display: flex;
+      width: 34%;
+      align-items: center;
+  }
+
+  }
+
+}
