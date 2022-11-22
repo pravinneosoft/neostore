@@ -1,61 +1,72 @@
-.header{
-  
-  &__top{
+.header {
+
+  &__top {
     background-color: $color-red;
-color: $color-white;
+    color: $color-white;
 
-h3{
-  text-align: center;
-  margin: 0;
-  padding: 12px 0;
-  font-weight: 700;
-font-size: 16px;
-}
-a{
-  color: $color-white;
-}
+    h3 {
+      text-align: center;
+      margin: 0;
+      padding: 12px 0;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    a {
+      color: $color-white;
+    }
   }
-  &__form{
-    position: relative;
-    max-width: 160px;
 
-    .form-control{
-      background-color:$color-light ;
+  &__form {
+    position: relative;
+    max-width: auto;
+
+    .form-control {
+      background-color: $color-light ;
       border-radius: 5px;
-      &:focus{
+      padding-right: 45px;
+
+      &:focus {
         box-shadow: none;
+        border: none;
       }
-      &::placeholder{
+
+      &::placeholder {
         font-size: 14px;
         color: $color-lightblack;
         font-weight: 300;
       }
 
+    
     }
-    button{
+
+    button {
       position: absolute;
       right: 0;
+      background-color: transparent !important;
     }
   }
-  &__icons{
+
+  &__icons {
     display: inline-flex;
-    li{
+
+    li {
       padding-left: 21px;
     }
   }
-  &__right{
+
+  &__right {
     display: flex;
     align-items: center;
-    justify-content: center;
-   position: absolute;
-   top: 0;
-   width: 100%;
-    @media (min-width: 992px) { 
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: 992px) {
       position: initial;
       display: flex;
       width: 34%;
       align-items: center;
-  }
+    }
 
   }
 

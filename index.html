@@ -10,71 +10,300 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="app/css/style.css" />
- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="app/css/style.css" />
+
 </head>
 
 <body>
   <header class="header">
-<div class="header__top">
-  <h3><strong> MARKDOWNS</strong>: <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a></h3>
-</div>
-<div class="container">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="header logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Furniture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home Decore</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pe-0" href="#">Sales</a>
-          </li>
-          
-        </ul>
-       
+    <div class="header__top">
+      <div class="container">
+        <h3><strong> MARKDOWNS</strong>: <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a></h3>
       </div>
-    
     </div>
-    <div class="header__right">
-      <form class="d-flex header__form" role="search">
-        <input class="form-control" type="text" placeholder="Search ..." aria-label="Search">
-        <button class="btn" type="submit"><img src="./app/images/svg_icons/search.svg" alt=""></button>
-      </form>
-      <ul class="header__icons">
-        <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/home.svg" alt="home-icon"></a></li>
-        <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/wish.svg" alt="wish-icon"></a></li>
-        <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/cart.svg" alt="cart-icon"></a></li>
-      </ul></div>
-  </nav>
-  </div>
-  </header>
-  <!-- ----------------------  footer block code ------------------------- -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="header logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Furniture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home Decore</a>
+              </li>
 
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Blog </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item nav-link" href="#"> Submenu item 1</a></li>
+                  <li><a class="dropdown-item nav-link" href="#"> Submenu item 2 </a></li>
+                  <li><a class="dropdown-item nav-link" href="#"> Submenu item 3 </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-0" href="#">Sales</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="header__right">
+          <form class="d-flex header__form" role="search">
+            <input class="form-control" type="text" placeholder="Search ..." aria-label="Search">
+            <button class="btn" type="submit"><img src="./app/images/svg_icons/search.svg" alt=""></button>
+          </form>
+          <ul class="header__icons">
+            <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/home.svg" alt="home-icon"></a></li>
+            <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/wish.svg" alt="wish-icon"></a></li>
+            <li><a href="javascript:void(0)"><img src="./app/images/svg_icons/cart.svg" alt="cart-icon"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="container-fluid p-0">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <picture>
+            <source media="(min-width:650px)" srcset="./app/images/banner.png">
+            <source media="(min-width:465px)" srcset="./app/images/banner.png">
+            <img src="./app/images/banner.png" alt="Flowers" style="width:100%;">
+          </picture>
+          <div class="banner__content">
+
+            <h2 class="banner__content-title">Furniture <br>
+              2022</h2>
+            <h6>NEW ARRIVALS</h6>
+            <h1>Spring
+              Collection</h1>
+            <a href="javascript:void(0)" class="btn btn--shop">Shop Now</a>
+          </div>
+        </div>
+        <div class="item">
+          <picture>
+            <source media="(min-width:650px)" srcset="./app/images/banner.png">
+            <source media="(min-width:465px)" srcset="./app/images/banner.png">
+            <img src="./app/images/banner.png" alt="Flowers" style="width:100%;">
+          </picture>
+          <div class="banner__content">
+
+            <h2 class="banner__content-title">Furniture <br>
+              2022</h2>
+            <h6>NEW ARRIVALS</h6>
+            <h1>Spring
+              Collection</h1>
+            <a href="javascript:void(0)" class="btn btn--shop">Shop Now</a>
+          </div>
+        </div>
+        <div class="item">
+          <picture>
+            <source media="(min-width:650px)" srcset="./app/images/banner.png">
+            <source media="(min-width:465px)" srcset="./app/images/banner.png">
+            <img src="./app/images/banner.png" alt="Flowers" style="width:100%;">
+          </picture>
+          <div class="banner__content">
+
+            <h2 class="banner__content-title">Furniture <br>
+              2022</h2>
+            <h6>NEW ARRIVALS</h6>
+            <h1>Spring
+              Collection</h1>
+            <a href="javascript:void(0)" class="btn btn--shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dept">
+    <div class="container">
+      <h2 class="heading">Shop by Department</h2>
+      <h6 class="subheading">Sitewide Discounts & Savings of up to 25%</h6>
+      <div class="row mt-5 justify-content-center dept__wrapper">
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)" class="dept__content">
+            <svg width="71" height="67" viewBox="0 0 71 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0761 53.5246L56.7236 66.5902L50.979 41.9653L70.1044 25.3969L44.9191 23.2602L35.0761 0.036438L25.2332 23.2602L0.0478516 25.3969L19.1733 41.9653L13.4287 66.5902L35.0761 53.5246Z"/>
+              </svg>
+            <p>Popular</p>
+            </a>
+        </div>
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)" class="dept__content">
+            <svg width="65" height="71" viewBox="0 0 65 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2997_682)">
+              <path d="M44.3312 0.036438C46.8115 1.41212 47.7907 3.57601 48.2222 6.33842C49.4577 14.2426 50.8943 22.1155 52.3253 29.9883C53.3635 35.7065 51.6319 37.9257 45.9226 37.933C36.9825 37.9441 28.0423 37.957 19.1022 37.9275C14.385 37.9128 12.386 35.6494 13.155 31.0012C14.5934 22.2996 16.2106 13.6275 17.6398 4.92591C17.9939 2.76018 19.4562 1.49315 20.7619 0.036438C28.6177 0.036438 36.4753 0.036438 44.3312 0.036438Z" />
+              <path d="M12.5389 42.5445C14.654 41.1264 16.7084 40.9275 18.8438 40.9331C28.1565 40.9625 37.4691 40.9533 46.7817 40.9386C48.908 40.9349 50.9918 41.0325 52.764 42.3769C53.5237 41.6992 53.3965 40.8133 53.6104 40.0564C54.6007 36.5684 57.7799 33.8834 61.3058 33.6163C63.196 33.4727 64.6288 34.2093 64.8962 36.1578C65.1433 37.946 64.1309 39.2019 62.3274 39.3861C59.6885 39.655 59.0486 41.2185 59.1132 43.526C59.1814 45.9846 59.1869 48.4505 59.1132 50.909C59.0025 54.6217 56.561 56.9403 52.8414 56.9513C47.82 56.9642 42.7967 57.0269 37.7771 56.9145C36.0805 56.8758 35.6398 57.3565 35.649 59.0453C35.6748 64.2054 35.5918 64.2036 40.77 64.2054C42.2305 64.2054 43.6984 64.1318 45.1497 64.2423C46.9035 64.3767 48.1408 65.3196 48.1187 67.1704C48.0984 68.9826 46.9588 70.0525 45.1442 70.0617C36.9269 70.1041 28.7097 70.1023 20.4924 70.0617C18.676 70.0525 17.54 68.9863 17.5142 67.1741C17.4902 65.3196 18.7239 64.3325 20.4777 64.2496C22.9377 64.1336 25.4125 64.1023 27.8688 64.2423C29.6151 64.3417 29.9821 63.6972 29.9803 62.06C29.9747 56.9532 30.0466 56.9532 24.8518 56.9532C20.7432 56.9532 16.6346 56.9734 12.526 56.9477C9.14759 56.9256 6.67282 54.5978 6.53452 51.1908C6.42387 48.4597 6.48842 45.7231 6.5087 42.9883C6.52345 40.968 5.71574 39.6973 3.58029 39.434C1.5186 39.1798 0.358666 37.9865 0.804936 35.9073C1.25674 33.806 2.90904 33.3475 4.85087 33.7158C9.51825 34.6016 11.8141 37.6642 12.5389 42.5445Z" />
+              </g>
+              <defs>
+              <clipPath id="clip0_2997_682">
+              <rect width="64.2185" height="70.0566" fill="white" transform="translate(0.716797 0.036438)"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <p>Chair</p>
+          </a>
+        </div>
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)" class="dept__content">
+            <svg width="85" height="85" viewBox="0 0 85 85"  xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_629_3873)">
+              <path d="M19.0693 32.4397C19.0693 32.9333 19.0693 33.4156 19.0693 33.9092C19.0693 41.7843 19.0693 41.8516 26.9903 41.9413C30.0467 41.975 32.6132 42.5247 32.5549 46.0247C32.5082 49.1994 30.1051 49.7266 27.247 49.9398C25.4855 50.0632 21.8458 48.3805 22.2774 51.6561C22.6507 54.4943 18.3811 59.6658 25.5438 60.2828C26.3487 60.3501 27.247 60.7876 27.0487 61.8533C26.862 62.8405 25.8704 62.9976 25.0888 63.0088C22.0324 63.0873 18.976 63.0873 15.9313 63.0312C15.1497 63.02 14.1348 62.8742 13.9948 61.8646C13.7964 60.4847 14.9397 60.3501 15.9546 60.2267C22.2657 59.4975 18.0661 54.9318 18.9643 52.2619C19.9326 49.4013 17.3428 49.8388 15.558 49.8388C12.4199 49.8276 10.8917 48.3132 10.9034 45.3067C10.9034 38.7779 10.9267 32.249 10.8917 25.7201C10.88 23.039 11.9649 21.1768 14.9164 21.1431C17.8444 21.1095 19.0927 22.8707 19.0693 25.5855C19.0577 27.8739 19.0693 30.1624 19.0693 32.4397Z" />
+              </g>
+              <path d="M67.9136 32.3504C67.9136 32.844 67.9136 33.3263 67.9136 33.8199C67.9136 41.695 67.9136 41.7623 59.9926 41.852C56.9362 41.8857 54.3697 42.4354 54.428 45.9354C54.4747 49.1101 56.8778 49.6374 59.7359 49.8505C61.4974 49.9739 65.1371 48.2912 64.7055 51.5669C64.3322 54.405 68.6018 59.5765 61.4391 60.1935C60.6342 60.2608 59.7359 60.6983 59.9342 61.764C60.1209 62.7512 61.1125 62.9083 61.8941 62.9195C64.9505 62.998 68.0069 62.998 71.0516 62.9419C71.8332 62.9307 72.8482 62.7849 72.9881 61.7753C73.1865 60.3954 72.0432 60.2608 71.0283 60.1374C64.7172 59.4082 68.9168 54.8425 68.0186 52.1726C67.0503 49.312 69.6401 49.7495 71.4249 49.7495C74.563 49.7383 76.0912 48.2239 76.0795 45.2174C76.0795 38.6886 76.0562 32.1597 76.0912 25.6308C76.1029 22.9497 75.018 21.0875 72.0666 21.0538C69.1385 21.0202 67.8902 22.7814 67.9136 25.4962C67.9252 27.7846 67.9136 30.0731 67.9136 32.3504Z" />
+              <path d="M42.5441 38.2167C36.3963 43.1302 31.4034 40.2808 26.3988 38.4523C23.739 37.4763 24.7656 35.0981 24.8823 33.3144C25.0456 30.6782 26.4455 28.5804 29.4085 28.1878C31.7417 27.8737 34.1332 27.8512 36.5013 27.84C43.1274 27.7951 49.7418 27.8064 56.3679 27.84C59.996 27.8625 62.5274 29.2871 63.2857 32.9891C64.044 36.7023 62.4224 38.1494 58.7361 39.5853C54.2098 41.3465 50.3601 41.3353 45.5889 38.6991C45.5889 45.2953 45.5422 51.2521 45.6122 57.1976C45.6472 60.2265 48.1786 59.0037 49.7885 59.2617C50.8151 59.43 51.9933 59.4973 52.0283 60.6976C52.0633 61.9765 50.7917 62.0999 49.8235 62.1111C46.0905 62.1784 42.3575 62.1784 38.6244 62.1223C37.5045 62.0999 35.9413 62.1335 36.1047 60.5181C36.2096 59.4188 37.5045 59.1383 38.5311 59.2954C42.1591 59.8338 42.7191 58.0165 42.6024 55.0437C42.3925 49.8947 42.5441 44.7007 42.5441 38.2167Z" />
+              <defs>
+              <clipPath id="clip0_629_3873">
+              <rect width="65.3861" height="42.034"transform="translate(10.8916 21.0533)"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <p>Table</p> </a>
+          </div>
+       
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)" class="dept__content">
+            <svg width="74" height="53" viewBox="0 0 74 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.0634015 20.3968C0.23006 20.0653 0.410127 19.7395 0.559545 19.4003C1.64953 16.9331 3.95209 15.5491 6.6531 15.7418C9.17404 15.923 11.3598 17.6732 11.9785 20.258C12.6796 23.1898 13.1949 26.1659 13.8156 29.1169C14.3826 31.8135 15.9055 33.0953 18.618 33.0972C30.7687 33.1107 42.9213 33.1107 55.0721 33.0972C57.7807 33.0933 59.2979 31.8135 59.8687 29.1111C60.4319 26.4415 60.9568 23.7622 61.5104 21.0907C62.1579 17.9585 64.1405 16.004 66.8914 15.7611C69.9544 15.4913 72.1095 16.9311 73.368 20.0768C73.4159 20.1983 73.5347 20.2908 73.6209 20.3968C73.6209 21.6439 73.6209 22.8929 73.6209 24.14C73.4313 26.2314 73.2282 28.3227 73.0577 30.416C72.914 32.1836 72.9294 33.9704 72.6688 35.7186C71.962 40.468 68.0618 43.5848 62.8782 43.5925C52.0703 43.6099 41.2605 43.5983 30.4526 43.5983C23.9491 43.5983 17.4437 43.6079 10.9402 43.5945C4.8984 43.5829 1.25491 40.0652 0.869873 33.9993C0.661072 30.709 0.333503 27.4245 0.0595703 24.1381C0.0634015 22.8929 0.0634015 21.6439 0.0634015 20.3968Z" />
+              <path d="M16.288 45.9325C15.8455 47.6422 15.5428 49.1437 15.0601 50.5855C14.4548 52.3935 12.6694 53.2609 10.9358 52.7308C9.16576 52.1892 8.21754 50.5624 8.58533 48.6985C9.13128 45.9325 9.13128 45.9325 11.8629 45.9325C13.2403 45.9325 14.6214 45.9325 16.288 45.9325Z" />
+              <path d="M57.3921 45.9267C59.7176 45.9267 61.7654 45.9152 63.8132 45.9441C64.0412 45.9479 64.4281 46.1503 64.4684 46.3238C64.7423 47.5266 65.1599 48.7525 65.1177 49.9572C65.0641 51.557 63.6389 52.7443 62.0681 52.887C60.5912 53.02 59.12 52.116 58.6277 50.6029C58.1583 49.1572 57.8423 47.6596 57.3921 45.9267Z" />
+              <path d="M36.5673 0.560758C43.3141 0.560758 50.0628 0.520281 56.8096 0.572324C63.2786 0.620511 67.6979 6.32017 66.1942 12.6232C66.0984 13.026 65.6769 13.531 65.2977 13.6563C61.817 14.8032 59.8477 17.1817 59.1964 20.7688C58.7252 23.3594 58.1735 25.9365 57.6276 28.5117C57.2444 30.3177 56.6812 30.7803 54.8978 30.7823C42.839 30.7881 30.7803 30.79 18.7215 30.7823C17.0358 30.7803 16.4362 30.2888 16.078 28.5888C15.5052 25.871 14.9899 23.1416 14.4229 20.4219C13.6528 16.723 11.4269 14.3907 7.75464 13.5464C7.01138 13.3749 6.76235 13.0935 6.61102 12.3784C5.30074 6.1891 9.68557 0.624366 16.0397 0.572324C22.8822 0.518353 29.7248 0.560758 36.5673 0.560758Z" />
+              </svg>
+              
+            <p>Sofa</p>
+          </a>
+        </div>
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)" class="dept__content">
+            <svg width="53" height="64" viewBox="0 0 53 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.5709 0.543274H0.237793V59.0356H23.5709V0.543274Z" />
+              <path d="M52.7804 0.543274H29.4473V59.0356H52.7804V0.543274Z" />
+              <path d="M5.82802 58.1267H0.237793V63.5942H5.82802V58.1267Z" />
+              <path d="M52.7943 58.1267H47.2041V63.5942H52.7943V58.1267Z" />
+              <path d="M21.855 25.084H18.0806V29.7825H21.855V25.084Z" />
+              <path d="M35.0372 25.084H31.2627V29.7825H35.0372V25.084Z" />
+              </svg>
+              
+            <p>Cupboard</p>
+          </a>
+        </div>
+        <div class="col-auto dept__card">
+          <a href="javascript:void(0)"class="dept__content">
+            <svg width="31" height="71" viewBox="0 0 31 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.911621 28.0774H13.8721V66.2605H2.98114V70.3741H28.8669V66.2605H17.9759V28.0774H30.9359L29.3355 21.2435H2.51198L0.911621 28.0774Z" />
+              <path d="M24.3423 0.7724H7.50519L3.64111 17.1493H28.2064L24.3423 0.7724Z" />
+              </svg>
+            <p>Lamp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trending">
+    <h2 class="heading">TRENDING</h2>
+    <h6 class="subheading">Explore a wide range of affordable, well-designed and functional home furnishing solutions
+
+    </h6>
+  </section>
+  <!-- ----------------------  footer block code ------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
+          <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="header logo"></a>
+          <form action="" class="footer__form">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Youre Email address" class="footer__form-input">
+            <button type="submit" value="send" class="btn btn--subscribe">Subscribe</button>
+          </form>
+          <div class="footer__info">
+            <p>Contact Info</p>
+            <div class="d-flex gap-4">
+              <a href="tel:+4733378901">+47 333 78 901</a>|<a href="tel:+4733378901">+47 333 78 901</a>
+            </div>
+            <address>
+              17 Princess Road, London, Greater London NW1 8JR, UK
+            </address>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li><a href="" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <h2 class="footer__title">categories</h2>
+          <ul class="footer__list">
+            <li><a href="javascript:void(0)"> Popular</a></li>
+            <li><a href="javascript:void(0)"> Chair</a></li>
+            <li><a href="javascript:void(0)"> sofa</a></li>
+            <li><a href="javascript:void(0)"> cupboard</a></li>
+            <li><a href="javascript:void(0)"> Lamp</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__title">customer servise</h2>
+          <ul class="footer__list">
+            <li><a href="javascript:void(0)"> my account</a></li>
+            <li><a href="javascript:void(0)"> Discount</a></li>
+            <li><a href="javascript:void(0)"> Return</a></li>
+            <li><a href="javascript:void(0)"> Order history</a></li>
+            <li><a href="javascript:void(0)"> order tracking</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__title">Furniture</h2>
+          <ul class="footer__list">
+            <li><a href="javascript:void(0)"> Living Room Furniture</a></li>
+            <li><a href="javascript:void(0)"> Bar Furniture</a></li>
+            <li><a href="javascript:void(0)"> Bedroom Furniture</a></li>
+            <li><a href="javascript:void(0)"> Kids Furniture</a></li>
+            <li><a href="javascript:void(0)"> Accent Furniture</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__title">Useful Links</h2>
+          <ul class="footer__list">
+            <li><a href="javascript:void(0)"> Promotions</a></li>
+            <li><a href="javascript:void(0)"> Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <div class="footer__copyright">
+    <a href="javascript:void(0)">©Neostore - All Rights Reserved</a>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <script src="app/js/main.js"></script>
 </body>
 

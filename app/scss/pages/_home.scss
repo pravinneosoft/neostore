@@ -1,0 +1,111 @@
+.banner {
+
+   position: relative;
+
+   &__content {
+
+
+      position: absolute;
+      top: 6%;
+      left: 60px;
+      @media (min-width: 576px) {top: 20%; }
+      @media (min-width: 768px) {
+         top: 21px;
+      }
+      @media (min-width: 992px) {
+         top: 0;
+         padding-top: 151px;
+         padding-bottom: 179px;
+      }
+
+      &-title {
+         font-size: 30px;
+         font-weight: 400;
+         color: $color-grey;
+         border-left: 4px solid $color-grey;
+         padding-left: 17px;
+         margin-bottom: 18px;
+
+         @media (min-width: 768px) {
+            font-size: 40px;
+            margin-bottom: 38px;
+         }
+      }
+
+      h6 {
+         @extend .banner__content-title;
+         padding: 0;
+         font-size: 17px;
+         border: 0;
+         font-weight: 700;
+         margin-bottom: 26px;
+
+         @media (min-width: 768px) {
+            margin-bottom: 56px;
+            font-size: 20px;
+         }
+      }
+
+      h1 {
+         font-weight: 300;
+         font-size: 30px;
+         color: $color-grey;
+
+         @media (min-width: 768px) {
+            font-size: 70px;
+         }
+      }
+   }
+}
+
+//---------- dept block css --------------//
+.dept{
+   &__wrapper{
+      padding: 0 -9px;
+   }
+   &__card{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 0 9px;
+     
+   }
+   &__content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 0.5px solid $color-dark;
+      height: 188px;
+      width: 188px;
+ border-radius: 3px;
+ transition: transform .6s;
+      img{
+         height: 85px;
+      }
+      p{
+         margin-top: 20px;
+         margin-bottom: 0;
+         color: $color-lightgrey;
+      }
+      svg{
+         path{
+
+            fill:$color-lightgrey;
+         }
+      }
+      &:hover{
+         background-color: $color-red;
+         transform: scale(1.1);
+         color: $color-white;
+         p{
+         color: $color-white;}
+         svg{
+             path{
+
+                fill:$color-white;
+             }
+         }
+      }
+   }
+}

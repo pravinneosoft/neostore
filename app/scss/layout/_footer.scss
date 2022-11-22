@@ -1,0 +1,101 @@
+.footer {
+    background-color: $color-grey;
+    color: $color-white;
+    padding-top: 34px;
+    padding-bottom: 48px;
+
+    &__form {
+        margin-top: 33px;
+        position: relative;
+
+        &-input {
+            border-radius: 4px;
+            width: 100%;
+            padding-left: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 0;
+            outline: $color-white auto 1px;
+            padding-left: 44px;
+            &:focus-visible {
+                outline: $color-white auto 1px;
+            }
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                color: $color-red;
+            }
+        }
+        i{
+            color: $color-red;
+            position: absolute;
+            top: 15px;
+            left: 16px;
+        }
+    }
+    &__info{
+        font-weight: 300;
+        font-size: 14px;
+        p{
+            margin-top: 40px;
+            margin-bottom: 20px;
+           
+        }
+        a{
+            
+color: $color-white;
+        }
+        ul{
+            display: flex;
+            column-gap: 10.8px;
+            li{
+                
+    height: 25px;
+    width: 25px;
+    background: $color-lightgrey;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: -1px;
+    justify-content: center;
+    align-items: center;
+
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 12px;
+        margin-top: 20px;
+        @media (min-width: 992px) {margin-top: 0;
+            margin-bottom: 36px;
+        }
+    }
+
+    &__list {
+        line-height: 41.5px;
+        li a {
+            font-weight: 300;
+            font-size: 14px;
+            color: $color-white;
+            &:hover{
+                color: $color-red;
+                // background-color: #fff;
+            }
+        }
+    }
+    &__copyright{
+        background-color: $color-red;
+        text-align: center;
+        padding-top: 17px;
+padding-bottom: 19px; 
+        a{
+            color: $color-white;
+            font-weight: 300;
+font-size: 14px;
+      }
+    }
+}

@@ -1,0 +1,31 @@
+.owl-dots{
+    display: none;
+}
+.owl-theme .owl-nav {
+    position: absolute;
+    margin-top: 10px;
+    top: 30%;
+    left: 0px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 576px) {top: 50%; }
+   
+}
+.owl-prev{
+    span{
+        font-size: 34px;
+        display: inline;
+    }
+}
+.owl-next{
+    span{
+        font-size: 34px;
+        display: inline;
+    }
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+     background: transparent; 
+    color: red;
+    text-decoration: none;
+}

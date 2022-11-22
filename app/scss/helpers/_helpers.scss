@@ -1,0 +1,25 @@
+.heading{
+    font-weight: 700;
+font-size: 30px;
+color: $color-lightblack;
+text-align: center;
+margin-top: 100px;
+}
+.subheading{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $color-lightgrey;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+margin: 0 auto;
+        width: 142px;
+        margin-top: 36px;
+        border: 1px solid $color-black;
+    }
+}
