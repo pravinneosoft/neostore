@@ -1,111 +1,244 @@
+// Banner section start
 .banner {
-
    position: relative;
-
    &__content {
 
 
       position: absolute;
-      top: 6%;
-      left: 60px;
-      @media (min-width: 576px) {top: 20%; }
-      @media (min-width: 768px) {
-         top: 21px;
+      top: 15%;
+      left: rem(30);
+
+      @include media-breakpoint-up(sm) {
+         top: 20%;
+         left: rem(60);
       }
-      @media (min-width: 992px) {
+
+      @include media-breakpoint-up(md) {
+         top: 30%;
+      }
+
+      @include media-breakpoint-up(lg) {
          top: 0;
-         padding-top: 151px;
-         padding-bottom: 179px;
+         padding-top: rem(50);
+         padding-bottom: rem(179);
+      }
+      @include media-breakpoint-up(xl) {
+         padding-top: rem(151);
       }
 
       &-title {
-         font-size: 30px;
-         font-weight: 400;
+         font-size: rem(15);
+         font-weight:$font-weight-normal;
          color: $color-grey;
-         border-left: 4px solid $color-grey;
-         padding-left: 17px;
-         margin-bottom: 18px;
-
-         @media (min-width: 768px) {
-            font-size: 40px;
-            margin-bottom: 38px;
+         border-left: rem(4) solid $color-grey;
+         padding-left: rem(17);
+         margin-bottom: rem(18);
+         @include media-breakpoint-up(sm) {
+            font-size: rem(30);
+         }
+         @include media-breakpoint-up(md) {
+            font-size: rem(40);
+            margin-bottom: rem(38);
          }
       }
 
       h6 {
          @extend .banner__content-title;
          padding: 0;
-         font-size: 17px;
+         font-size: rem(17);
          border: 0;
-         font-weight: 700;
-         margin-bottom: 26px;
-
-         @media (min-width: 768px) {
-            margin-bottom: 56px;
-            font-size: 20px;
+         font-weight:$font-weight-bold;
+        margin: 0;
+         @include media-breakpoint-up(sm) {
+            margin-bottom: rem(26);
+         }
+         @include media-breakpoint-up(md) {
+           
+            font-size: rem(20);
+         }
+         @include media-breakpoint-up(lg) {
+            margin-bottom: rem(56);
          }
       }
 
       h1 {
-         font-weight: 300;
-         font-size: 30px;
+         font-weight: $font-weight-light;
+         font-size: rem(30);
          color: $color-grey;
-
-         @media (min-width: 768px) {
-            font-size: 70px;
+         
+         @include media-breakpoint-up(md) {
+            font-size: rem(40);
+         }
+         @include media-breakpoint-up(lg) {
+            font-size: rem(70);
          }
       }
    }
 }
+// Banner section end
+//Department section start 
+.dept {
+   &__wrapper {
+      padding: 0 rem(-9);
+   }
 
-//---------- dept block css --------------//
-.dept{
-   &__wrapper{
-      padding: 0 -9px;
-   }
-   &__card{
+   &__card {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
-      padding: 0 9px;
-     
+      margin-bottom: rem(20);
+      padding: 0 rem(9);
+
    }
-   &__content{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+   &__content {
+      @include flex-center;
       flex-direction: column;
-      border: 0.5px solid $color-dark;
-      height: 188px;
-      width: 188px;
- border-radius: 3px;
- transition: transform .6s;
-      img{
-         height: 85px;
+      border: rem(0.5) solid $color-dark;
+      height: rem(188);
+      width: rem(188);
+      border-radius: rem(3);
+      transition: transform .6s;
+
+      img {
+         height: rem(85);
       }
-      p{
-         margin-top: 20px;
+
+      p {
+         margin-top: rem(20);
          margin-bottom: 0;
          color: $color-lightgrey;
       }
-      svg{
-         path{
 
-            fill:$color-lightgrey;
+      svg {
+         path {
+
+            fill: $color-lightgrey;
          }
       }
-      &:hover{
+
+      &:hover {
          background-color: $color-red;
          transform: scale(1.1);
          color: $color-white;
-         p{
-         color: $color-white;}
-         svg{
-             path{
 
-                fill:$color-white;
-             }
+         p {
+            color: $color-white;
+         }
+
+         svg {
+            path {
+
+               fill: $color-white;
+            }
          }
       }
    }
 }
+//Department section end 
+//Trending section start 
+.trending {
+   &__content{
+      padding: 0 rem(8);
+      margin-bottom: rem(24);
+   }
+   &__card {
+      width: rem(232);
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+
+      a {
+         padding: rem(15) 0 0 0;
+      }
+
+      .card-title {
+         @include fontsize;
+         color: $color-whitesmoke;
+         margin-bottom: rem(4);
+      }
+      .card-text{
+         @include fontsize;
+         color: $color-lightblack;
+      }
+   }
+}
+//Trending section end
+//Furniture section start 
+.furniture{
+   &__content{
+      padding: 0 rem(7);
+      margin-bottom: rem(24);
+   }
+   &__card{
+      width: auto;
+      border: none;
+      border-radius: 0;
+      @include media-breakpoint-up(lg){
+         width: rem(399);
+      }
+      &-body{
+         @include flex-center;
+         background-color: $color-light;
+         justify-content: space-between;
+         padding: rem(14) rem(22);
+         div .card-title{
+            @include default-fontsize;
+            color: $color-whitesmoke;
+         }
+         div .card-text{
+            @include default-fontsize;
+            color:$color-red;
+         }
+      }
+      .btn--shop{
+         margin-top: 0;
+         &:hover{
+            background-color: $color-dark;
+           
+         }
+      }
+   }
+}
+//Furniture section end 
+//Blog section start
+.blog{
+   &__card{
+width: rem(399);
+border: none;
+      &-body{
+         text-align: center;
+         padding: rem(24) 0;
+         border-bottom: rem(1) solid $color-dark;
+         border-left:  rem(1) solid $color-dark;
+         border-right:  rem(1) solid $color-dark;
+         div{
+            border-bottom: rem(1) solid $color-dark;
+         }
+         h6{
+            color: $color-red;
+            font-size: rem(12);
+            font-weight: $font-weight-medium;
+         }
+         h5{
+            color: $color-lightblack;
+            font-size: rem(20);
+            font-weight: $font-weight-medium;
+            margin-top: rem(7);
+         }
+         p{
+            font-size: rem(14);
+            font-weight: $font-weight-light;
+            color: $color-black;
+            margin-top: rem(40);
+            margin-bottom: rem(22);
+         }
+         
+      }
+      &-link{
+         font-weight: $font-weight-medium;
+         font-size: rem(14);
+         color: $color-graphite;
+      }
+   }
+}
+//Blog section end 

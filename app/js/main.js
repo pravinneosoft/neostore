@@ -1,3 +1,4 @@
+// Submenu js start
 document.addEventListener("DOMContentLoaded", function(){
   // make it as accordion for smaller screens
   if (window.innerWidth > 992) {
@@ -31,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   // end if innerWidth
   }); 
-
+// Submenu js end
+// Owl carousel Js start
 $('.owl-carousel').owlCarousel({
   autoplay:false,
 autoplayTimeout:3500 ,
@@ -51,4 +53,4 @@ function toggleVideo({ currentTarget: wrapper }) {
     playpause.removeAttribute('hidden');
   }
 }
-
+// Owl carousel Js end

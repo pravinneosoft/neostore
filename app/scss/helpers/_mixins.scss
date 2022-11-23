@@ -1,12 +1,10 @@
 @mixin fontsize{
-    font-size: 14px;
+    font-size: rem(14);
+    font-weight: 500;
 }
-@mixin fontsize-medium{
-    font-size:33px;
-}
-
-@mixin fontsize-larger{
-    font-size:55px;
+@mixin default-fontsize{
+    font-size: rem(20);
+            font-weight: $font-weight-medium;
 }
 @mixin center {
     text-align: center;
@@ -17,3 +15,40 @@
     content: "";
     position: absolute;
   }
+@mixin flex-center {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+
+// fadeIn and fadeOut css property end /
+// hover, focus, active css property Begin /
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin focus {
+    &:focus {
+        
+        @content;
+    }
+}
+
+@mixin hover-focus {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover-focus-active {
+
+    &:hover,
+    &:focus,
+    &.active {
+        @content;
+    }
+}

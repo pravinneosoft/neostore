@@ -1,5 +1,27 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+// etc
+
 //font variables
 $primary-font:'Gotham';
+//font size rem
+$base-rem: 16 !default;
+$font-weight-medium:500;
+
 // font path 
 $fonts-path: "../fonts/gotham" !default;
 $images: "../images" !default;
@@ -12,5 +34,8 @@ $color-black:#000;
 $color-grey:#111111;
 $color-lightgrey:#7F7F7F;
 $color-dark:#BFBFBF;
+$color-whitesmoke:#4f4f4f;
+$color-pink:antiquewhite;
+$color-graphite:#3333
 // icomoon icon
 

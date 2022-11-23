@@ -1,5 +1,4 @@
-
-
+//Font-face typography start 
 @font-face {
     font-family: 'Gotham';
     src: url('#{$fonts-path}/Gotham-Black.woff2') format('woff2'),
@@ -17,12 +16,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
-
-
-
 @font-face {
     font-family: 'Gotham';
     src: url('#{$fonts-path}/Gotham-Light.woff2') format('woff2'),
@@ -31,11 +24,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
-
-
 @font-face {
     font-family: 'Gotham';
     src: url('#{$fonts-path}/Gotham-Medium.woff2') format('woff2'),
@@ -44,8 +32,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: 'Gotham';
     src: url('#{$fonts-path}/Gotham-Thin.woff2') format('woff2'),
@@ -54,6 +40,6 @@
     font-style: normal;
     font-display: swap;
 }
-
+//Font-face typography end
 
 

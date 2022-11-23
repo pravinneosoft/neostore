@@ -1,12 +1,14 @@
+//Button utility start
+//Button common part start
 .btn {
     background-color: $color-red;
     color: $color-white;
-
+//Button common part end
     &--shop {
-        font-size: 14px;
+        font-size: rem(14);
         font-weight: 500;
-        padding: 10px 37px;
-        border-radius: 2px;
+       
+        border-radius: rem(2);
       
 
         &:hover {
@@ -14,19 +16,22 @@
             color: $color-red;
             transition: 0.4s all ease-in-out;
         }
-        @media (min-width: 768px) {
-            margin-top: 56px;
+        @include media-breakpoint-up(sm) {
+            padding: rem(10) rem(37);
+         }
+         @include media-breakpoint-up(lg) {
+            margin-top: rem(56);
          }
     }
 
     &--subscribe {
         font-weight: 500;
-        font-size: 14px;
-      padding: 10.5px 15px;
-      border-radius: 3px;
+        font-size: rem(14);
+      padding: rem(10.5) rem(15);
+      border-radius: rem(3);
       position: absolute;
-      right: 2px;
-      top: 2px;
+      right: rem(2);
+      top: rem(2);
         &:hover {
             background-color: $color-grey;
             color: $color-white;
@@ -34,3 +39,4 @@
         }
     }
 }
+//Button utility end

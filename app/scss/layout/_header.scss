@@ -1,5 +1,5 @@
+// Header section start
 .header {
-
   &__top {
     background-color: $color-red;
     color: $color-white;
@@ -7,9 +7,9 @@
     h3 {
       text-align: center;
       margin: 0;
-      padding: 12px 0;
-      font-weight: 700;
-      font-size: 16px;
+      padding: rem(12) 0;
+      font-weight: $font-weight-bold;
+      font-size: rem(16);
     }
 
     a {
@@ -23,8 +23,8 @@
 
     .form-control {
       background-color: $color-light ;
-      border-radius: 5px;
-      padding-right: 45px;
+      border-radius: rem(5);
+      padding-right: rem(45);
 
       &:focus {
         box-shadow: none;
@@ -32,9 +32,9 @@
       }
 
       &::placeholder {
-        font-size: 14px;
+        font-size: rem(14);
         color: $color-lightblack;
-        font-weight: 300;
+        font-weight: $font-weight-light;
       }
 
     
@@ -51,7 +51,7 @@
     display: inline-flex;
 
     li {
-      padding-left: 21px;
+      padding-left: rem(21);
     }
   }
 
@@ -61,7 +61,7 @@
     justify-content: space-between;
     width: 100%;
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg) {
       position: initial;
       display: flex;
       width: 34%;
@@ -71,3 +71,42 @@
   }
 
 }
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: rem(20);
+  font-weight: 500;
+  color: $color-lightblack;
+  padding: rem(10) rem(24.7);
+  background: $color-pink;
+  border-bottom: rem(1) solid $color-red;
+
+  &:hover {
+      color: $color-red;
+      transition: 0.3s all ease-in-out;
+  }
+
+  @include media-breakpoint-up(lg) {
+      padding: rem(10) rem(15);
+      font-size: rem(14);
+      font-weight: $font-weight-light;
+      color: $color-lightblack;
+      background-color: $color-white;
+      border: transparent;
+  }
+
+  @include media-breakpoint-up(xl) {
+      padding: rem(10) rem(28.7);
+  }
+}
+
+.navbar {
+  padding: rem(21) 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+// Header section end
