@@ -6,8 +6,7 @@
     top: 30%;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     @include media-breakpoint-up(sm) {top: 50%; }
    
 }

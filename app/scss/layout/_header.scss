@@ -36,17 +36,13 @@
         color: $color-lightblack;
         font-weight: $font-weight-light;
       }
-
-    
     }
-
     button {
       position: absolute;
       right: 0;
       background-color: transparent !important;
     }
   }
-
   &__icons {
     display: inline-flex;
 
@@ -56,8 +52,7 @@
   }
 
   &__right {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     justify-content: space-between;
     width: 100%;
 
@@ -67,9 +62,7 @@
       width: 34%;
       align-items: center;
     }
-
   }
-
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   font-size: rem(20);
@@ -100,12 +93,10 @@
 
 .navbar {
   padding: rem(21) 0;
+  &-toggler:focus {
+    box-shadow: none;
+  }
 }
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
 .dropdown-toggle::after {
   display: none;
 }

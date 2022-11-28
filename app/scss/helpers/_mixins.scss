@@ -1,28 +1,35 @@
-@mixin fontsize{
+@mixin fontsize {
     font-size: rem(14);
-    font-weight:  $font-weight-medium;
+    font-weight: $font-weight-medium;
 }
-@mixin default-fontsize{
+
+@mixin default-fontsize {
     font-size: rem(20);
-            font-weight: $font-weight-medium;
+    font-weight: $font-weight-medium;
 }
+
 @mixin center {
     text-align: center;
-}@mixin full-width {
-  width: 100%;
 }
+
+@mixin full-width {
+    width: 100%;
+}
+
 @mixin contents {
     content: "";
     position: absolute;
-  }
+}
+
 @mixin flex-center {
     display: flex;
-      justify-content: center;
-      align-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 @mixin flex-space-between {
     display: flex;
-      justify-content:space-between;
+    justify-content: space-between;
 }
 
 // fadeIn and fadeOut css property end /
@@ -37,12 +44,13 @@
 
 @mixin focus {
     &:focus {
-        
+
         @content;
     }
 }
 
 @mixin hover-focus {
+
     &:hover,
     &:focus {
         @content;

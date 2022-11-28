@@ -1,10 +1,7 @@
 // Banner section start
 .banner {
    position: relative;
-
    &__content {
-
-
       position: absolute;
       top: 15%;
       left: rem(30);
@@ -13,11 +10,9 @@
          top: 20%;
          left: rem(60);
       }
-
       @include media-breakpoint-up(md) {
          top: 30%;
       }
-
       @include media-breakpoint-up(lg) {
          top: 0;
          padding-top: rem(50);
@@ -27,7 +22,6 @@
       @include media-breakpoint-up(xl) {
          padding-top: rem(151);
       }
-
       &-title {
          font-size: rem(15);
          font-weight: $font-weight-normal;
@@ -35,7 +29,6 @@
          border-left: rem(4) solid $color-grey;
          padding-left: rem(17);
          margin-bottom: rem(18);
-
          @include media-breakpoint-up(sm) {
             font-size: rem(30);
          }
@@ -45,7 +38,6 @@
             margin-bottom: rem(38);
          }
       }
-
       h6 {
          @extend .banner__content-title;
          padding: 0;
@@ -67,7 +59,6 @@
             margin-bottom: rem(56);
          }
       }
-
       h1 {
          font-weight: $font-weight-light;
          font-size: rem(30);
@@ -83,22 +74,18 @@
       }
    }
 }
-
 // Banner section end
 //Department section start 
 .dept {
    &__wrapper {
       padding: 0 rem(-9);
    }
-
    &__card {
       display: flex;
       justify-content: center;
       margin-bottom: rem(20);
       padding: 0 rem(9);
-
    }
-
    &__content {
       @include flex-center;
       flex-direction: column;
@@ -107,24 +94,19 @@
       width: rem(188);
       border-radius: rem(3);
       transition: transform .6s;
-
       img {
          height: rem(85);
       }
-
       p {
          margin-top: rem(20);
          margin-bottom: 0;
          color: $color-lightgrey;
       }
-
       svg {
          path {
-
             fill: $color-lightgrey;
          }
       }
-
       &:hover {
          background-color: $color-red;
          transform: scale(1.1);
@@ -143,7 +125,6 @@
       }
    }
 }
-
 //Department section end 
 //Trending section start 
 .trending {
@@ -151,17 +132,14 @@
       padding: 0 rem(8);
       margin-bottom: rem(24);
    }
-
    &__card {
       width: rem(232);
       background-color: transparent;
       border: none;
       border-radius: 0;
-
       a {
          padding: rem(15) 0 0 0;
       }
-
       .card-title {
          @include fontsize;
          color: $color-whitesmoke;
@@ -174,7 +152,6 @@
       }
    }
 }
-
 //Trending section end
 //Furniture section start 
 .furniture {
@@ -197,16 +174,6 @@
          background-color: $color-light;
          justify-content: space-between;
          padding: rem(14) rem(22);
-
-         // div .card-title {
-         //    @include default-fontsize;
-         //    color: $color-whitesmoke;
-         // }
-
-         // div .card-text {
-         //    @include default-fontsize;
-         //    color: $color-red;
-         // }
       }
 
       &-title {
@@ -229,12 +196,10 @@
       }
    }
 }
-
 //Furniture section end 
 //special offer section start
 .offer {
    position: relative;
-
    &__heading {
       background-color: $color-white;
       width: 18.375rem;
@@ -282,6 +247,7 @@
 
       @include media-breakpoint-up(xl) {
          margin-top: rem(20);
+         padding: 0 rem(34);
       }
    }
 
@@ -313,8 +279,7 @@
       }
 
       &-ratings {
-         display: flex;
-         justify-content: space-between;
+         @include flex-space-between;
          margin-top: rem(18);
 
          h3 {
@@ -335,7 +300,6 @@
       }
    }
 }
-
 //special offer section end
 //Best-sellar section start
 .bestsell {
@@ -348,9 +312,6 @@
          gap: rem(26);
       }
    }
-
-   &__content {}
-
    &__card {
       border: 0;
       flex-direction: row;
@@ -394,8 +355,7 @@
             li {
                a {
                   border: 0.5px solid $color-dark;
-                  padding: rem(10) rem(11);
-                 
+                  padding: rem(10) rem(11);   
                   text-align: center;
                   img{
                      width: rem(20);
@@ -411,7 +371,6 @@
       }
    }
 }
-
 //Best-sellar section end
 //Blog section start
 .blog {
@@ -504,5 +463,4 @@
       }
    }
 }
-
 //Blog section end 
