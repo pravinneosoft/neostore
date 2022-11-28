@@ -1,6 +1,7 @@
 // Banner section start
 .banner {
    position: relative;
+
    &__content {
 
 
@@ -22,20 +23,23 @@
          padding-top: rem(50);
          padding-bottom: rem(179);
       }
+
       @include media-breakpoint-up(xl) {
          padding-top: rem(151);
       }
 
       &-title {
          font-size: rem(15);
-         font-weight:$font-weight-normal;
+         font-weight: $font-weight-normal;
          color: $color-grey;
          border-left: rem(4) solid $color-grey;
          padding-left: rem(17);
          margin-bottom: rem(18);
+
          @include media-breakpoint-up(sm) {
             font-size: rem(30);
          }
+
          @include media-breakpoint-up(md) {
             font-size: rem(40);
             margin-bottom: rem(38);
@@ -47,15 +51,18 @@
          padding: 0;
          font-size: rem(17);
          border: 0;
-         font-weight:$font-weight-bold;
-        margin: 0;
+         font-weight: $font-weight-bold;
+         margin: 0;
+
          @include media-breakpoint-up(sm) {
             margin-bottom: rem(26);
          }
+
          @include media-breakpoint-up(md) {
-           
+
             font-size: rem(20);
          }
+
          @include media-breakpoint-up(lg) {
             margin-bottom: rem(56);
          }
@@ -65,16 +72,18 @@
          font-weight: $font-weight-light;
          font-size: rem(30);
          color: $color-grey;
-         
+
          @include media-breakpoint-up(md) {
             font-size: rem(40);
          }
+
          @include media-breakpoint-up(lg) {
             font-size: rem(70);
          }
       }
    }
 }
+
 // Banner section end
 //Department section start 
 .dept {
@@ -134,13 +143,15 @@
       }
    }
 }
+
 //Department section end 
 //Trending section start 
 .trending {
-   &__content{
+   &__content {
       padding: 0 rem(8);
       margin-bottom: rem(24);
    }
+
    &__card {
       width: rem(232);
       background-color: transparent;
@@ -156,89 +167,342 @@
          color: $color-whitesmoke;
          margin-bottom: rem(4);
       }
-      .card-text{
+
+      .card-text {
          @include fontsize;
          color: $color-lightblack;
       }
    }
 }
+
 //Trending section end
 //Furniture section start 
-.furniture{
-   &__content{
+.furniture {
+   &__content {
       padding: 0 rem(7);
       margin-bottom: rem(24);
    }
-   &__card{
+
+   &__card {
       width: auto;
       border: none;
       border-radius: 0;
-      @include media-breakpoint-up(lg){
+
+      @include media-breakpoint-up(lg) {
          width: rem(399);
       }
-      &-body{
+
+      &-body {
          @include flex-center;
          background-color: $color-light;
          justify-content: space-between;
          padding: rem(14) rem(22);
-         div .card-title{
-            @include default-fontsize;
-            color: $color-whitesmoke;
-         }
-         div .card-text{
-            @include default-fontsize;
-            color:$color-red;
-         }
+
+         // div .card-title {
+         //    @include default-fontsize;
+         //    color: $color-whitesmoke;
+         // }
+
+         // div .card-text {
+         //    @include default-fontsize;
+         //    color: $color-red;
+         // }
       }
-      .btn--shop{
+
+      &-title {
+         @include default-fontsize;
+         color: $color-whitesmoke;
+      }
+
+      &-text {
+         @include default-fontsize;
+         color: $color-red;
+      }
+
+      .btn--shop {
          margin-top: 0;
-         &:hover{
+
+         &:hover {
             background-color: $color-dark;
-           
+
          }
       }
    }
 }
+
 //Furniture section end 
+//special offer section start
+.offer {
+   position: relative;
+
+   &__heading {
+      background-color: $color-white;
+      width: 18.375rem;
+      align-items: center;
+      padding: 0 rem(6);
+      position: absolute;
+      top: -15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(md) {
+         @include flex-space-between;
+         margin: initial;
+         flex-wrap: wrap;
+         width: rem(566);
+         align-items: center;
+         padding: 0 rem(12);
+         top: rem(-32);
+         right: initial;
+         left: rem(98);
+      }
+
+      h2 {
+         font-size: rem(30);
+         font-weight: $font-weight-bold;
+         color: $color-lightblack;
+         text-transform: uppercase;
+      }
+   }
+
+   &__border {
+      border: 1px solid $color-darkred;
+      padding-top: rem(70);
+      padding-bottom: rem(46);
+   }
+
+   &__content {
+      margin-top: rem(45);
+      width: 100%;
+
+      @include media-breakpoint-up(sm) {
+         width: auto;
+      }
+
+      @include media-breakpoint-up(xl) {
+         margin-top: rem(20);
+      }
+   }
+
+   &__card {
+      border: none;
+
+      div .card-title {
+         @extend .furniture__card-title;
+      }
+
+      div .card-text {
+         @extend .furniture__card-text;
+      }
+
+      img {
+         margin: rem(23) 0;
+      }
+
+      &-progress {
+         border-radius: rem(5);
+         background-color: $color-light;
+         height: rem(6);
+      }
+
+      &-progress-bar {
+         background-color: $color-green;
+         border-radius: rem(5);
+         width: 37%
+      }
+
+      &-ratings {
+         display: flex;
+         justify-content: space-between;
+         margin-top: rem(18);
+
+         h3 {
+            font-size: rem(14);
+            font-weight: $font-weight-medium;
+            color: $color-whitesmoke;
+         }
+
+         ul {
+            display: inline-flex;
+            gap: rem(3);
+
+            li i {
+               color: $color-dark;
+               font-size: rem(20);
+            }
+         }
+      }
+   }
+}
+
+//special offer section end
+//Best-sellar section start
+.bestsell {
+   &__wrapper {
+      gap: rem(26);
+      justify-content: space-around;
+
+      @include media-breakpoint-up(xl) {
+         justify-content: space-between;
+         gap: rem(26);
+      }
+   }
+
+   &__content {}
+
+   &__card {
+      border: 0;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-body {
+         padding-left: rem(12);
+
+         ul {
+            display: inline-flex;
+            gap: rem(3);
+
+            li i {
+               color: $color-dark;
+               font-size: rem(20);
+            }
+         }
+
+         h2 {
+            @include fontsize;
+            color: $color-lightblack;
+            margin-top: 19px;
+            margin-bottom: rem(3)
+         }
+
+         h5 {
+            @include fontsize;
+            color: $color-lightblack;
+
+            s {
+               color: $color-dark;
+            }
+         }
+
+         ol {
+            display: inline-flex;
+            margin-top: rem(21);
+
+            li {
+               a {
+                  border: 0.5px solid $color-dark;
+                  padding: rem(10) rem(11);
+                 
+                  text-align: center;
+                  img{
+                     width: rem(20);
+                  }
+               }
+
+               &:last-child {
+                  margin-left: rem(9);
+               }
+            }
+         }
+
+      }
+   }
+}
+
+//Best-sellar section end
 //Blog section start
-.blog{
-   &__card{
-width: rem(399);
-border: none;
-      &-body{
+.blog {
+   &__content {
+      padding: 0 rem(7);
+      margin-bottom: rem(24);
+   }
+
+   &__card {
+      width: auto;
+      border: none;
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+         width: rem(399);
+      }
+
+      &-body {
          text-align: center;
-         padding: rem(24) 0;
+         padding: rem(20) 0;
          border-bottom: rem(1) solid $color-dark;
-         border-left:  rem(1) solid $color-dark;
-         border-right:  rem(1) solid $color-dark;
-         div{
+         border-left: rem(1) solid $color-dark;
+         border-right: rem(1) solid $color-dark;
+
+         div {
             border-bottom: rem(1) solid $color-dark;
          }
-         h6{
+
+         h6 {
             color: $color-red;
             font-size: rem(12);
             font-weight: $font-weight-medium;
          }
-         h5{
+
+         h5 {
             color: $color-lightblack;
             font-size: rem(20);
             font-weight: $font-weight-medium;
             margin-top: rem(7);
+            margin-bottom: rem(24);
          }
-         p{
+
+         p {
             font-size: rem(14);
             font-weight: $font-weight-light;
             color: $color-black;
-            margin-top: rem(40);
+            margin-top: rem(16);
             margin-bottom: rem(22);
+            padding: 0 rem(12);
          }
-         
+
       }
-      &-link{
+
+      &-link {
          font-weight: $font-weight-medium;
          font-size: rem(14);
          color: $color-graphite;
+         text-decoration: underline;
+
+         &:hover {
+            @include hover;
+         }
+      }
+   }
+
+   &__date {
+      width: rem(83);
+      position: absolute;
+      top: rem(23);
+      left: rem(23);
+      color: $color-lightblack;
+      padding: rem(4) rem(21);
+      text-align: center;
+      background-color: $color-white;
+
+      h2 {
+         font-size: rem(30);
+         font-weight: $font-weight-bold;
+         margin: 0;
+      }
+
+      h5 {
+         margin: 0;
+         font-weight: $font-weight-medium;
+      }
+
+      hr {
+         margin: rem(4) 0;
+         border: $border-width solid $color-black;
       }
    }
 }
+
 //Blog section end 

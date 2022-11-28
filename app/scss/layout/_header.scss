@@ -27,8 +27,8 @@
       padding-right: rem(45);
 
       &:focus {
-        box-shadow: none;
-        border: none;
+        box-shadow: 0 0 0 transparent;
+        border:1px solid transparent;
       }
 
       &::placeholder {

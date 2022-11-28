@@ -1,6 +1,6 @@
 @mixin fontsize{
     font-size: rem(14);
-    font-weight: 500;
+    font-weight:  $font-weight-medium;
 }
 @mixin default-fontsize{
     font-size: rem(20);
@@ -20,13 +20,18 @@
       justify-content: center;
       align-items: center;
 }
-
+@mixin flex-space-between {
+    display: flex;
+      justify-content:space-between;
+}
 
 // fadeIn and fadeOut css property end /
 // hover, focus, active css property Begin /
 @mixin hover {
     &:hover {
-        @content;
+        color: $color-red;
+        font-weight: $font-weight-bold;
+        transition: 0.4s all ease-in-out;
     }
 }
 
