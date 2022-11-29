@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }); 
 // Submenu js end
 // Owl carousel Js start
-$('.owl-carousel').owlCarousel({
+$('.banner-carousel').owlCarousel({
   autoplay:false,
 autoplayTimeout:3500 ,
   loop: true,
@@ -42,17 +42,7 @@ autoplayTimeout:3500 ,
   dots: false,
   margin: 10,
   nav: true,});
-function toggleVideo({ currentTarget: wrapper }) {
-  let video = wrapper.querySelector('.humans-video');
-  let playpause = wrapper.querySelector('.humans-playvideo');
-  if (video.paused) {
-    video.play();
-    playpause.setAttribute('hidden', '');
-  } else {
-    video.pause();
-    playpause.removeAttribute('hidden');
-  }
-}
+
 // Owl carousel Js end
 
 //countdown timer
@@ -84,3 +74,34 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+//store carousel
+$('.store-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  dots: false,
+  nav:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2,
+          stagePadding: 50
+      },
+      1000:{
+          items:4,
+          stagePadding: 100
+      }
+  }
+})
+//show and hide div
+// const el = document.getElementById('show');
+// const hiddenDiv = document.getElementsByClassName('hidden');
+// el.addEventListener('mouseover', function handleMouseOver() {
+//   hiddenDiv.style.display = 'block';
+// });
+// el.addEventListener('mouseout', function handleMouseOut() {
+//   hiddenDiv.style.display = 'none';
+// });
+

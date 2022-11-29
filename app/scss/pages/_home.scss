@@ -1,6 +1,7 @@
 // Banner section start
 .banner {
    position: relative;
+
    &__content {
       position: absolute;
       top: 15%;
@@ -10,9 +11,11 @@
          top: 20%;
          left: rem(60);
       }
+
       @include media-breakpoint-up(md) {
          top: 30%;
       }
+
       @include media-breakpoint-up(lg) {
          top: 0;
          padding-top: rem(50);
@@ -22,6 +25,7 @@
       @include media-breakpoint-up(xl) {
          padding-top: rem(151);
       }
+
       &-title {
          font-size: rem(15);
          font-weight: $font-weight-normal;
@@ -29,6 +33,7 @@
          border-left: rem(4) solid $color-grey;
          padding-left: rem(17);
          margin-bottom: rem(18);
+
          @include media-breakpoint-up(sm) {
             font-size: rem(30);
          }
@@ -38,6 +43,7 @@
             margin-bottom: rem(38);
          }
       }
+
       h6 {
          @extend .banner__content-title;
          padding: 0;
@@ -59,6 +65,7 @@
             margin-bottom: rem(56);
          }
       }
+
       h1 {
          font-weight: $font-weight-light;
          font-size: rem(30);
@@ -74,18 +81,21 @@
       }
    }
 }
+
 // Banner section end
 //Department section start 
 .dept {
    &__wrapper {
       padding: 0 rem(-9);
    }
+
    &__card {
       display: flex;
       justify-content: center;
       margin-bottom: rem(20);
       padding: 0 rem(9);
    }
+
    &__content {
       @include flex-center;
       flex-direction: column;
@@ -94,19 +104,23 @@
       width: rem(188);
       border-radius: rem(3);
       transition: transform .6s;
+
       img {
          height: rem(85);
       }
+
       p {
          margin-top: rem(20);
          margin-bottom: 0;
          color: $color-lightgrey;
       }
+
       svg {
          path {
             fill: $color-lightgrey;
          }
       }
+
       &:hover {
          background-color: $color-red;
          transform: scale(1.1);
@@ -125,6 +139,7 @@
       }
    }
 }
+
 //Department section end 
 //Trending section start 
 .trending {
@@ -132,14 +147,17 @@
       padding: 0 rem(8);
       margin-bottom: rem(24);
    }
+
    &__card {
       width: rem(232);
       background-color: transparent;
       border: none;
       border-radius: 0;
+
       a {
          padding: rem(15) 0 0 0;
       }
+
       .card-title {
          @include fontsize;
          color: $color-whitesmoke;
@@ -152,6 +170,7 @@
       }
    }
 }
+
 //Trending section end
 //Furniture section start 
 .furniture {
@@ -196,10 +215,12 @@
       }
    }
 }
+
 //Furniture section end 
 //special offer section start
 .offer {
    position: relative;
+
    &__heading {
       background-color: $color-white;
       width: 18.375rem;
@@ -300,7 +321,96 @@
       }
    }
 }
+
 //special offer section end
+//set section start
+.fast {
+   margin-top: rem(100);
+   &__left {
+      position: relative;
+      color: $color-white;
+
+      &-content {
+         padding: rem(41) rem(150) rem(26) rem(46);
+         position: absolute;
+         top: rem(104);
+         left: rem(-18);
+         background-image: url('#{$images}/rectangle-bg.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+
+         p {
+            @include fontsize;
+         }
+
+         h3 {
+            font-size: rem(40);
+            font-weight: $font-weight-medium;
+            margin-bottom: rem(5);
+         }
+
+         h5 {
+            font-size: rem(18);
+            font-weight: $font-weight-medium;
+            margin-bottom: rem(10);
+         }
+
+         a {
+            @include fontsize;
+            color: $color-white;
+            text-decoration: underline;
+         }
+
+         img {
+            position: absolute;
+            top: rem(-13);
+            left: 0;
+            z-index: -1;
+         }
+      }
+   }
+
+   &__card {
+      display: inline-block;
+      position: relative;
+
+      &-content {
+         h4 {
+            font-weight: $font-weight-bold;
+            font-size: rem(20);
+            color: $color-whitesmoke;
+            margin-top: rem(8);
+         }
+
+         p {
+            color: $color-dark;
+            font-size: rem(14);
+            font-weight: $font-weight-bold;
+         }
+      }
+
+      &-off {
+         @include fontsize;
+         background-color: $color-red;
+         width: rem(50);
+         height: rem(50);
+         position: absolute;
+         top:rem(15);
+         right: rem(15);
+         padding-top: rem(4);
+         p{
+            @include fontsize;
+            color: $color-white;
+            text-align: center;
+         }
+      }
+   }
+   &__primary{
+      margin-bottom: rem(25);
+   }
+}
+
+//set section end
 //Best-sellar section start
 .bestsell {
    &__wrapper {
@@ -312,6 +422,7 @@
          gap: rem(26);
       }
    }
+
    &__card {
       border: 0;
       flex-direction: row;
@@ -355,10 +466,21 @@
             li {
                a {
                   border: 0.5px solid $color-dark;
-                  padding: rem(10) rem(11);   
-                  text-align: center;
-                  img{
+                  padding: rem(10) rem(11);
+                  @include flex-center;
+
+                  span {
                      width: rem(20);
+                     color: $color-lightblack;
+                     font-size: rem(20);
+                  }
+
+                  &:hover {
+                     background-color: $color-lightblack;
+
+                     span {
+                        color: red;
+                     }
                   }
                }
 
@@ -371,6 +493,7 @@
       }
    }
 }
+
 //Best-sellar section end
 //Blog section start
 .blog {
@@ -463,4 +586,137 @@
       }
    }
 }
+
 //Blog section end 
+
+//Store section start
+.store {
+   &-content {
+      position: relative;
+
+      a {
+         &:hover {
+            background-color: black;
+         }
+      }
+
+      &:hover {
+         &::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: $color-black;
+            opacity: 0.6;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            text-align: center;
+            cursor: pointer;
+         }
+
+         &::before {
+            content: "";
+            background-image: url('#{$images}/svg_icons/plus.svg');
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            z-index: 9;
+         }
+      }
+   }
+
+   &-carousel {
+      .owl-stage-outer .owl-stage .owl-item {
+         margin-right: 0 !important;
+      }
+   }
+
+   // &-hide {
+   //    display: none;
+   // }
+
+   // &-layer {
+
+
+   //    i {
+   //       position: absolute;
+   //       top: 50%;
+   //       left: 50%;
+   //       transform: translate(-50%, -50%);
+   //       font-size: rem(62);
+   //       color: $color-white;
+   //    }
+   // }
+
+}
+
+//Store section end
+//Signup section start
+.signup {
+   padding-top: rem(88);
+   padding-bottom: rem(81);
+
+   text-align: center;
+
+   @include media-breakpoint-up(xl) {
+      background-image: url('#{$images}/signup-bg.png');
+      background-repeat: no-repeat;
+      background-position: right;
+   }
+
+   &__heading {
+      font-size: rem(30);
+      font-weight: $font-weight-bold;
+      color: $color-lightblack;
+   }
+
+   p {
+      font-size: rem(20);
+      color: $color-lightgrey;
+      font-weight: $font-weight-light
+   }
+
+   &__form {
+      margin-top: rem(55);
+
+      &-email {
+         padding-bottom: rem(13);
+         border-top: 0;
+         border-left: 0;
+         border-right: 0;
+         border-bottom: 1px solid $color-black;
+         width: 90%;
+         padding-right: rem(40);
+         background-color: transparent;
+
+         &::placeholder {
+            font-size: rem(20);
+            font-weight: $font-weight-light;
+            color: $color-lightgrey;
+
+         }
+
+         &:focus-visible {
+            outline: transparent;
+            border-bottom: 1px solid $color-black;
+         }
+
+         @include media-breakpoint-up(sm) {
+            width: rem(426);
+         }
+      }
+
+      &-submit {
+         background: transparent;
+         border: 0;
+         margin-left: rem(-35);
+      }
+   }
+}

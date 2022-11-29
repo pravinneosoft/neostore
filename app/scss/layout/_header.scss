@@ -48,6 +48,9 @@
 
     li {
       padding-left: rem(21);
+      a{
+       @include iconhover;
+      }
     }
   }
 

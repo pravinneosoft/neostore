@@ -41,7 +41,17 @@
         transition: 0.4s all ease-in-out;
     }
 }
-
+@mixin iconhover{
+    span{
+        font-size: rem(20);
+        color: $color-lightblack;
+      }
+      &:hover{
+        span{
+          color: $color-red;
+        }
+      }
+}
 @mixin focus {
     &:focus {
 
