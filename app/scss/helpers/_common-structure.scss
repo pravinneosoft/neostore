@@ -10,15 +10,12 @@
 
 .section {
   margin: rem(30) 0;
-
   @include media-breakpoint-up(md) {
       margin: 50px 0;
   }
-
   @include media-breakpoint-up(xl) {
       margin: 100px 0;
   }
-
   &__heading {
       text-align: center;
       position: relative;
@@ -35,7 +32,6 @@
           width: 142px;
           border: 1px solid $color-black;
       }
-
       h2 {
           font-size: rem(30);
           font-weight: $font-weight-bold;

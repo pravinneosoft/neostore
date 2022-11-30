@@ -261,7 +261,7 @@
         <div class="row justify-content-center trending__wrapper">
           <div class="col-auto trending__content">
             <div class="card trending__card">
-              <img src="./app/images/t-chair.png" class="card-img-top" alt="chair image">
+              <img src="./app/images/t-chair.png" alt="chair image">
               <a href="javascript:void(0)" class="card-body">
                 <h5 class="card-title">White Wooden Chair</h5>
                 <p class="card-text">₹1200.00</p>
@@ -270,7 +270,7 @@
           </div>
           <div class="col-auto trending__content">
             <div class="card trending__card">
-              <img src="./app/images/t-sofa.png" class="card-img-top" alt="chair image">
+              <img src="./app/images/t-sofa.png" alt="chair image">
               <a href="javascript:void(0)" class="card-body">
                 <h5 class="card-title">White Wooden Chair</h5>
                 <p class="card-text">₹1200.00</p>
@@ -279,7 +279,7 @@
           </div>
           <div class="col-auto trending__content">
             <div class="card trending__card">
-              <img src="./app/images/t-seatchair.png" class="card-img-top" alt="chair image">
+              <img src="./app/images/t-seatchair.png" alt="chair image">
               <a href="javascript:void(0)" class="card-body">
                 <h5 class="card-title">White Wooden Chair</h5>
                 <p class="card-text">₹1200.00</p>
@@ -288,7 +288,7 @@
           </div>
           <div class="col-auto trending__content">
             <div class="card trending__card">
-              <img src="./app/images/t-watch.png" class="card-img-top" alt="chair image">
+              <img src="./app/images/t-watch.png" alt="chair image">
               <a href="javascript:void(0)" class="card-body">
                 <h5 class="card-title">White Wooden Chair</h5>
                 <p class="card-text">₹1200.00</p>
@@ -297,7 +297,7 @@
           </div>
           <div class="col-auto trending__content">
             <div class="card trending__card">
-              <img src="./app/images/t-lamp.png" class="card-img-top" alt="chair image">
+              <img src="./app/images/t-lamp.png" alt="chair image">
               <a href="javascript:void(0)" class="card-body">
                 <h5 class="card-title">White Wooden Chair</h5>
                 <p class="card-text">₹1200.00</p>
@@ -313,17 +313,18 @@
       <div class="container">
         <div class="offer__heading">
           <h2>special offer</h2>
-          <button class="btn btn--time" id="timer"></button>
+          <div class="btn--time" id="timer"></div>
         </div>
         <div class="offer__border">
           <div class="row justify-content-center">
             <div class="col-auto offer__content">
               <div class="card offer__card">
                 <div>
-                  <h5 class="card-title m-0">White Wooden Chair</h5>
+                  <a href="javascript:void(0)" title="white wooden chair" class="card-title m-0">White Wooden Chair</a>
                   <p class="card-text">₹12000.00</p>
                 </div>
-                <img src="./app/images/o_woddenchair.jpg" alt="wooden chair">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/o_woddenchair.jpg" alt="wooden chair"></a>
                 <div class="progress offer__card-progress">
                   <div class="progress-bar offer__card-progress-bar" role="progressbar" aria-label="Success example"
                     aria-valuenow="25" aria-valuemin="37" aria-valuemax="100"></div>
@@ -343,10 +344,11 @@
             <div class="col-auto offer__content">
               <div class="card offer__card">
                 <div>
-                  <h5 class="card-title m-0">White Wooden Chair</h5>
+                  <a href="javascript:void(0)" title="white wooden chair" class="card-title m-0">White Wooden Chair</a>
                   <p class="card-text">₹12000.00</p>
                 </div>
-                <img src="./app/images/o_whitechair.jpg" alt="wooden chair">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/o_whitechair.jpg" alt="wooden chair"></a>
                 <div class="progress offer__card-progress">
                   <div class="progress-bar offer__card-progress-bar" role="progressbar" aria-label="Success example"
                     aria-valuenow="25" aria-valuemin="37" aria-valuemax="100"></div>
@@ -366,10 +368,11 @@
             <div class="col-auto offer__content">
               <div class="card offer__card">
                 <div>
-                  <h5 class="card-title m-0">White Wooden Chair</h5>
+                  <a href="javascript:void(0)" title="white wooden chair" class="card-title m-0">White Wooden Chair</a>
                   <p class="card-text">₹12000.00</p>
                 </div>
-                <img src="./app/images/o_blackchair.jpg" alt="wooden chair">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/o_blackchair.jpg" alt="wooden chair"></a>
                 <div class="progress offer__card-progress">
                   <div class="progress-bar offer__card-progress-bar" role="progressbar" aria-label="Success example"
                     aria-valuenow="25" aria-valuemin="37" aria-valuemax="100"></div>
@@ -395,20 +398,20 @@
     <section class="fast">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-8 col-xl-6">
             <div class="fast__left">
-              <img src="./app/images/bedding-sofa.png" alt="bed sofa">
+              <img class="fast__left-img" src="./app/images/bedding-sofa.png" alt="bed sofa">
               <div class="fast__left-content">
                 <p>SOFA & CHAIRS</p>
                 <h3>Need it fast?</h3>
                 <h5>See what’s in stock!</h5>
-                <a href="javascript:void(0)">Shop now</a>
+                <a href="javascript:void(0)" class="btn--shopnow">Shop now</a>
                 <img src="./app/images/rectangle_corner.png" alt="bg-image">
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="javascript:void(0)" class="fast__card fast__primary">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <a href="javascript:void(0)" class="card fast__card fast__primary">
               <img src="./app/images/fast_sofa.png" alt="sofa image">
               <div class="fast__card-content">
                 <h4>Bedding Sets</h4>
@@ -418,7 +421,7 @@
                 <p>20% OFF</p>
               </div>
             </a>
-            <a href="javascript:void(0)" class="fast__card">
+            <a href="javascript:void(0)" class="card fast__card">
               <img src="./app/images/fast_nature.png" alt="nature image">
               <div class="fast__card-content">
                 <h4>Living Sets</h4>
@@ -429,22 +432,22 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3">
-            <a href="javascript:void(0)" class="fast__card fast__primary">
+          <div class="col-md-6 col-lg-12 col-xl-3">
+            <a href="javascript:void(0)" class="card fast__card fast__primary">
               <img src="./app/images/fast_set.png" alt="sofa image">
               <div class="fast__card-content">
-                <h4>Soleil Dining Chair                </h4>
-                <p>lightweight chair                </p>
+                <h4>Soleil Dining Chair </h4>
+                <p>lightweight chair </p>
               </div>
               <div class="fast__card-off">
                 <p>20% OFF</p>
               </div>
             </a>
-            <a href="javascript:void(0)" class="fast__card">
+            <a href="javascript:void(0)" class="card fast__card">
               <img src="./app/images/fast_lamp.jpg" alt="nature image">
               <div class="fast__card-content">
                 <h4>Outdoor Sets</h4>
-                <p>Simplest design solutions                 </p>
+                <p>Simplest design solutions </p>
               </div>
               <div class="fast__card-off">
                 <p>20% OFF</p>
@@ -466,37 +469,40 @@
         <div class="row justify-content-center">
           <div class="col-auto furniture__content">
             <div class="card furniture__card">
-              <img src="./app//images/f-lamp.jpg" alt="nature lamp">
+              <a href="javascript:void(0)" title="nature lamp">
+                <img src="./app//images/f-lamp.jpg" alt="nature lamp"></a>
               <div href="javascript:void(0)" class="card-body furniture__card-body">
                 <div>
                   <h5 class="furniture__card-title">Sofas under</h5>
                   <p class="furniture__card-text">₹12000.00</p>
                 </div>
-                <a href="#" class="btn btn--shop">Shop Now</a>
+                <a href="#" class="btn btn--shop furniture__card-link">Shop Now</a>
               </div>
             </div>
           </div>
           <div class="col-auto furniture__content">
             <div class="card furniture__card">
-              <img src="./app//images/f-bed.jpg" alt="nature lamp">
+              <a href="javascript:void(0)" title="nature lamp">
+                <img src="./app//images/f-bed.jpg" alt="nature lamp"></a>
               <div href="javascript:void(0)" class="card-body furniture__card-body">
                 <div>
                   <h5 class="furniture__card-title">Sofas under</h5>
                   <p class="furniture__card-text">₹12000.00</p>
                 </div>
-                <a href="#" class="btn btn--shop">Shop Now</a>
+                <a href="#" class="btn btn--shop furniture__card-link">Shop Now</a>
               </div>
             </div>
           </div>
           <div class="col-auto furniture__content">
             <div class="card furniture__card">
-              <img src="./app//images/f-flower.jpg" alt="nature lamp">
+              <a href="javascript:void(0)" title="nature lamp">
+                <img src="./app//images/f-flower.jpg" alt="nature lamp"></a>
               <div href="javascript:void(0)" class="card-body furniture__card-body">
                 <div>
                   <h5 class="furniture__card-title">Sofas under</h5>
                   <p class="furniture__card-text">₹12000.00</p>
                 </div>
-                <a href="#" class="btn btn--shop">Shop Now</a>
+                <a href="#" class="btn btn--shop furniture__card-link">Shop Now</a>
               </div>
             </div>
           </div>
@@ -636,6 +642,29 @@
       </div>
     </section>
     <!-- Bestsellar section end -->
+    <!-- Arrival section start -->
+    <section class="arrival">
+      <div class="container">
+        <div class="row justify-content-center arrival__content">
+          <div class="col-auto arrival__sofa">
+            <h5 class="arrival__title">NEW ARRIVALS</h5>
+            <h2 class="arrival__text">Sofa Style 2021</h2>
+            <a href="javascrip:void(0)" class="btn--shopnow">shop now</a>
+          </div>
+          <div class="col-auto arrival__home">
+            <h5 class="arrival__title">NEW ARRIVALS</h5>
+            <h2 class="arrival__text">Perfect fit for your home</h2>
+            <a href="javascrip:void(0)" class="btn--shopnow">shop now</a>
+          </div>
+          <div class="col-auto arrival__new">
+            <h5 class="arrival__title">NEW ARRIVALS</h5>
+            <h2 class="arrival__text">New Collection</h2>
+            <a href="javascrip:void(0)" class="btn--shopnow">shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Arrival section end -->
     <!--Blog section start-->
     <section class="blog section">
       <div class="container">
@@ -646,7 +675,8 @@
         <div class="row justify-content-center">
           <div class="col-auto blog__content">
             <div class="card blog__card">
-              <img src="./app/images/b-sofa.jpg" alt="sofa image">
+              <a href="javascript:void(0)" title="sofa image">
+                <img src="./app/images/b-sofa.jpg" alt="sofa image"></a>
               <div class="card-body blog__card-body">
                 <div>
                   <h6>Bedroom CHAIR </h6>
@@ -654,7 +684,7 @@
                 </div>
                 <p class="card-text">Color sets the tone for any space and dramatically impacts the room’s atmosphere.
                 </p>
-                <a href="#" class="blog__card-link">Read More</a>
+                <a href="javascript:void(0)" title="read more" class="blog__card-link">Read More</a>
               </div>
               <div class="blog__date">
                 <h2>26</h2>
@@ -665,7 +695,8 @@
           </div>
           <div class="col-auto blog__content">
             <div class="card blog__card">
-              <img src="./app/images/b-nature.jpg" alt="sofa image">
+              <a href="javascript:void(0)" title="sofa image">
+                <img src="./app/images/b-nature.jpg" alt="sofa image"></a>
               <div class="card-body blog__card-body">
                 <div>
                   <h6>FURNITURE</h6>
@@ -674,7 +705,7 @@
                 </div>
                 <p class="card-text">Color sets the tone for any space and dramatically impacts the room’s atmosphere.
                 </p>
-                <a href="#" class="blog__card-link">Read More</a>
+                <a href="javascript:void(0)" title="read more" class="blog__card-link">Read More</a>
               </div>
               <div class="blog__date">
                 <h2>28</h2>
@@ -685,7 +716,8 @@
           </div>
           <div class="col-auto blog__content">
             <div class="card blog__card">
-              <img src="./app/images/b-chaire.jpg" alt="sofa image">
+              <a href="javascript:void(0)" title="sofa image">
+                <img src="./app/images/b-chaire.jpg" alt="sofa image"></a>
               <div class="card-body blog__card-body">
                 <div>
                   <h6>DINING CHAIR </h6>
@@ -693,7 +725,7 @@
                 </div>
                 <p class="card-text">Color sets the tone for any space and dramatically impacts the room’s atmosphere.
                 </p>
-                <a href="#" class="blog__card-link">Read More</a>
+                <a href="javascript:void(0)" title="Read More" class="blog__card-link">Read More</a>
               </div>
               <div class="blog__date">
                 <h2>26</h2>
@@ -703,7 +735,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <!--Blog section end-->
@@ -713,38 +744,176 @@
         <h2>#NEOSTOREfurniture</h2>
         <p>Use #neostore on your post for a chance to be featured! </p>
       </div>
+
       <div class="fluid-container">
+        <!-- Owl  carousel start -->
         <div class="owl-carousel store-carousel owl-theme">
           <div class="item store-content">
             <a href="#" id="show"><img src="./app/images/s_cupboard.jpg" alt="cupboard image"></a>
-            <!-- <div class="store-hide store-layer ">
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </div> -->
           </div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
+          <div class="item store-content" data-bs-toggle="modal" data-bs-target="#exampleModal"><a
+              data-bs-toggle="modal" data-bs-target="#exampleModal" href="javascript:void(0)"><img
+                src="./app/images/s_decore.jpg" alt="cupboard image"></a></div>
+          <div class="item store-content" data-bs-toggle="modal" data-bs-target="#exampleModal2"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal3"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
+          <div class="item store-content" data-bs-toggle="modal" data-bs-target="#exampleModal4"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal5"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal6"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal7"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal8"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal9"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_decore.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal10"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
                 alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_lamp.jpg"
-                alt="cupboard image"></a></div>
-          <div class="item store-content"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
+          <div class="item store-content"data-bs-toggle="modal" data-bs-target="#exampleModal11"><a href="javascript:void(0)"><img src="./app/images/s_cupboard.jpg"
                 alt="cupboard image"></a></div>
         </div>
+        <!-- Owl  carousel end -->
       </div>
+
+<!-- Modal section start -->
+<div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_decore.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_lamp.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_decore.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_cupboard.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_decore.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_lamp.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_cupboard.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_lamp.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_decore.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_lamp.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Neo Furniture</h1>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./app/images/s_cupboard.jpg" class="w-100" alt="decore image">
+          </div>
+        </div>
+      </div>
+ </div>
+<!-- Modal section end -->
     </section>
     <!-- Store section end -->
     <!-- Signup section start -->

@@ -6,19 +6,22 @@
     font-weight: $font-weight-medium;
 
     //Button common part end
-    &--search{
-        &:active{
-            border:none !important;
+    &--search {
+        &:active {
+            border: none !important;
             display: block;
         }
-        span{
+
+        span {
             font-size: rem(20);
             color: $color-lightblack;
         }
-        &:hover{
+
+        &:hover {
             @include iconhover;
         }
     }
+
     &--shop {
         font-size: rem(14);
         border-radius: rem(2);
@@ -44,8 +47,9 @@
         padding: rem(10.5) rem(15);
         border-radius: rem(3);
         position: absolute;
-        right: rem(2);
-        top: rem(2);
+        right: rem(3);
+        top: rem(3);
+        border: 0;
 
         &:hover {
             background-color: $color-grey;
@@ -61,9 +65,22 @@
         text-align: center;
         padding: rem(20) 0;
 
-        &:hover {
+        
             background-color: $color-red;
             color: $color-white;
+        
+    }
+
+    &--shopnow {
+        @include fontsize;
+        color: $color-white;
+        text-decoration: underline;
+        display: inline;
+
+        &:hover {
+            text-decoration: wavy;
+            color: $color-black;
+            transform: scale(1.03);
         }
     }
 }

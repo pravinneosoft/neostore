@@ -102,7 +102,6 @@
       border: rem(0.5) solid $color-dark;
       height: rem(188);
       width: rem(188);
-      border-radius: rem(3);
       transition: transform .6s;
 
       img {
@@ -139,7 +138,6 @@
       }
    }
 }
-
 //Department section end 
 //Trending section start 
 .trending {
@@ -170,7 +168,6 @@
       }
    }
 }
-
 //Trending section end
 //Furniture section start 
 .furniture {
@@ -204,18 +201,15 @@
          @include default-fontsize;
          color: $color-red;
       }
-
-      .btn--shop {
-         margin-top: 0;
-
-         &:hover {
-            background-color: $color-dark;
-
-         }
-      }
+&-link{
+   margin-top: 0;
+   &:hover{
+      background-color: $color-white;
+      font-weight: $font-weight-bold;
    }
 }
-
+   }
+}
 //Furniture section end 
 //special offer section start
 .offer {
@@ -302,7 +296,7 @@
       &-ratings {
          @include flex-space-between;
          margin-top: rem(18);
-
+align-items: center;
          h3 {
             font-size: rem(14);
             font-weight: $font-weight-medium;
@@ -321,24 +315,33 @@
       }
    }
 }
-
 //special offer section end
-//set section start
+//fast section start
 .fast {
    margin-top: rem(100);
    &__left {
       position: relative;
       color: $color-white;
-
+      &-img{
+         
+         width: 100%;
+         @include media-breakpoint-up(md){
+            width: initial;
+         }
+      }
       &-content {
-         padding: rem(41) rem(150) rem(26) rem(46);
+         padding: rem(41) rem(10) rem(26) rem(46);
          position: absolute;
-         top: rem(104);
-         left: rem(-18);
+         top: 0;
+         left: 0;
          background-image: url('#{$images}/rectangle-bg.png');
          background-size: cover;
          background-repeat: no-repeat;
-
+@include media-breakpoint-up(md){
+   padding: rem(41) rem(150) rem(26) rem(46);
+   top: rem(104);
+         left: rem(-18);
+}
          p {
             @include fontsize;
          }
@@ -354,13 +357,6 @@
             font-weight: $font-weight-medium;
             margin-bottom: rem(10);
          }
-
-         a {
-            @include fontsize;
-            color: $color-white;
-            text-decoration: underline;
-         }
-
          img {
             position: absolute;
             top: rem(-13);
@@ -404,13 +400,16 @@
             text-align: center;
          }
       }
+      &:hover{
+         transform: scale(1.05);
+         transition: 0.5s all ease-in-out;
+      }
    }
    &__primary{
       margin-bottom: rem(25);
    }
 }
-
-//set section end
+//fast section end
 //Best-sellar section start
 .bestsell {
    &__wrapper {
@@ -476,10 +475,11 @@
                   }
 
                   &:hover {
-                     background-color: $color-lightblack;
+                     background-color: $color-white;
+                     border-color: $color-white;
 
                      span {
-                        color: red;
+                        color: $color-red;
                      }
                   }
                }
@@ -493,8 +493,60 @@
       }
    }
 }
-
 //Best-sellar section end
+//Arrival section start
+.arrival{
+   color: $color-white;
+   &__content{
+      gap: rem(20);
+   }
+   &__title{
+font-weight: $font-weight-medium;
+font-size: rem(12);
+margin-bottom: rem(5);
+   }
+   &__text{
+      font-weight: $font-weight-medium;  
+      font-size: rem(20);
+      margin-bottom: rem(24);
+   }
+   &__sofa{
+      min-height: rem(454);
+      background-image: url('#{$images}/arrival_sofa.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include flex-center;
+      flex-direction: column;
+      width: 100%;
+      @include media-breakpoint-up(xl){
+width: rem(315);
+      }
+   }
+   &__home{
+      min-height: rem(454);
+      background-image: url('#{$images}/arrival_lamp.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include flex-center;
+      flex-direction: column;
+      width: 100%;
+      @include media-breakpoint-up(xl){
+      width: rem(570);}
+   }
+   &__new{
+      min-height: rem(454);
+      background-image: url('#{$images}/arrival_nature.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include flex-center;
+      flex-direction: column;
+      width: 100%;
+      @include media-breakpoint-up(xl){
+         width: rem(315);
+               }
+   }
+}
+//Arrival section end 
 //Blog section start
 .blog {
    &__content {
@@ -520,6 +572,7 @@
 
          div {
             border-bottom: rem(1) solid $color-dark;
+            padding: 0 rem(20);
          }
 
          h6 {
@@ -542,7 +595,7 @@
             color: $color-black;
             margin-top: rem(16);
             margin-bottom: rem(22);
-            padding: 0 rem(12);
+            padding: 0 rem(20);
          }
 
       }
@@ -586,9 +639,7 @@
       }
    }
 }
-
 //Blog section end 
-
 //Store section start
 .store {
    &-content {
@@ -656,15 +707,12 @@
    // }
 
 }
-
 //Store section end
 //Signup section start
 .signup {
    padding-top: rem(88);
    padding-bottom: rem(81);
-
    text-align: center;
-
    @include media-breakpoint-up(xl) {
       background-image: url('#{$images}/signup-bg.png');
       background-repeat: no-repeat;
@@ -705,7 +753,7 @@
 
          &:focus-visible {
             outline: transparent;
-            border-bottom: 1px solid $color-black;
+            border-bottom: 1px solid $color-red;
          }
 
          @include media-breakpoint-up(sm) {
@@ -717,6 +765,11 @@
          background: transparent;
          border: 0;
          margin-left: rem(-35);
+         &:hover{
+            span{
+               color: $color-green;
+            }
+         }
       }
    }
 }
