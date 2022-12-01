@@ -1,31 +1,20 @@
 // Banner section start
 .banner {
    position: relative;
-
+   &__wrapper{
+      padding-top: rem(151);
+      padding-bottom: rem(50);
+   }
+   &-slide_1{
+background-color: $color-pink;
+   }
+   &-slide_2{
+      background-color: $color-yellow;
+   }
+   &-slide_3{
+      background-color: $color-lightblue;
+   }
    &__content {
-      position: absolute;
-      top: 15%;
-      left: rem(30);
-
-      @include media-breakpoint-up(sm) {
-         top: 20%;
-         left: rem(60);
-      }
-
-      @include media-breakpoint-up(md) {
-         top: 30%;
-      }
-
-      @include media-breakpoint-up(lg) {
-         top: 0;
-         padding-top: rem(50);
-         padding-bottom: rem(179);
-      }
-
-      @include media-breakpoint-up(xl) {
-         padding-top: rem(151);
-      }
-
       &-title {
          font-size: rem(15);
          font-weight: $font-weight-normal;
@@ -70,7 +59,7 @@
          font-weight: $font-weight-light;
          font-size: rem(30);
          color: $color-grey;
-
+         margin-bottom: rem(56);
          @include media-breakpoint-up(md) {
             font-size: rem(40);
          }
@@ -153,13 +142,16 @@
       border: none;
       border-radius: 0;
 
-      &:hover {
-         transform: scale(1.07);
-         transition: 0.4s all ease-in-out;
-      }
+     
 
-      a {
+      a {overflow: hidden;
          padding: rem(15) 0 0 0;
+         img{
+            &:hover {
+               transform: scale(1.07);
+               transition: 0.4s all ease-in-out;
+            }
+         }
       }
 
       .card-body {
@@ -195,16 +187,22 @@
       width: auto;
       border: none;
       border-radius: 0;
-
+      overflow: hidden;
       @include media-breakpoint-up(lg) {
          width: rem(399);
       }
+   
       a{
          img{width: 100%;
             @include media-breakpoint-up(sm){
                width: initial;
             }
+            &:hover {
+               transform: scale(1.03);
+               transition: 0.4s all ease-in;
+            }
          }
+        
       }
       &-body {
          @include flex-center;
@@ -232,10 +230,7 @@
          }
       }
 
-      &:hover {
-         transform: scale(1.03);
-         transition: 0.4s all ease-in;
-      }
+      
    }
 
    &__desc {
@@ -307,11 +302,8 @@
 
    &__card {
       border: none;
-
-      &:hover {
-         transform: scale(1.02);
-         transition: 0.4s all ease-in-out;
-      }
+      overflow: hidden;
+      
 
       &-desc {
          .card-title {
@@ -326,12 +318,16 @@
             @extend .furniture__card-text;
          }
       }
-      a{
+      a{overflow-x: hidden;
          img{width: 100%;
             margin: rem(23) 0;
             @include media-breakpoint-up(sm){
                width: initial;
             }
+            // &:hover {
+            //    transform: scale(1.02);
+            //    transition: 0.4s all ease-in-out;
+            // }
          }
       }
       
@@ -445,12 +441,22 @@
       display: inline-block;
       position: relative;
       margin-bottom: rem(20);
+      overflow: hidden;
+      border-radius: 0;
       @include media-breakpoint-up(sm){
          margin-bottom: rem(30);
       }
+      a{
+         img{
+            &:hover{
+               transform: scale(1.05);
+               transition: 0.5s all ease-in-out;
+            }
+         }
+      }
       &-content {
 
-         h4 {
+         a {
             font-weight: $font-weight-bold;
             font-size: rem(20);
             color: $color-whitesmoke;
@@ -459,6 +465,7 @@
             &:hover {
                color: $color-red;
             }
+           
          }
 
          p {
@@ -486,8 +493,10 @@
       }
 
       &:hover {
-         transform: scale(1.05);
-         transition: 0.5s all ease-in-out;
+         img{
+           
+
+         }
       }
    }
 
@@ -610,7 +619,19 @@ color: $color-red;
    color: $color-white;
 
    &__content {
-      gap: rem(20);
+      row-gap:rem(12);
+      @include media-breakpoint-up(sm){
+         justify-content: center;
+      }
+      @include media-breakpoint-up(md){
+         justify-content: space-between;
+      }
+      @include media-breakpoint-up(xl){
+         justify-content: center;
+      }
+      div{
+         padding: 0 6px;
+      }
    }
 
    &__title {
@@ -632,10 +653,13 @@ color: $color-red;
       background-repeat: no-repeat;
       @include flex-center;
       flex-direction: column;
-      width: auto;
+      width: 100%;
       background-position: center;
+      order: 2;
+      
       @include media-breakpoint-up(xl) {
          width: rem(315);
+         order: initial;
       }
    }
 
@@ -645,9 +669,11 @@ color: $color-red;
       background-size: cover;
       background-repeat: no-repeat;
       @include flex-center;
+      text-align: center;
       flex-direction: column;
-      width: auto;
-
+      width: 100%;
+      background-position: center;
+      
       @include media-breakpoint-up(xl) {
          width: rem(570);
       }
@@ -658,10 +684,11 @@ color: $color-red;
       background-image: url('#{$images}/arrival_nature.png');
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       @include flex-center;
       flex-direction: column;
-      width: auto;
-
+      width: 100%;
+      
       @include media-breakpoint-up(xl) {
          width: rem(315);
       }
@@ -680,17 +707,19 @@ color: $color-red;
       width: auto;
       border: none;
       position: relative;
-
+overflow: hidden;
+border-radius: 0;
       @include media-breakpoint-up(md) {
          width: rem(399);
       }
 
+      a{
+         img{width: 100%;
+            
       &:hover {
          transform: scale(1.03);
          transition: 0.4s all ease-in-out;
       }
-      a{
-         img{width: 100%;
          }
       }
       &-body {

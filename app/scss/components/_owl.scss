@@ -5,8 +5,8 @@
         position: absolute;
         margin-top: rem(10);
         top: 30%;
-        left: 0;
-        right: 0;
+        left: rem(8);
+        right: rem(8);
         @include flex-space-between;
         @include media-breakpoint-up(sm) {top: 50%; }
        
@@ -28,6 +28,7 @@
         color: $color-red;
         text-decoration: none;
     }
+   
     // Owl Carousel end
     
    

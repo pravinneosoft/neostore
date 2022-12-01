@@ -25,12 +25,11 @@
     &--shop {
         font-size: rem(14);
         border-radius: rem(2);
-
-
+        display: inline;
         &:hover {
             background-color: $color-white;
             color: $color-red;
-            transition: 0.4s all ease-in-out;
+            box-shadow:0 0 0 2px $color-red;
         }
 
         @include media-breakpoint-up(sm) {
