@@ -199,7 +199,13 @@
       @include media-breakpoint-up(lg) {
          width: rem(399);
       }
-
+      a{
+         img{width: 100%;
+            @include media-breakpoint-up(sm){
+               width: initial;
+            }
+         }
+      }
       &-body {
          @include flex-center;
          background-color: $color-light;
@@ -320,10 +326,15 @@
             @extend .furniture__card-text;
          }
       }
-
-      img {
-         margin: rem(23) 0;
+      a{
+         img{width: 100%;
+            margin: rem(23) 0;
+            @include media-breakpoint-up(sm){
+               width: initial;
+            }
+         }
       }
+      
 
       &-progress {
          border-radius: rem(5);
@@ -369,7 +380,10 @@
    &__left {
       position: relative;
       color: $color-white;
-
+      margin-bottom: rem(20);
+      @include media-breakpoint-up(sm){
+         margin-bottom: rem(30);
+      }
       &-img {
 
          width: 100%;
@@ -380,14 +394,16 @@
       }
 
       &-content {
-         padding: rem(41) rem(10) rem(26) rem(46);
+         padding: rem(8) rem(8) rem(8) rem(8);
          position: absolute;
          top: 0;
          left: 0;
          background-image: url('#{$images}/rectangle-bg.png');
          background-size: cover;
          background-repeat: no-repeat;
-
+         @include media-breakpoint-up(sm) {
+            padding: rem(41) rem(10) rem(26) rem(46);
+         }
          @include media-breakpoint-up(md) {
             padding: rem(41) rem(150) rem(26) rem(46);
             top: rem(104);
@@ -418,11 +434,20 @@
          }
       }
    }
-
+   &__right{
+      @include flex-center;
+      flex-wrap: wrap;
+      @include media-breakpoint-up(sm){
+         justify-content: space-evenly;
+      }
+   }
    &__card {
       display: inline-block;
       position: relative;
-
+      margin-bottom: rem(20);
+      @include media-breakpoint-up(sm){
+         margin-bottom: rem(30);
+      }
       &-content {
 
          h4 {
@@ -520,7 +545,19 @@ color: $color-red;
 
       &-body {
          padding-left: rem(12);
-
+         &-star{
+           width: 70%;
+            &::before{
+            content: '\f005' '\f005' '\f005' '\f005' '\f005';
+            position: relative;
+            display: block;
+            line-height: 16px;
+            font: var(--fa-font-solid);
+            font-weight: 300;
+            letter-spacing: 7px;
+            color: red;
+            }
+         }
          ul {
             display: inline-flex;
             gap: rem(3);
@@ -595,8 +632,8 @@ color: $color-red;
       background-repeat: no-repeat;
       @include flex-center;
       flex-direction: column;
-      width: 100%;
-
+      width: auto;
+      background-position: center;
       @include media-breakpoint-up(xl) {
          width: rem(315);
       }
@@ -609,7 +646,7 @@ color: $color-red;
       background-repeat: no-repeat;
       @include flex-center;
       flex-direction: column;
-      width: 100%;
+      width: auto;
 
       @include media-breakpoint-up(xl) {
          width: rem(570);
@@ -623,7 +660,7 @@ color: $color-red;
       background-repeat: no-repeat;
       @include flex-center;
       flex-direction: column;
-      width: 100%;
+      width: auto;
 
       @include media-breakpoint-up(xl) {
          width: rem(315);
@@ -652,7 +689,10 @@ color: $color-red;
          transform: scale(1.03);
          transition: 0.4s all ease-in-out;
       }
-
+      a{
+         img{width: 100%;
+         }
+      }
       &-body {
          text-align: center;
          padding: rem(20) 0;
@@ -770,8 +810,8 @@ color: $color-red;
             transform: translate(-50%, -50%);
             left: 50%;
             top: 50%;
-            width: 40px;
-            height: 40px;
+            width: 57px;
+            height: 57px;
             background-repeat: no-repeat;
             z-index: 9;
          }

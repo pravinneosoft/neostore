@@ -4,3 +4,7 @@
 .modal-dialog{
     background-color: $color-red;
 }
+.btn-close{
+    // background-image: url('#{$images}/svg_icons/delete-button.svg');
+    background: transparent url('#{$images}/svg_icons/delete-button.svg') center/1em auto no-repeat;
+}
