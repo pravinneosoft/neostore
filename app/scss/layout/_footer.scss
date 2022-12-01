@@ -105,9 +105,9 @@
             color: $color-white;
             // transition: 0.4 all ease-in-out;
             &:hover {
-                font-size: rem(15);
+               
                 color: $color-red;
-                font-weight: $font-weight-normal;
+                
                 text-decoration: underline;
                 transform: scale(1.1);
             }
