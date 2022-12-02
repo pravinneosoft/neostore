@@ -1,9 +1,12 @@
 // Header section start
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   &__top {
     background-color: $color-red;
     color: $color-white;
-
+   
     h3 {
       text-align: center;
       margin: 0;
@@ -25,7 +28,8 @@
       background-color: $color-light ;
       border-radius: rem(5);
       padding-right: rem(45);
-      border:1px solid transparent;
+      border: 1px solid transparent;
+
       &:focus {
         box-shadow: 0px 0px 3px 0px #bb0100;
       }
@@ -36,70 +40,186 @@
         font-weight: $font-weight-light;
       }
     }
+
     button {
       position: absolute;
       right: 0;
       background-color: transparent !important;
     }
   }
+
   &__icons {
     display: inline-flex;
 
     li {
       padding-left: rem(21);
-      a{
-       @include iconhover;
+
+      a {
+        @include iconhover;
       }
     }
   }
 
   &__right {
     @include flex-center;
+   
     justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
+    @include media-breakpoint-up(sm) {
+      width: 62%;
+      justify-content: flex-end;
+      margin: 0;
+    }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+
+    @include media-breakpoint-up(xl) {
       position: initial;
       display: flex;
-      width: 34%;
+      width: 23%;
       align-items: center;
     }
   }
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-  font-size: rem(20);
-  font-weight: 500;
-  color: $color-lightblack;
-  padding: rem(10) rem(24.7);
-  background: $color-pink;
-  border-bottom: rem(1) solid $color-red;
+  &__bottom{
+    background-color: $color-white;
+  }
 
-  &:hover {
-      color: $color-red;
-      transition: 0.3s all ease-in-out;
+}
+
+
+
+// Header section end
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20.5px;
+  flex-direction: column;
+
+  .header__center {
+    position: relative;
+    display: none;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-black;
+    color: $color-white;
+    z-index: 3;
+    padding-top: rem(20);
+    animation: showNavigationBar 0.5s ease forwards;
+
+    @keyframes showNavigationBar {
+      to {
+        left: 0;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 33%;
+      
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      position: static;
+      height: auto;
+      width: fit-content;
+      background-color: initial;
+      border: initial;
+      padding: 0;
+    }
+
+    &-center {
+      display: block;
+      font-size: rem(40) !important;
+      font-weight: $font-weight-bold !important;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+    ul {
+
+
+      li {
+        padding: 20px;
+        border-bottom: 2px solid $color-red;
+
+        &:first-child {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+        }
+
+        a {
+          // font-size: rem(14px);
+          font-size: 14px;
+
+          font-weight: $font-weight-bold;
+          color: $color-white;
+
+          @include media-breakpoint-up(lg) {
+            color: $color-lightblack;
+            font-weight: $font-weight-light;
+          }
+          &:hover{
+            color: $color-red;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding: 0;
+          border-bottom: initial;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        display: flex;
+        gap: 19px;
+      }
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        gap: 57.5px;
+      }
+    }
+  }
+  @include media-breakpoint-up(sm){
+    flex-direction: initial;
+  }
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.navbar-toggler {
+  display: block;
+
+  .fa-solid {
+    font-size: rem(21);
   }
 
   @include media-breakpoint-up(lg) {
-      padding: rem(10) rem(15);
-      font-size: rem(14);
-      font-weight: $font-weight-light;
-      color: $color-lightblack;
-      background-color: $color-white;
-      border: transparent;
+    display: none;
   }
 
-  @include media-breakpoint-up(xl) {
-      padding: rem(10) rem(28.7);
-  }
 }
 
-.navbar {
-  padding: rem(21) 0;
-  &-toggler:focus {
-    box-shadow: none;
+.closebtn {
+  display: block;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
   }
+   
+
 }
-.dropdown-toggle::after {
-  display: none;
-}
-// Header section end

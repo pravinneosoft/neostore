@@ -8,13 +8,15 @@
     //Button common part end
     &--search {
         &:active {
-            border: none !important;
+            border-color: transparent !important;
             display: block;
         }
 
         span {
             font-size: rem(20);
             color: $color-lightblack;
+            margin-top: 2px;
+    display: inline-block;
         }
 
         &:hover {

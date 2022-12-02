@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="app/css/style.css" />
 </head>
 <!-- Head section end -->
-
 <body>
+ 
   <!--Header section start-->
   <header class="header">
     <!--Header top area start-->
@@ -37,59 +37,51 @@
     <!--Header bottom area start-->
     <div class="header__bottom">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid p-0">
-            <!-- Brand logo start -->
-            <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="header logo"></a>
+        <nav class="header__nav">    
+             <!-- Brand logo start -->
+            <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="neostore logo"></a>
             <!-- Brand logo end -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Site navigations start -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- Site navigations center -->
+            <div class="header__center"id="mySidenav">
+              <ul >       
+                <li>
+                  <a class="#" href="#">Home</a>
+                   <a href="javascript:void(0)"class="header__center-center" onclick="closeNav()">&times;</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Furniture</a>
+                <li>
+                  <a href="#">Furniture</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home Decore</a>
+                <li>
+                  <a href="#">Home Decore</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Blog </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item nav-link" href="#"> Submenu item 1</a></li>
-                    <li><a class="dropdown-item nav-link" href="#"> Submenu item 2 </a></li>
-                    <li><a class="dropdown-item nav-link" href="#"> Submenu item 3 </a></li>
-                  </ul>
+                <li>
+                  <a href="#">Blog</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link pe-0" href="#">Sales</a>
+                <li>
+                  <a  href="#">Sales</a>
                 </li>
-
               </ul>
             </div>
-            <!-- Site navigations end -->
-          </div>
+            <!-- Site navigations center -->
           <!-- Header right area start -->
           <div class="header__right">
             <form class="d-flex header__form" role="search">
               <input class="form-control" type="text" placeholder="Search ..." aria-label="Search">
-              <button class="btn btn--search" type="submit"><span class="icon-search"></span></button>
+              <button class=" btn--search btn" type="button"><span class="icon-search"></span></button>
             </form>
             <ul class="header__icons">
               <li><a href="javascript:void(0)" title="contact"><span class="icon-home"></span></a></li>
               <li><a href="javascript:void(0)" title="wish"><span class="icon-wish"></span></a></li>
               <li><a href="javascript:void(0)" title="add to cart"><span class="icon-cart1"></span></a></li>
+              <li> <button class="navbar-toggler"  type="button"onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+              </button></li>
             </ul>
           </div>
           <!-- Header right area end -->
-        </nav>
+       </nav>
       </div>
+    </div>
     </div>
     <!--Header bottom area end-->
   </header>
@@ -100,27 +92,27 @@
     <section class="banner">
       <div class="container-fluid p-0">
         <!-- Owl carousel start -->
-
         <div class="owl-carousel banner-carousel owl-theme">
           <div class="item banner-slide_1">
             <a href="javascript:void(0)">
             <div class="container">
                 <div class="row banner__wrapper">
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="banner__content">
                       <h2 class="banner__content-title">Furniture <br>
                         2022</h2>
                       <h6>NEW ARRIVALS</h6>
                       <h1>Spring
                         Collection</h1>
-                      <button type="button" class="btn btn--shop">Shop Now</button>
+                        <div>
+                      <button type="button" class="btn btn--shop">Shop Now</button></div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <picture>
                       <source media="(min-width:650px)" srcset="./app/images/banner-img.png">
-                      <source media="(min-width:465px)" srcset="./app/images/beanner-img.png">
-                      <img src="./app/images/bannser-img.png" alt="Flowers">
+                      <source media="(min-width:465px)" srcset="./app/images/banner-img.png">
+                      <img src="./app/images/banner-img.png" alt="Flowers">
                     </picture>
                   </div>
                 </div>
@@ -131,7 +123,7 @@
             <a href="javascript:void(0)">
             <div class="container">
                 <div class="row banner__wrapper">
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="banner__content">
                       <h2 class="banner__content-title">Furniture <br>
                         2022</h2>
@@ -141,11 +133,11 @@
                       <button type="button" class="btn btn--shop">Shop Now</button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <picture>
                       <source media="(min-width:650px)" srcset="./app/images/banner-img.png">
-                      <source media="(min-width:465px)" srcset="./app/images/beanner-img.png">
-                      <img src="./app/images/bannser-img.png" alt="Flowers">
+                      <source media="(min-width:465px)" srcset="./app/images/banner-img.png">
+                      <img src="./app/images/banner-img.png" alt="Flowers">
                     </picture>
                   </div>
                 </div>
@@ -156,7 +148,7 @@
             <a href="javascript:void(0)">
             <div class="container">
                 <div class="row banner__wrapper">
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="banner__content">
                       <h2 class="banner__content-title">Furniture <br>
                         2022</h2>
@@ -166,11 +158,11 @@
                       <button type="button" class="btn btn--shop">Shop Now</button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <picture>
                       <source media="(min-width:650px)" srcset="./app/images/banner-img.png">
-                      <source media="(min-width:465px)" srcset="./app/images/beanner-img.png">
-                      <img src="./app/images/bannser-img.png" alt="Flowers">
+                      <source media="(min-width:465px)" srcset="./app/images/banner-img.png">
+                      <img src="./app/images/banner-img.png" alt="Flowers">
                     </picture>
                   </div>
                 </div>

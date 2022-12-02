@@ -2,8 +2,12 @@
 .banner {
    position: relative;
    &__wrapper{
-      padding-top: rem(151);
+      padding-top: rem(40);
       padding-bottom: rem(50);
+      
+          @include media-breakpoint-up(lg){
+            padding-top: rem(151);
+             }
    }
    &-slide_1{
 background-color: $color-pink;
@@ -15,12 +19,18 @@ background-color: $color-pink;
       background-color: $color-lightblue;
    }
    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+       @include media-breakpoint-up(md){
+            display: initial;
+            text-align: start;
+          }
       &-title {
          font-size: rem(15);
          font-weight: $font-weight-normal;
-         color: $color-grey;
-         border-left: rem(4) solid $color-grey;
-         padding-left: rem(17);
+         color: $color-grey;    
+         padding-left: 0;
          margin-bottom: rem(18);
 
          @include media-breakpoint-up(sm) {
@@ -30,6 +40,8 @@ background-color: $color-pink;
          @include media-breakpoint-up(md) {
             font-size: rem(40);
             margin-bottom: rem(38);
+            padding-left: rem(17);
+            border-left: rem(4) solid $color-grey;
          }
       }
 
@@ -59,9 +71,10 @@ background-color: $color-pink;
          font-weight: $font-weight-light;
          font-size: rem(30);
          color: $color-grey;
-         margin-bottom: rem(56);
+         margin-bottom: rem(24);
          @include media-breakpoint-up(md) {
             font-size: rem(40);
+            margin-bottom: rem(56);
          }
 
          @include media-breakpoint-up(lg) {

@@ -105,3 +105,19 @@ $('.store-carousel').owlCarousel({
 //   hiddenDiv.style.display = 'none';
 // });
 
+function openNav() {
+
+
+  document.getElementById("mySidenav").style.display = "block";
+  document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
+ 
+
+  
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
+  // location.reload();
+}
