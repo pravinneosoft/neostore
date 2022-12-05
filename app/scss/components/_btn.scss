@@ -87,7 +87,7 @@
     }
     &--continue{
        @include fontsize;
-        width: 100%;
+        width: 50%;
         padding: rem(6.5) 0;
         &:hover{
             background-color: $color-red;
@@ -97,7 +97,6 @@
         }
          @include media-breakpoint-up(md){
             width: rem(271);
-
             }
     }
 }

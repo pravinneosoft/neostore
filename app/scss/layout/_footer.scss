@@ -15,9 +15,12 @@
             width: 100%;
             font-size: rem(16);
             font-weight: $font-weight-normal;
-            padding: rem(10) rem(123) rem(10) rem(20);
+            padding: rem(10) rem(106) rem(10) rem(25);
             height: rem(48);
             border-color: transparent;
+             @include media-breakpoint-up(sm){
+                padding: rem(10) rem(123) rem(10) rem(45);
+                }
             &:focus-visible {
                 outline:  0;
                 
@@ -37,8 +40,11 @@
         i {
             color: $color-red;
             position: absolute;
-            top: rem(15);
-            left: rem(16);
+            top: rem(16);
+            left: rem(5);
+             @include media-breakpoint-up(sm){
+                left: rem(16);
+                }
         }
     }
 
