@@ -1,35 +1,42 @@
 // Banner section start
 .banner {
    position: relative;
-   &__wrapper{
+
+   &__wrapper {
       padding-top: rem(40);
       padding-bottom: rem(50);
-      
-          @include media-breakpoint-up(lg){
-            padding-top: rem(151);
-             }
+
+      @include media-breakpoint-up(lg) {
+         padding-top: rem(151);
+      }
    }
-   &-slide_1{
-background-color: $color-pink;
+
+   &-slide_1 {
+      background-color: $color-pink;
    }
-   &-slide_2{
+
+   &-slide_2 {
       background-color: $color-yellow;
    }
-   &-slide_3{
+
+   &-slide_3 {
       background-color: $color-lightblue;
    }
+
    &__content {
       display: flex;
       flex-direction: column;
       text-align: center;
-       @include media-breakpoint-up(md){
-            display: initial;
-            text-align: start;
-          }
+
+      @include media-breakpoint-up(md) {
+         display: initial;
+         text-align: start;
+      }
+
       &-title {
          font-size: rem(15);
          font-weight: $font-weight-normal;
-         color: $color-grey;    
+         color: $color-grey;
          padding-left: 0;
          margin-bottom: rem(18);
 
@@ -72,6 +79,7 @@ background-color: $color-pink;
          font-size: rem(30);
          color: $color-grey;
          margin-bottom: rem(24);
+
          @include media-breakpoint-up(md) {
             font-size: rem(40);
             margin-bottom: rem(56);
@@ -155,11 +163,13 @@ background-color: $color-pink;
       border: none;
       border-radius: 0;
 
-     
 
-      a {overflow: hidden;
+
+      a {
+         overflow: hidden;
          padding: rem(15) 0 0 0;
-         img{
+
+         img {
             &:hover {
                transform: scale(1.07);
                transition: 0.4s all ease-in-out;
@@ -201,22 +211,27 @@ background-color: $color-pink;
       border: none;
       border-radius: 0;
       overflow: hidden;
+
       @include media-breakpoint-up(lg) {
          width: rem(399);
       }
-   
-      a{
-         img{width: 100%;
-            @include media-breakpoint-up(sm){
+
+      a {
+         img {
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
                width: initial;
             }
+
             &:hover {
                transform: scale(1.03);
                transition: 0.4s all ease-in;
             }
          }
-        
+
       }
+
       &-body {
          @include flex-center;
          background-color: $color-light;
@@ -243,7 +258,7 @@ background-color: $color-pink;
          }
       }
 
-      
+
    }
 
    &__desc {
@@ -316,7 +331,7 @@ background-color: $color-pink;
    &__card {
       border: none;
       overflow: hidden;
-      
+
 
       &-desc {
          .card-title {
@@ -331,19 +346,25 @@ background-color: $color-pink;
             @extend .furniture__card-text;
          }
       }
-      a{overflow-x: hidden;
-         img{width: 100%;
+
+      a {
+         overflow-x: hidden;
+
+         img {
+            width: 100%;
             margin: rem(23) 0;
-            @include media-breakpoint-up(sm){
+
+            @include media-breakpoint-up(sm) {
                width: initial;
             }
+
             // &:hover {
             //    transform: scale(1.02);
             //    transition: 0.4s all ease-in-out;
             // }
          }
       }
-      
+
 
       &-progress {
          border-radius: rem(5);
@@ -390,9 +411,11 @@ background-color: $color-pink;
       position: relative;
       color: $color-white;
       margin-bottom: rem(20);
-      @include media-breakpoint-up(sm){
+
+      @include media-breakpoint-up(sm) {
          margin-bottom: rem(30);
       }
+
       &-img {
 
          width: 100%;
@@ -410,9 +433,11 @@ background-color: $color-pink;
          background-image: url('#{$images}/rectangle-bg.png');
          background-size: cover;
          background-repeat: no-repeat;
+
          @include media-breakpoint-up(sm) {
             padding: rem(41) rem(10) rem(26) rem(46);
          }
+
          @include media-breakpoint-up(md) {
             padding: rem(41) rem(150) rem(26) rem(46);
             top: rem(104);
@@ -443,30 +468,36 @@ background-color: $color-pink;
          }
       }
    }
-   &__right{
+
+   &__right {
       @include flex-center;
       flex-wrap: wrap;
-      @include media-breakpoint-up(sm){
+
+      @include media-breakpoint-up(sm) {
          justify-content: space-evenly;
       }
    }
+
    &__card {
       display: inline-block;
       position: relative;
       margin-bottom: rem(20);
       overflow: hidden;
       border-radius: 0;
-      @include media-breakpoint-up(sm){
+
+      @include media-breakpoint-up(sm) {
          margin-bottom: rem(30);
       }
-      a{
-         img{
-            &:hover{
+
+      a {
+         img {
+            &:hover {
                transform: scale(1.05);
                transition: 0.5s all ease-in-out;
             }
          }
       }
+
       &-content {
 
          a {
@@ -478,7 +509,7 @@ background-color: $color-pink;
             &:hover {
                color: $color-red;
             }
-           
+
          }
 
          p {
@@ -506,10 +537,7 @@ background-color: $color-pink;
       }
 
       &:hover {
-         img{
-           
-
-         }
+         img {}
       }
    }
 
@@ -537,49 +565,56 @@ background-color: $color-pink;
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
-      &-img{
-         &:hover{
-            transform:scale(0.97);
+
+      &-img {
+         &:hover {
+            transform: scale(0.97);
             transition: 0.5s all ease-in-out
+         }
       }
-      }
+
       &-desc {
          a {
             @include fontsize;
             color: $color-lightblack;
             margin-top: 19px;
             margin-bottom: rem(3);
-            &:hover{
-color: $color-red;
+
+            &:hover {
+               color: $color-red;
             }
          }
 
       }
 
       &-price {
-         span{
+         span {
             text-decoration: line-through;
             color: $color-dark;
          }
+
          @include fontsize;
          color: $color-lightblack;
       }
 
       &-body {
          padding-left: rem(12);
-         &-star{
-           width: 70%;
-            &::before{
-            content: '\f005' '\f005' '\f005' '\f005' '\f005';
-            position: relative;
-            display: block;
-            line-height: 16px;
-            font: var(--fa-font-solid);
-            font-weight: 300;
-            letter-spacing: 7px;
-            color: red;
+
+         &-star {
+            width: 70%;
+
+            &::before {
+               content: '\f005' '\f005' '\f005' '\f005' '\f005';
+               position: relative;
+               display: block;
+               line-height: 16px;
+               font: var(--fa-font-solid);
+               font-weight: 300;
+               letter-spacing: 7px;
+               color: red;
             }
          }
+
          ul {
             display: inline-flex;
             gap: rem(3);
@@ -632,17 +667,21 @@ color: $color-red;
    color: $color-white;
 
    &__content {
-      row-gap:rem(12);
-      @include media-breakpoint-up(sm){
+      row-gap: rem(12);
+
+      @include media-breakpoint-up(sm) {
          justify-content: center;
       }
-      @include media-breakpoint-up(md){
+
+      @include media-breakpoint-up(md) {
          justify-content: space-between;
       }
-      @include media-breakpoint-up(xl){
+
+      @include media-breakpoint-up(xl) {
          justify-content: center;
       }
-      div{
+
+      div {
          padding: 0 6px;
       }
    }
@@ -669,7 +708,7 @@ color: $color-red;
       width: 100%;
       background-position: center;
       order: 2;
-      
+
       @include media-breakpoint-up(xl) {
          width: rem(315);
          order: initial;
@@ -686,7 +725,7 @@ color: $color-red;
       flex-direction: column;
       width: 100%;
       background-position: center;
-      
+
       @include media-breakpoint-up(xl) {
          width: rem(570);
       }
@@ -701,7 +740,7 @@ color: $color-red;
       @include flex-center;
       flex-direction: column;
       width: 100%;
-      
+
       @include media-breakpoint-up(xl) {
          width: rem(315);
       }
@@ -720,21 +759,24 @@ color: $color-red;
       width: auto;
       border: none;
       position: relative;
-overflow: hidden;
-border-radius: 0;
+      overflow: hidden;
+      border-radius: 0;
+
       @include media-breakpoint-up(md) {
          width: rem(399);
       }
 
-      a{
-         img{width: 100%;
-            
-      &:hover {
-         transform: scale(1.03);
-         transition: 0.4s all ease-in-out;
-      }
+      a {
+         img {
+            width: 100%;
+
+            &:hover {
+               transform: scale(1.03);
+               transition: 0.4s all ease-in-out;
+            }
          }
       }
+
       &-body {
          text-align: center;
          padding: rem(20) 0;

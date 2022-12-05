@@ -16,7 +16,7 @@
             font-size: rem(20);
             color: $color-lightblack;
             margin-top: 2px;
-    display: inline-block;
+            display: inline-block;
         }
 
         &:hover {
@@ -28,10 +28,11 @@
         font-size: rem(14);
         border-radius: rem(2);
         display: inline;
+
         &:hover {
             background-color: $color-white;
             color: $color-red;
-            box-shadow:0 0 0 2px $color-red;
+            box-shadow: 0 0 0 2px $color-red;
         }
 
         @include media-breakpoint-up(sm) {
@@ -66,10 +67,10 @@
         text-align: center;
         padding: rem(20) 0;
 
-        
-            background-color: $color-red;
-            color: $color-white;
-        
+
+        background-color: $color-red;
+        color: $color-white;
+
     }
 
     &--shopnow {
@@ -83,6 +84,21 @@
             color: $color-blue;
             transform: scale(1.03);
         }
+    }
+    &--continue{
+       @include fontsize;
+        width: 100%;
+        padding: rem(6.5) 0;
+        &:hover{
+            background-color: $color-red;
+            color: $color-white;
+            background-color: $color-black;
+            box-shadow: 0 0 0 2px $color-red;
+        }
+         @include media-breakpoint-up(md){
+            width: rem(271);
+
+            }
     }
 }
 

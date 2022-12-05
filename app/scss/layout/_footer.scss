@@ -13,12 +13,9 @@
         &-input {
             border-radius: rem(4);
             width: 100%;
-            padding-left: rem(20);
             font-size: rem(16);
             font-weight: $font-weight-normal;
-            padding: rem(10) 0;
-            padding-left: rem(44);
-            padding-right: rem(123);
+            padding: rem(10) rem(123) rem(10) rem(20);
             height: rem(48);
             border-color: transparent;
             &:focus-visible {

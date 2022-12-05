@@ -121,3 +121,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
   // location.reload();
 }
+
+function changecolor(){
+  document.getElementById("my").style.color="red";
+}
+function checkbox(){
+  document.getElementById("checked").style.color="red";
+}
