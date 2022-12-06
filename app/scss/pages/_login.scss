@@ -128,12 +128,3 @@
 }
 // Login Page end
 
-.header__bottom-brand_logo{
-    margin-top: rem(17);
-    margin-bottom: rem(20);
-    text-align: center;
-     @include media-breakpoint-up(md){
-          margin-bottom: 0;
-          text-align: start;
-        }
-}

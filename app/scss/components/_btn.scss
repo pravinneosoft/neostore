@@ -66,10 +66,12 @@
         font-size: rem(16);
         text-align: center;
         padding: rem(20) 0;
-
-
         background-color: $color-red;
         color: $color-white;
+        margin-top: rem(10);
+         @include media-breakpoint-up(md){
+              margin-top: 0;
+            }
 
     }
 
@@ -80,24 +82,32 @@
         display: inline;
 
         &:hover {
-            text-decoration: wavy;
-            color: $color-blue;
-            transform: scale(1.03);
+            color: $color-white;
+
+            text-decoration: none;
         }
     }
-    &--continue{
-       @include fontsize;
+
+    &--continue {
+        @include fontsize;
         width: 50%;
         padding: rem(6.5) 0;
-        &:hover{
+
+        &:hover {
             background-color: $color-red;
             color: $color-white;
             background-color: $color-black;
             box-shadow: 0 0 0 2px $color-red;
         }
-         @include media-breakpoint-up(md){
+
+        @include media-breakpoint-up(md) {
             width: rem(271);
-            }
+        }
+        &:active{
+            color: $color-white !important;
+background-color:  $color-red !important;
+border-color:transparent !important;
+        }
     }
 }
 

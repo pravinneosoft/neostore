@@ -1,8 +1,8 @@
 // Header section start
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  // position: sticky;
+  // top: 0;
+  // z-index: 5;
   &__top {
     background-color: $color-red;
     color: $color-white;
@@ -85,6 +85,7 @@
   }
   &__bottom{
     background-color: $color-white;
+    
   }
 
 }
@@ -222,4 +223,14 @@
   }
    
 
+}
+
+.scrollEffect {
+  transition: all 1s;
+  box-shadow: -2px 0px 5px 2px $color-lightblack;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
 }

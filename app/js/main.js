@@ -46,7 +46,7 @@ autoplayTimeout:3500 ,
 // Owl carousel Js end
 
 //countdown timer
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -128,3 +128,24 @@ function changecolor(){
 function checkbox(){
   document.getElementById("checked").style.color="red";
 }
+
+
+//scrolling effect of header
+document.addEventListener("DOMContentLoaded", () => {
+  headerScroll();
+});
+
+console.log("header2");
+function headerScroll() {
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector(".header__bottom");
+    const windowScrollY = window.scrollY;
+    const SCROLL_HEIGHT = 43;
+    if (windowScrollY < SCROLL_HEIGHT) {
+      header.classList.remove("scrollEffect");
+    } else {
+      header.classList.add("scrollEffect");
+    }
+  });
+};
+headerScroll();

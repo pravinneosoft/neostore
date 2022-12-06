@@ -1,0 +1,26 @@
+.listbanner{
+    background-image: url('#{$images}/banner-subpage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: rem(66) 0;
+}
+
+.breadcrumb{
+    width: rem(184);
+    justify-content: space-between;
+   
+    li a{
+        font-weight: $font-weight-medium;
+        font-size: rem(16);
+    color: $color-grey;}
+    &-active{
+        color: $color-red;
+        &::before{
+            content: '|' !important;
+            color: $color-red !important;
+            padding-right: rem(40) !important;
+        }
+        
+    }
+}

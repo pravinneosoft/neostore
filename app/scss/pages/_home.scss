@@ -162,12 +162,13 @@
       background-color: transparent;
       border: none;
       border-radius: 0;
+      display: block;
+      overflow: hidden;
 
 
-
-      a {
+      a {display: block;
          overflow: hidden;
-         padding: rem(15) 0 0 0;
+         // padding: rem(15) 0 0 0;
 
          img {
             &:hover {
@@ -178,6 +179,7 @@
       }
 
       .card-body {
+         padding-left: 0;
          &:hover {
             h5 {
                color: $color-red;
@@ -193,7 +195,8 @@
 
       .card-text {
          @include fontsize;
-         color: $color-lightblack;
+         color: $color-lightblack; 
+         //  padding: 0 0 0 rem(15);
       }
    }
 }
@@ -217,6 +220,8 @@
       }
 
       a {
+         display: block;
+         overflow: hidden;
          img {
             width: 100%;
 
@@ -333,10 +338,10 @@
       overflow: hidden;
 
 
-      &-desc {
+      &-desc {margin-bottom: rem(23);
          .card-title {
+            
             @extend .furniture__card-title;
-
             &:hover {
                color: $color-red;
             }
@@ -347,21 +352,24 @@
          }
       }
 
-      a {
+      a {display: block;
+         overflow: hidden;
          overflow-x: hidden;
-
+        
          img {
             width: 100%;
-            margin: rem(23) 0;
-
+            // margin: rem(23) 0;
+            display: block;
+            border: 1px solid transparent;
             @include media-breakpoint-up(sm) {
                width: initial;
             }
 
-            // &:hover {
-            //    transform: scale(1.02);
-            //    transition: 0.4s all ease-in-out;
-            // }
+            &:hover {
+               transform: scale(1.01);
+               transition: 0.4s all ease-in-out;
+               border: 1px solid $color-dark;
+            }
          }
       }
 
@@ -370,6 +378,7 @@
          border-radius: rem(5);
          background-color: $color-light;
          height: rem(6);
+         margin-top: rem(23);
       }
 
       &-progress-bar {
@@ -490,6 +499,8 @@
       }
 
       a {
+         display: block;
+         overflow: hidden;
          img {
             &:hover {
                transform: scale(1.05);
@@ -535,10 +546,6 @@
             text-align: center;
          }
       }
-
-      &:hover {
-         img {}
-      }
    }
 
    &__primary {
@@ -567,10 +574,13 @@
       justify-content: center;
 
       &-img {
+         display: block;
+         overflow: hidden;
+         img{
          &:hover {
-            transform: scale(0.97);
+            transform: scale(1.03);
             transition: 0.5s all ease-in-out
-         }
+         }}
       }
 
       &-desc {
@@ -600,20 +610,7 @@
       &-body {
          padding-left: rem(12);
 
-         &-star {
-            width: 70%;
-
-            &::before {
-               content: '\f005' '\f005' '\f005' '\f005' '\f005';
-               position: relative;
-               display: block;
-               line-height: 16px;
-               font: var(--fa-font-solid);
-               font-weight: 300;
-               letter-spacing: 7px;
-               color: red;
-            }
-         }
+        
 
          ul {
             display: inline-flex;
@@ -766,7 +763,8 @@
          width: rem(399);
       }
 
-      a {
+      a {display: block;
+         overflow: hidden;
          img {
             width: 100%;
 

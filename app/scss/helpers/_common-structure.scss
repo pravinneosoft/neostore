@@ -1,48 +1,108 @@
 //Common section start
 @function strip-unit($num) {
-    @return calc($num / ($num * 0 + 1));
-  }
-  
-  @function rem($pixels) {
-    @return calc(strip-unit($pixels) / $base-rem) * 1rem;
-  }
+  @return calc($num / ($num * 0 + 1));
+}
+
+@function rem($pixels) {
+  @return calc(strip-unit($pixels) / $base-rem) * 1rem;
+}
 
 
 .section {
   margin: rem(30) 0;
+
   @include media-breakpoint-up(md) {
-      margin: 50px 0;
+    margin: 50px 0;
   }
+
   @include media-breakpoint-up(xl) {
-      margin: 100px 0;
+    margin: 100px 0;
   }
+
   &__heading {
-      text-align: center;
-      position: relative;
-      z-index: 0;
-      margin-bottom: 66px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 66px;
 
-      &::after {
-          content: '';
-          position: absolute;
-          bottom: -20px;
-          right: 0;
-          left: 0;
-          margin: 0 auto;
-          width: 142px;
-          border: 1px solid $color-black;
-      }
-      h2 {
-          font-size: rem(30);
-          font-weight: $font-weight-bold;
-          color: $color-lightblack;
-      }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 142px;
+      border: 1px solid $color-black;
+    }
 
-      p {
-          font-weight: $font-weight-medium;
-          color: $color-lightgrey;
-      }
+    h2 {
+      font-size: rem(30);
+      font-weight: $font-weight-bold;
+      color: $color-lightblack;
+    }
+
+    p {
+      font-weight: $font-weight-medium;
+      color: $color-lightgrey;
+    }
   }
 
 }
+
+.contact-logo {
+  margin-top: rem(17);
+  margin-bottom: rem(20);
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
+
+.ratings {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  &::before {
+    content: '\f005' ' \f005' ' \f005' ' \f005' ' \f005';
+    position: relative;
+    display: block;
+    line-height: 16px;
+    font: var(--fa-font-regular);
+    font-weight: $font-weight-light;
+    letter-spacing:0;
+    color: $color-dark;
+  }
+
+  &__result {
+    display: inline-block;
+    width: 92%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    &::before {
+      content: '\f005' ' \f005' ' \f005' ' \f005' ' \f005';
+      position: relative;
+      display: block;
+      line-height: 16px;
+      font: var(--fa-font-solid);
+      font-weight: $font-weight-bold;   
+      letter-spacing:0;
+      color: $color-dark;
+      z-index: 2;
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+  }
+}
+
 //Common section end
