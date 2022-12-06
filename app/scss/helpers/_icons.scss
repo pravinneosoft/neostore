@@ -23,6 +23,88 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-product-grid {
+  &:before {
+    content: $icon-product-grid;     
+    color: #7f7f7f;
+  }
+}
+.icon-favourite-list {
+  &:before {
+    content: $icon-favourite-list; 
+  }
+}
+.icon-favourite-grid {
+  &:before {
+    content: $icon-favourite-grid; 
+  }
+}
+.icon-close-button {
+  &:before {
+    content: $icon-close-button; 
+  }
+}
+.icon-product-share {
+  &:before {
+    content: $icon-product-share; 
+  }
+}
+.icon-product-bottom-arrow {
+  &:before {
+    content: $icon-product-bottom-arrow; 
+  }
+}
+.icon-product-top-arrow {
+  &:before {
+    content: $icon-product-top-arrow; 
+  }
+}
+.icon-product-left-arrow {
+  &:before {
+    content: $icon-product-left-arrow;     
+    color: #223354;
+  }
+}
+.icon-product-right-arrow {
+  &:before {
+    content: $icon-product-right-arrow;     
+    color: #223354;
+  }
+}
+.icon-product-star {
+  &:before {
+    content: $icon-product-star;     
+    color: #b2b2b2;
+  }
+}
+.icon-product-check {
+  &:before {
+    content: $icon-product-check;     
+    color: #fff;
+  }
+}
+.icon-product-wish {
+  &:before {
+    content: $icon-product-wish; 
+  }
+}
+.icon-product-zoom {
+  &:before {
+    content: $icon-product-zoom; 
+  }
+}
+.icon-product-addtocart {
+  &:before {
+    content: $icon-product-addtocart; 
+  }
+}
+.icon-product-list {
+  &:before {
+    content: $icon-product-list;     
+    color: #7f7f7f;
+  }
+}
 .icon-cart1 {
   &:before {
     content: $icon-cart1; 
@@ -327,5 +409,3 @@
     content: $icon-down; 
   }
 }
-//icomoon icons end
-
