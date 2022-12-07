@@ -2,76 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="app/css/style.css" />
-    <title>Login page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="app/css/style.css" />
+  <title>Login page</title>
 </head>
 
 <body>
-    <!-- Header section start -->
-    <header>
-      
-        <!--Header top area start-->
-        <div class="header__top">
-            <div class="container">
-                <h3><strong> MARKDOWNS</strong>: <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a></h3>
-            </div>
+  <!-- Header section start -->
+  <header>
+
+    <!--Header top area start-->
+    <div class="header__top">
+      <div class="container">
+        <h3><strong> MARKDOWNS</strong>: <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a></h3>
+      </div>
+    </div>
+    <!--Header top area end-->
+    <!--Header bottom area start-->
+    <div class="contact-logo">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./app/images/logo.png" alt="neostore logo"></a>
+      </div>
+    </div>
+    <!--Header bottom area end-->
+
+  </header>
+  <!-- Header section end -->
+  <!-- Login section  start -->
+  <section class="login">
+    <div class="container">
+      <div class="row login__wrapper">
+        <div class="col-md-6">
+          <div class="login__img">
+            <img src="./app/images/login-page/login-page.jpg" alt="login image">
+          </div>
         </div>
-        <!--Header top area end-->
-        <!--Header bottom area start-->
-        <div class="contact-logo">
-            <div class="container">
-            <a class="navbar-brand" href="./index.html"><img src="./app/images/logo.png" alt="neostore logo"></a>
-        </div></div>
-        <!--Header bottom area end-->
-        
-    </header>
-    <!-- Header section end -->
-    <!-- Login section  start -->
-    <section class="login">
-        <div class="container">
-        <div class="row login__wrapper">
-            <div class="col-md-6">
-                <div class="login__img">
-                <img src="./app/images/login-page/login-page.jpg" alt="login image"></div>
+        <div class="col-md-6">
+          <div class="login__form">
+            <div class="login__form-title">
+              <h3>Log in</h3>
             </div>
-            <div class="col-md-6">
-                <div class="login__form">
-                    <div class="login__form-title">
-                        <h3>Log in</h3>
-                        </div>
-                    <form action="">
-                        <div class="login__form-email">
-                            <label for="emailinput" class="form-label">Email</label>
-                            <input type="email" name="email" placeholder="youremail@address.com" id="emailinput"class="form-control">
-                        </div>
-                        <div class="login__form-password">
-                            <label for="passwordinput" class="form-label">password</label>
-                            <input type="password" name="password" placeholder="Youre Password" id="passwordinput"
-                                class="form-control">
-                        </div>
-                        <div class="login__form-forgot">
-                            <a href="javascript:void(0)"title="forgot password">Forgot password</a>
-                        </div>
-                        <div class="login__form-submit">
-                        <button type="button"class="btn btn--continue">Continue</button>
-                        <p>New to  NeoSTORE? <a href="./register.html"title="signup">Sign up</a></p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>         
+            <form action="">
+              <div class="login__form-email">
+                <label for="emailinput" class="form-label">Email</label>
+                <input type="email" name="email" placeholder="youremail@address.com" id="emailinput"
+                  class="form-control">
+              </div>
+              <div class="login__form-password">
+                <label for="passwordinput" class="form-label">password</label>
+                <input type="password" name="password" placeholder="Youre Password" id="passwordinput"
+                  class="form-control">
+              </div>
+              <div class="login__form-forgot">
+                <a href="javascript:void(0)" title="forgot password">Forgot password</a>
+              </div>
+              <div class="login__form-submit">
+                <button type="button" class="btn btn--continue">Continue</button>
+                <p>New to NeoSTORE? <a href="./register.html" title="signup">Sign up</a></p>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
-    <!-- Login section  end -->
-     <!--Footer section start-->
+      </div>
+    </div>
+  </section>
+  <!-- Login section  end -->
+  <!--Footer section start-->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -146,12 +149,12 @@
     </div>
   </footer>
   <!--Footer section end-->
-    <!-- Script tags start -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="app/js/main.js"></script>
-    <!-- Script tags start -->
+  <!-- Script tags start -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="app/js/main.js"></script>
+  <!-- Script tags start -->
 
 </body>
 

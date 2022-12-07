@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="app/css/style.css" />
@@ -79,37 +79,196 @@
     </header>
     <!-- Header section end -->
     <!-- Banner section start -->
-    <section class="listbanner">
+    <section class="inner-banner">
         <div class="container">
-            <div class="listbanner-content">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                        <li class="breadcrumb-item breadcrumb-active" aria-current="page">Library</li>
-                    </ol>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item breadcrumb-active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="inner-banner-overlay">
 
         </div>
     </section>
     <!-- Banner section end -->
     <!-- Filter section start -->
-<section class="filter">
-    <label for="product">Sort By:</label>
-<select name="product" id="product">
-  <option value="Best Match">Best Match</option>
-  <option value="Price">Price : Law to High</option>
-  <option value="Price">Price : High to Law</option>
-  <option value="Avg review">Avg .Customer Review</option>
-  <option value="Newest">Newest Arrival</option>
-</select>
-<nav>
-    <span>View</span>
-    
-    <button></button>
-</nav>
-</section>
+    <section class="filter">
+        <div class="container">
+            <aside>
+                <label for="product" class="filter__label">Sort By:</label>
+                <select name="product" id="product">
+                    <option value="Best Match">Best Match</option>
+                    <option value="Price">Price : Law to High</option>
+                    <option value="Price">Price : High to Law</option>
+                    <option value="Avg review">Avg .Customer Review</option>
+                    <option value="Newest">Newest Arrival</option>
+                </select>
+
+                <nav>
+                    <span>View</span>
+                    <button><span class="icon-product-grid"></span></button>
+                    <button><span class="icon-product-list"></span></button>
+                </nav>
+            </aside>
+        </div>
+    </section>
     <!-- Filter section end -->
+    <!-- Product section start -->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <!-- Product left area start -->
+                <div class="col-md-3 ps-0">
+                    <div class="product__left">
+                        <div class="product-brand ">
+                            <h4 class="product__left-title">Product Brand</h4>
+                            <form action="" class="inner-form">
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="coaster">
+                                    <label for="coaster">Coaster Furniture</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="fusion">
+                                    <label for="fusion">Fusion Dot High Fashion</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="unique">
+                                    <label for="unique">Unique Furnitture Restor</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="dream">
+                                    <label for="dream">Dream Furnitture Flipping</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="young">
+                                    <label for="young">Young Repurposed</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="green">
+                                    <label for="green">Green DIY furniture</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-offer">
+                            <h4 class="product__left-title">Discount Offer</h4>
+                            <form action="" class="inner-form">
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="cashback20">
+                                    <label for="cashback20">20% Cashback</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="cashback5">
+                                    <label for="cashback5">5% Cashback</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="cashback25">
+                                    <label for="cashback25">25% Cashback</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-rating">
+                            <h4 class="product__left-title">Rating Item</h4>
+                            <form action="" class="inner-form">
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="rating1">
+                                    <label for="rating1">
+                                        <div class="product-star">
+                                            <span class="product-star_result"></span>
+                                        </div>(2341)
+                                    </label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="rating2">
+                                    <label for="rating2">
+                                        <div class="product-star">
+                                            <span class="product-star_result"></span>
+                                        </div>(1726)
+                                    </label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="rating3">
+                                    <label for="rating3">
+                                        <div class="product-star">
+                                            <span class="product-star_result"></span>
+                                        </div>(258)
+                                    </label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="rating4">
+                                    <label for="rating4">
+                                        <div class="product-star">
+                                            <span class="product-star_result"></span>
+                                        </div>(25)
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-discount">
+                            <h4 class="product__left-title">Discount Offer</h4>
+                            <form action="" class="inner-form">
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="price0-15">
+                                    <label for="price0-15">₹0.00 - ₹1500.00</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="price15">
+                                    <label for="price15">₹1500.00 - ₹3500.00</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="price35">
+                                    <label for="price35">₹3500.00 - ₹5000.00</label>
+                                </div>
+                                <div class="inner-form-group">
+                                    <input type="checkbox" id="price5">
+                                    <label for="price5">₹5000.00</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-search">
+                            <form class="d-flex product-search_form" role="search">
+                                <input class="form-control" type="text" placeholder="₹10.00 `" aria-label="Search">
+                                <button class=" btn--search btn" type="button"><span class="icon-search m-0"></span></button>
+                              </form>
+                        </div>
+                        <div class="product-color">
+                            <h4 class="product__left-title">Filter By Color</h4>
+                            <form action="" class="inner-form product-color_switches">
+                                <div class="inner-form-blue">
+                                    <input type="checkbox" id="blue">
+                                    <label for="blue">Blue</label>
+                                </div>
+                                <div class="inner-form-orange">
+                                    <input type="checkbox" id="orange">
+                                    <label for="orange">Orange</label>
+                                </div>
+                                <div class="inner-form-brown">
+                                    <input type="checkbox" id="brown">
+                                    <label for="brown">Brown</label>
+                                </div>
+                                <div class="inner-form-green">
+                                    <input type="checkbox" id="greens">
+                                    <label for="greens">Green</label>
+                                </div>
+                                <div class="inner-form-cream">
+                                    <input type="checkbox" id="cream">
+                                    <label for="cream">Cream</label>
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product left area end -->
+                <!-- Product right area start -->
+                <div class="col-md-9">
+                    <div class="product__right"></div>
+                </div>
+                <!-- Product right area end -->
+            </div>
+        </div>
+    </section>
+    <!-- Product section end -->
     <!-- Footer section start -->
     <footer class="footer">
         <div class="container">

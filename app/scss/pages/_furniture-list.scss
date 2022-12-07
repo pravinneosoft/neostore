@@ -1,26 +1,255 @@
-.listbanner{
-    background-image: url('#{$images}/banner-subpage.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: rem(66) 0;
-}
-
-.breadcrumb{
+.breadcrumb {
     width: rem(184);
     justify-content: space-between;
-   
-    li a{
-        font-weight: $font-weight-medium;
-        font-size: rem(16);
-    color: $color-grey;}
-    &-active{
+
+    li a {
+        color: $color-grey;
+    }
+
+    &-active {
         color: $color-red;
-        &::before{
+
+        &::before {
             content: '|' !important;
             color: $color-red !important;
             padding-right: rem(40) !important;
         }
-        
+
     }
 }
+
+.filter {
+    padding: rem(26) 0;
+
+    &__label {
+        font-weight: $font-weight-medium;
+        color: $color-whitesmoke;
+        margin-right: rem(8);
+    }
+
+    aside {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        select {
+            border: 1px solid $color-darkest;
+            padding: rem(11) 0 rem(11) rem(15);
+            font-size: rem(14);
+            font-weight: $font-weight-normal;
+            color: $color-lightgrey;
+            width: 11%;
+
+            &:focus-visible {
+                outline: transparent;
+            }
+        }
+
+        nav {
+            span {
+                margin-left: rem(18);
+                color: $color-black;
+            }
+
+            button {
+                background: transparent;
+                border: 0;
+                margin-left: rem(14);
+
+                span {
+                    margin-left: 0;
+                }
+
+                &:focus {
+                    span {
+                        &::before {
+                            color: $color-darkred;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product {
+    &__left {
+
+        &-title {
+            font-size: rem(20);
+            font-weight: $font-weight-medium;
+            color: $color-lightblack;
+            position: relative;
+            display: inline-block;
+            padding-bottom: rem(13);
+            &::after {
+                content: "";
+                position: absolute;
+                /* top: 2.0625rem; */
+                right: 0;
+                bottom: 0;
+                left: 50%;
+                margin: 0 auto;
+                width: 93%;
+                transform: translate(-50%, -50%);
+                border: 1px solid $color-black;
+            }
+
+        }
+    }
+    &-offer{
+        margin-top: rem(43);
+    }
+    &-rating{
+        margin-top: rem(36);
+    }
+    &-discount{
+        margin-top: rem(43);
+    }
+    &-search{
+        width: 203px;
+        margin-top: rem(28);
+        &_form{
+            position: relative;
+            max-width: auto;   
+            .form-control {
+                border-radius: rem(5);
+                padding: rem(3) rem(45) rem(3) rem(9);
+                border: 1px solid $color-lightwheat;
+                 border-radius: 3px;
+                &:focus {
+                  box-shadow: 0px 0px 3px 0px $color-red;
+                  border-color:$color-red;
+                }
+          
+                &::placeholder {
+                  font-size: rem(12);
+               color: rgba(21, 24, 117, 0.1);
+                  font-weight: $font-weight-medium;
+                }
+              }
+          
+              button {
+                position: absolute;
+                right: 0;
+                background-color: transparent !important;
+                padding-top: 4.5px;
+                span{
+                    color: $color-lightwheat;
+                }
+              }
+        }
+    }
+    &-color{
+        margin-top: rem(43);
+        &_switches{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: rem(19);
+        }
+        .inner-form-blue{
+            @include switchbox;
+            label:before {
+                background-color: $color-darkblue;
+                border-color: $color-darkblue;
+            }
+            input:checked+label:before {
+                background-color:$color-darkblue;
+            }
+        }
+        .inner-form-orange{
+            @include switchbox;
+            label:before {
+                background-color: $color-orange;
+                border-color: $color-orange;
+            }
+            input:checked+label:before {
+                background-color:$color-orange;
+            }
+        }
+        .inner-form-brown{
+            @include switchbox;
+            label:before {
+                background-color: $color-brown;
+                border-color: $color-brown;
+            }
+            input:checked+label:before {
+                background-color:$color-brown;
+            }
+        }
+        .inner-form-green{
+            @include switchbox;
+            label:before {
+                background-color: $color-darkgreen;
+                border-color: $color-darkgreen;
+            }
+            input:checked+label:before {
+                background-color:$color-darkgreen;
+            }
+        }
+        .inner-form-cream{
+            @include switchbox;
+            label:before {
+                background-color: $color-cream;
+                border-color: $color-cream;
+            }
+            input:checked+label:before {
+                background-color:$color-cream;
+            }
+        }
+    }
+}
+// inner form area start
+.inner-form {
+    margin-top: rem(25);
+    &-group {
+        @include switchbox;
+    }
+}
+// inner form area end
+// common ratings for product listing start
+.product-star {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10px;
+    margin-right: rem(7);
+
+    &::before {
+        content: '\f005' ' \f005' ' \f005' ' \f005' ' \f005';
+        position: relative;
+        display: block;
+        line-height: 16px;
+        font: var(--fa-font-solid);
+        font-weight: $font-weight-bold;
+        letter-spacing: 0;
+        color: $color-wheat
+    }
+
+    &_result {
+        display: inline-block;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &::before {
+            content: '\f005' ' \f005' ' \f005' ' \f005' ' \f005';
+            position: relative;
+            display: block;
+            line-height: 16px;
+            font: var(--fa-font-solid);
+            font-weight: $font-weight-bold;
+            letter-spacing: 0;
+            color: $color-yellow;
+            z-index: 2;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}
+// common ratings for product listing end
