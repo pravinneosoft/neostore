@@ -97,9 +97,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 20.5px;
   flex-direction: column;
-
+  padding-block: 5px;
+   @include media-breakpoint-up(sm){
+    padding-block: 20.5px;
+      }
   .header__center {
     position: relative;
     display: none;

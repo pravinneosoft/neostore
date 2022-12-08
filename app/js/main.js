@@ -24,9 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
           el_link.classList.remove('show');
           nextEl.classList.remove('show');
         }
-  
-  
-      })
+          })
     });
   
   }
@@ -106,14 +104,8 @@ $('.store-carousel').owlCarousel({
 // });
 
 function openNav() {
-
-
   document.getElementById("mySidenav").style.display = "block";
   document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
- 
-
-  
-
 }
 
 function closeNav() {
@@ -121,7 +113,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
   // location.reload();
 }
-
 function changecolor(){
   document.getElementById("my").style.color="red";
 }
