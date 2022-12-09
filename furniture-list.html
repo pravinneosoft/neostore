@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="app/css/style.css" />
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -264,9 +267,9 @@
                 <!-- Product right area start -->
                 <div class="col-sm-12 col-md-9 pe-0">
                     <div class="product__right">
-                        <div class="row product__right-wrapper">
+                        <div class="row product__right-wrapper"id="paginated-list" data-current-page="1" aria-live="polite">
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card" >
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/ultricess.jpg" alt="chair image">
                                     </a>
@@ -283,8 +286,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                            <div class="col-auto  product__right-content">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/vitae.jpg" alt="chair image">
                                     </a>
@@ -302,7 +305,7 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/vietae-sed.jpg" alt="chair image">
                                     </a>
@@ -320,7 +323,7 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/imperdiet.jpg" alt="chair image">
                                     </a>
@@ -338,7 +341,7 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/suspedies-sed.jpg" alt="chair image">
                                     </a>
@@ -356,7 +359,7 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/fermentum.jpg" alt="chair image">
                                     </a>
@@ -374,7 +377,7 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/imperdiet2.jpg" alt="chair image">
                                     </a>
@@ -390,10 +393,9 @@
                                         <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
                                     </ul>
                                 </div>
-                            </div>
-                            
+                            </div>                    
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
                                     </a>
@@ -411,7 +413,223 @@
                                 </div>
                             </div>
                             <div class="col-auto product__right-content">
-                                <div class="card product-card"onmouseover="showicon(this)" onmouseout="hideicon(this)">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Vitae suspendisse sed</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Vitae suspendisse sed</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Vitae suspendisse sed</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Vitae suspendisse sed</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/suspendies.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Vitae suspendisse sed</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
+                                    <a href="#" title="wooden chair">
+                                        <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
+                                    </a>
+                                    <div class="card-body product-card-body">
+                                        <a href="javascript:void(0)" title="wooden chair">
+                                            <h5 class="card-title">Sed at fermentum</h5>
+                                        </a>
+                                        <p>₹26.00 <span>₹42.00</span></p>
+                                    </div>
+                                    <ul class="product-card-icon"id="social-icon">
+                                        <li><a href="#"title="cart icon"><span class="icon-product-addtocart"></span></a></li>
+                                        <li><a href="#"title="zoom icon"><span class="icon-product-zoom"></span></a></li>
+                                        <li><a href="#"title="wish icon"><span class="icon-product-wish"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto product__right-content">
+                                <div class="card product-card">
                                     <a href="#" title="wooden chair">
                                         <img src="./app/images/furniture-list/fermentum2.jpg" alt="chair image">
                                     </a>
@@ -429,8 +647,20 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="pagination-container">
+                            <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                              &lt;
+                            </button>
+                                  <div id="pagination-numbers">
+                                  </div>
+                            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                              &gt;
+                            </button>
+                          </nav>
                     </div>
+                   
                 </div>
+               
                 <!-- Product right area end -->
             </div>
         </div>
