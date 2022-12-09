@@ -178,3 +178,15 @@ window.addEventListener("load", () => {
 });
 
 // pagination internal page link js end
+
+//zoom in and zoom out effect
+$(document).ready(function(){
+  $("#zoominbtn").click(function(){
+       $("img").width($("img").width()+100);
+       $("img").height($("img").height()+100);
+  });
+  $("#zoomoutbtn").click(function(){
+       $("img").width($("img").width()-100);
+       $("img").height($("img").height()-100);
+  });   
+});

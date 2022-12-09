@@ -1,7 +1,5 @@
 .breadcrumb {
-    width: rem(184);
-    justify-content: space-between;
-
+   
     li a {
         color: $color-grey;
     }
@@ -12,7 +10,7 @@
         &::before {
             content: '|' !important;
             color: $color-red !important;
-            padding-right: rem(40) !important;
+            padding: 0 rem(24) !important;
         }
 
     }
@@ -492,10 +490,8 @@
             }
         }
     }
+    // common ratings for product listing end
 }
-
-// common ratings for product listing end
-
 // pagination area start
 .pagination {
     &-hidden {
@@ -506,10 +502,9 @@
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: -70px;
+        bottom: rem(-94);
         right: 0;
         justify-content: center;
-
     }
 
     &-number,
