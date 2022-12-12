@@ -109,6 +109,14 @@ background-color:  $color-red !important;
 border-color:transparent !important;
         }
     }
+    &--addtocart{
+        width: 321px;
+        border-radius: 2px;
+        &:hover,&:active,&:focus-visible{
+            background-color: $color-black !important;
+            color: $color-white !important;
+        }
+    }
 }
 
 //Button utility end
