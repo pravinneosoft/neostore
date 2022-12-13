@@ -1,6 +1,6 @@
 .inner-detail {
-  min-height: rem(680);
-  position: relative;
+  // min-height: rem(680);
+  // position: relative;
   padding-top: rem(54);
 }
 
@@ -68,7 +68,7 @@ div.vertical-carousel .owl-nav .owl-next {
   }
 
   &-img {
-    display: inline-flex;
+    display: flex;
     gap: 9px;
     margin: 15px 0;
 
@@ -82,7 +82,7 @@ div.vertical-carousel .owl-nav .owl-next {
   }
   &-socialicons{
     margin-top: rem(24);
-    display: inline-flex;
+    display: flex;
     gap: 12px;
 a{
   color: $color-lightblack;
@@ -103,6 +103,7 @@ a{
 // counter block css start
 .counter {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 3px;
 
   &__content {
@@ -115,6 +116,13 @@ a{
       display: grid;
       place-content: center;
       color: $color-white;
+      input{
+        background-color: transparent;
+        width: 47px;
+        border: 0;
+        text-align: center;
+        color: $color-white;
+      }
     }
 
     button {
@@ -240,3 +248,134 @@ a{
 }
 
 //additional info tabs section end
+
+
+
+#img-zoomer-box {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  margin: 10px auto;
+}
+
+#img-1 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box:hover, #img-zoomer-box:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box:hover #img-2, #img-zoomer-box:active #img-2 {
+  opacity: 1;
+}
+#img-2 {
+  width: 340px;
+  height: 340px;
+  background: url('#{$images}/furniture-detail-page/middel-image.jpg') no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 999;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-container {
+  position: relative;
+   display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.gallery-main {
+  width: 500px;
+  height: 540px;
+
+}
+
+.swiper-fade .swiper-slide-active, .swiper-fade .swiper-slide-active .swiper-slide-active {
+  border: 1px solid $color-dark;
+}
+.gallery-main .swiper-button-prev{
+       top: 8px;
+     border-color: transparent;
+      left: 65px;
+      span{
+        font-size: rem(9.5);
+        color: $color-lightblack;
+      }
+      &::after{
+        content: '';
+      }
+   
+} .gallery-main .swiper-button-next {
+  top: 97%;
+     border: 0;
+      left: 65px;
+      span{
+        font-size: rem(9.5);
+        color: $color-lightblack;
+      }
+      &::after{
+        content: '';
+      }  position: absolute;
+
+
+}
+.gallery-thumbs {
+  order: -1;
+  width: 144px;
+  height: 470px;
+  overflow: hidden;
+  margin-top: 34px;
+ 
+}
+.gallery-thumbs .swiper-slide img {
+  transition: 0.3s;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 0.9;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    right: -50%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    right: -50%;
+  }
+}

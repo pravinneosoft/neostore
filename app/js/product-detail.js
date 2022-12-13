@@ -9,21 +9,32 @@ $(document).ready(function() {
       dots:false,
     });
   });
-  var data = 1;
-  
-//printing default value of data that is 0 in h2 tag
-document.getElementById("counting").innerText = data;
-  
-//creation of increment function
-function increment() {
-    data = data + 1;
-    document.getElementById("counting").innerText = data;
-}
-//creation of decrement function
-function decrement() {
-    data = data - 1;
-    document.getElementById("counting").innerText = data;
-}
+
+// increment and decrement counter code start 
+document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+var valueCount
+document.querySelector(".plus-btn").addEventListener("click", function() {
+           valueCount = document.getElementById("quantity").value;
+     valueCount++;
+    document.getElementById("quantity").value = valueCount;
+
+    if (valueCount > 1) {
+        document.querySelector(".minus-btn").removeAttribute("disabled");
+        document.querySelector(".minus-btn").classList.remove("disabled")
+    }
+})
+document.querySelector(".minus-btn").addEventListener("click", function() {
+   valueCount = document.getElementById("quantity").value;
+    valueCount--;
+    document.getElementById("quantity").value = valueCount
+    if (valueCount == 1) {
+        document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+    }
+})
+// increment and decrement counter code end
+
+
+
 
 var btnContainer = document.getElementById("myDIV");
 
@@ -39,3 +50,51 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active1";
   });
 }
+
+
+
+
+
+
+
+
+
+let zoomer = function (){
+  document.querySelector('#img-zoomer-box')
+    .addEventListener('mousemove', function(e) {
+
+    let original = document.querySelector('#img-1'),
+        magnified = document.querySelector('#img-2'),
+        style = magnified.style,
+        x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        imgWidth = original.offsetWidth,
+        imgHeight = original.offsetHeight,
+        xperc = ((x/imgWidth) * 100),
+        yperc = ((y/imgHeight) * 100);
+
+    //lets user scroll past right edge of image
+    if(x > (.01 * imgWidth)) {
+      xperc += (.15 * xperc);
+    };
+
+    //lets user scroll past bottom edge of image
+    if(y >= (.01 * imgHeight)) {
+      yperc += (.15 * yperc);
+    };
+
+    style.backgroundPositionX = (xperc - 9) + '%';
+    style.backgroundPositionY = (yperc - 9) + '%';
+
+    style.left = (x - 180) + 'px';
+    style.top = (y - 180) + 'px';
+
+  }, false);
+}();
+
+
+
+
+
+
+

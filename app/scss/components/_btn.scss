@@ -110,12 +110,15 @@ border-color:transparent !important;
         }
     }
     &--addtocart{
-        width: 321px;
+        width: auto;
         border-radius: 2px;
         &:hover,&:active,&:focus-visible{
             background-color: $color-black !important;
             color: $color-white !important;
         }
+         @include media-breakpoint-up(sm){
+            width: 321px;
+            }
     }
 }
 
