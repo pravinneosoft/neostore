@@ -1,7 +1,6 @@
 .inner-detail {
-  // min-height: rem(680);
-  // position: relative;
-  padding-top: rem(54);
+  margin: rem(54) 0 rem(93) 0;
+
 }
 
 .vertical-carousel {
@@ -27,11 +26,18 @@ div.vertical-carousel .owl-nav .owl-next {
   top: unset;
   bottom: 15px;
 }
-.middel-content{
+
+.middel-content {
   border: 1px solid $color-dark;
 }
 
 .right__content {
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: initial;
+  }
+
   &-title {
     h4 {
       font-weight: $font-weight-bold;
@@ -61,7 +67,8 @@ div.vertical-carousel .owl-nav .owl-next {
       margin-bottom: 8px;
     }
   }
-  &-text{
+
+  &-text {
     color: $color-grey;
     font-size: rem(12);
     font-weight: $font-weight-light;
@@ -71,6 +78,11 @@ div.vertical-carousel .owl-nav .owl-next {
     display: flex;
     gap: 9px;
     margin: 15px 0;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: flex-start;
+    }
 
     li {
       width: 64px;
@@ -80,23 +92,31 @@ div.vertical-carousel .owl-nav .owl-next {
       }
     }
   }
-  &-socialicons{
+
+  &-socialicons {
     margin-top: rem(24);
     display: flex;
     gap: 12px;
-a{
-  color: $color-lightblack;
-  font-size: rem(14);
-  font-weight: $font-weight-medium;
-  display: inline-flex;
-    align-items: center;
-    line-height: rem(14);
-    gap: rem(6);
-    &:hover{
-      color: $color-darkred;
-      text-decoration: underline;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: flex-start;
     }
-}
+
+    a {
+      color: $color-lightblack;
+      font-size: rem(14);
+      font-weight: $font-weight-medium;
+      display: inline-flex;
+      align-items: center;
+      line-height: rem(14);
+      gap: rem(6);
+
+      &:hover {
+        color: $color-darkred;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -116,7 +136,8 @@ a{
       display: grid;
       place-content: center;
       color: $color-white;
-      input{
+
+      input {
         background-color: transparent;
         width: 47px;
         border: 0;
@@ -128,8 +149,9 @@ a{
     button {
       border: 0.5px solid $color-whitesmoke;
       background-color: transparent;
-      display: flex;
-      padding: 2px;
+      @include flex-center;
+      height: 20px;
+      width: 20px;
 
       span {
         font-size: rem(6);
@@ -252,30 +274,26 @@ a{
 
 
 #img-zoomer-box {
-  max-width: 500px;
-  height: auto;
   position: relative;
-  margin: 10px auto;
 }
 
-#img-1 {
-  width: 100%;
-  height: auto;
-}
 
-#img-zoomer-box:hover, #img-zoomer-box:active {
+#img-zoomer-box:hover,
+#img-zoomer-box:active {
   cursor: zoom-in;
   display: block;
 }
 
-#img-zoomer-box:hover #img-2, #img-zoomer-box:active #img-2 {
+#img-zoomer-box:hover #img-2,
+#img-zoomer-box:active #img-2 {
   opacity: 1;
 }
+
 #img-2 {
   width: 340px;
   height: 340px;
   background: url('#{$images}/furniture-detail-page/middel-image.jpg') no-repeat #FFF;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
   pointer-events: none;
   position: absolute;
   opacity: 0;
@@ -306,76 +324,113 @@ a{
 
 
 
-.gallery-container {
-  position: relative;
-   display: flex;
-  justify-content: space-around;
-  overflow: hidden;
-  flex-wrap: wrap;
+.slider {
+  margin-bottom: rem(21);
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: initial;
+  }
 }
 
-.gallery-main {
-  width: 500px;
-  height: 540px;
-
+.slider .swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
-.swiper-fade .swiper-slide-active, .swiper-fade .swiper-slide-active .swiper-slide-active {
-  border: 1px solid $color-dark;
-}
-.gallery-main .swiper-button-prev{
-       top: 8px;
-     border-color: transparent;
-      left: 65px;
-      span{
-        font-size: rem(9.5);
-        color: $color-lightblack;
+.slider__flex {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column-reverse;
+   @include media-breakpoint-up(md){
+   flex-direction: initial;
       }
-      &::after{
-        content: '';
-      }
-   
-} .gallery-main .swiper-button-next {
-  top: 97%;
-     border: 0;
-      left: 65px;
-      span{
-        font-size: rem(9.5);
-        color: $color-lightblack;
-      }
-      &::after{
-        content: '';
-      }  position: absolute;
+}
 
+.slider__col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 0;
+  width: 100%;
+   @include media-breakpoint-up(md){
+    flex-direction: column;
+    width: 150px;
+    margin-right: 32px;
+      }
 
 }
-.gallery-thumbs {
-  order: -1;
-  width: 144px;
-  height: 470px;
-  overflow: hidden;
-  margin-top: 34px;
+
+.slider__prev:focus,
+.slider__next:focus {
+  outline: none;
+}
+
+.slider__thumbs {
+  width: calc(100% - 96px);
+  margin: 0 16px;
+  height: auto;
+ @include media-breakpoint-up(md){
+  height: calc(536px - 96px);
+  width: initial;
+  margin: initial;
+    }
  
 }
-.gallery-thumbs .swiper-slide img {
-  transition: 0.3s;
-}
-.gallery-thumbs .swiper-slide-active {
-  opacity: 0.9;
-}
-.gallery-thumbs .swiper-slide-thumb-active {
+
+.slider__thumbs .slider__image:hover {
   opacity: 1;
 }
-@-webkit-keyframes slide-in {
-  from {
-    opacity: 0;
-    right: -50%;
+
+.slider__images {
+  border: 1px solid $color-dark;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: 526px;
+    width: initial;
   }
 }
 
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    right: -50%;
+.slider__images .slider__image img {
+  transition: 3s;
+}
+
+.slider__images .slider__image:hover img {
+  transform: scale(1.1);
+}
+
+.slider__image {
+
+  overflow: hidden;
+}
+
+.slider__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slider__prev,
+.slider__next {
+  width: 32px;
+  transform: rotate(270deg);
+  cursor: pointer;
+  text-align: center;
+    height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    span {
+    font-size: rem(9.5);
+    color: $color-lightblack;
+  }
+
+  @include media-breakpoint-up(md) {
+    transform: initial;
+    width: initial;
   }
 }
+
