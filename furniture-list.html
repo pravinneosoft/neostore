@@ -100,9 +100,9 @@
     <section class="filter">
         <div class="container">
             <aside>
+                <button class="filter__btn" title="filter"onclick="openfilter()"><i class="fa-solid fa-bars-staggered"></i></button>
                 <label for="product" class="filter__label">Sort By:</label>
-               
-                <select  name="product" id="product">
+                               <select  name="product" id="product">
                     <option value="Best Match">Best Match</option>
                     <option value="Price">Price : Law to High</option>
                     <option value="Price">Price : High to Law</option>
@@ -125,8 +125,8 @@
         <div class="container">
             <div class="row">
                 <!-- Product left area start -->
-                <div class="col-sm-12 col-md-3 ps-0">
-                    <div class="product__left">
+                <div class="col-sm-12 col-md-3">
+                    <div class="product__left"id="sidenav">
                         <div class="product-brand ">
                             <h4 class="product__left-title">Product Brand</h4>
                             <form action="" class="inner-form">
@@ -267,7 +267,7 @@
                 </div>
                 <!-- Product left area end -->
                 <!-- Product right area start -->
-                <div class="col-sm-12 col-md-9 pe-0">
+                <div class="col-sm-12 col-md-9">
                     <div class="product__right">
                         <div class="row product__right-wrapper"id="paginated-list" data-current-page="1" aria-live="polite">
                             <div class="col-auto product__right-content">
@@ -742,6 +742,8 @@
     </footer>
     <!-- Footer section end -->
     <!--Js links start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>

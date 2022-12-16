@@ -345,7 +345,11 @@ div.vertical-carousel .owl-nav .owl-next {
   flex-direction: column-reverse;
    @include media-breakpoint-up(md){
    flex-direction: initial;
+   justify-content: space-evenly;
       }
+       @include media-breakpoint-up(lg){
+            justify-content: initial;
+          }
 }
 
 .slider__col {

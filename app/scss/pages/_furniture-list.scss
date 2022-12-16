@@ -21,7 +21,15 @@
 
 .filter {
   padding: rem(26) 0;
-
+  &__btn{
+    background: transparent;
+        border: 0;
+        margin-right: rem(20);
+        display: block;
+         @include media-breakpoint-up(md){
+          display: none;
+            }
+  }
   &__label {
     font-weight: $font-weight-medium;
     color: $color-whitesmoke;
@@ -46,6 +54,7 @@
       background-image: url('#{$images}/helper/select-dropdown.png');
       background-repeat: no-repeat;
       background-size:auto;
+      font-family: 'Gotham';
           background-position: 89% 50%;
       &:active,&:focus{
         border: 1px solid $color-darkred;
@@ -117,7 +126,7 @@
   // Left area start
   &__left {
     width: 100%;
-
+    display: none;
     @include media-breakpoint-up(sm) {
       display: flex;
       flex-wrap: wrap;
@@ -522,6 +531,12 @@
     bottom: rem(-94);
     right: 0;
     justify-content: center;
+    left: 0;
+    margin: 0 auto;
+     @include media-breakpoint-up(sm){
+          margin: initial;
+          left: initial;
+        }
   }
 
   &-number,

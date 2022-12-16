@@ -1,12 +1,13 @@
 // Header section start
 .header {
+
   // position: sticky;
   // top: 0;
   // z-index: 5;
   &__top {
     background-color: $color-red;
     color: $color-white;
-   
+
     h3 {
       text-align: center;
       margin: 0;
@@ -25,7 +26,7 @@
     max-width: auto;
 
     .form-control {
-      background-color: $color-light ;
+      background-color: $color-light;
       border-radius: rem(5);
       padding-right: rem(45);
       border: 1px solid transparent;
@@ -62,10 +63,11 @@
 
   &__right {
     @include flex-center;
-   
+
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
+
     @include media-breakpoint-up(sm) {
       width: 62%;
       justify-content: flex-end;
@@ -83,9 +85,10 @@
       align-items: center;
     }
   }
-  &__bottom{
+
+  &__bottom {
     background-color: $color-white;
-    
+
   }
 
 }
@@ -99,24 +102,27 @@
   align-items: center;
   flex-direction: column;
   padding-block: 5px;
-   @include media-breakpoint-up(sm){
+
+  @include media-breakpoint-up(sm) {
     padding-block: 20.5px;
-      }
+  }
+
   .header__center {
     position: relative;
-    display: none;
-    border: 1px solid #000;
+    border: 1px solid $color-black;
     position: absolute;
     top: 0;
     left: -100%;
     bottom: 0;
     height: 100vh;
-    width: 100%;
+    width: 0;
     background-color: $color-black;
     color: $color-white;
     z-index: 3;
     padding-top: rem(20);
+    transition: left 0.5s all ease-in-out;
     animation: showNavigationBar 0.5s ease forwards;
+    display: none;
 
     @keyframes showNavigationBar {
       to {
@@ -124,10 +130,7 @@
       }
     }
 
-    @include media-breakpoint-up(sm) {
-      width: 33%;
-      
-    }
+    @include media-breakpoint-up(sm) {}
 
     @include media-breakpoint-up(lg) {
       display: block;
@@ -139,7 +142,7 @@
       padding: 0;
     }
 
-    &-center {
+    &-close {
       display: block;
       font-size: rem(40) !important;
       font-weight: $font-weight-bold !important;
@@ -174,7 +177,8 @@
             color: $color-lightblack;
             font-weight: $font-weight-light;
           }
-          &:hover{
+
+          &:hover {
             color: $color-red;
           }
         }
@@ -189,13 +193,15 @@
         display: flex;
         gap: 19px;
       }
+
       @include media-breakpoint-up(xl) {
         display: flex;
         gap: 57.5px;
       }
     }
   }
-  @include media-breakpoint-up(sm){
+
+  @include media-breakpoint-up(sm) {
     flex-direction: initial;
   }
 }
@@ -223,16 +229,31 @@
   @include media-breakpoint-up(lg) {
     display: none;
   }
-   
+
 
 }
 
-.scrollEffect {
+.scrolleffect {
   transition: all 1s;
-  box-shadow: -2px 0px 2px 0px $color-lightblack;
+  box-shadow: -1px -2px 7px 2px $color-red;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
   width: 100%;
+}
+
+.humbergerg {
+  width: 230px !important;
+  transition: 0.5s all ease-in-out;
+  display: block !important;
+  left: 0;
+  animation: hideNavigationBar 0.5s ease forwards;
+  display: none;
+
+  @keyframes hideNavigationBar {
+    to {
+      left: -100%;
+    }
+  }
 }

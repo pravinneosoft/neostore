@@ -103,16 +103,40 @@ $('.store-carousel').owlCarousel({
 //   hiddenDiv.style.display = 'none';
 // });
 
-function openNav() {
-  document.getElementById("mySidenav").style.display = "block";
-  document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
-}
+// function openNav() {
+//   document.getElementById("mySidenav").style.display = "block";
+//   document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
+// }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.display = "none";
-  document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
-  // location.reload();
-}
+// function closeNav() {
+//   document.getElementById("mySidenav").style.display = "none";
+//   document.getElementById("mySidenav").style.transition = " display 1s ease-in-out";
+//   // location.reload();
+// }
+
+$(document).ready(function () {
+  $(".open-header").click(function(e){ 
+    $("#mySidenav").addClass('humbergerg');
+      
+  });
+ $(".header__center-close").click(function(e){ 
+    $("#mySidenav").removeClass('humbergerg');		
+  }
+  ); console.log("DSss")
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 function changecolor(){
   document.getElementById("my").style.color="red";
 }
@@ -131,11 +155,11 @@ function headerScroll() {
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".header__bottom");
     const windowScrollY = window.scrollY;
-    const SCROLL_HEIGHT = 43;
+    const SCROLL_HEIGHT = 50;
     if (windowScrollY < SCROLL_HEIGHT) {
-      header.classList.remove("scrollEffect");
+      header.classList.remove("scrolleffect");
     } else {
-      header.classList.add("scrollEffect");
+      header.classList.add("scrolleffect");
     }
   });
 };
