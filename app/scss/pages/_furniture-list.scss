@@ -48,12 +48,12 @@
       font-weight: $font-weight-normal;
       color: $color-lightgrey;
       width: 37%;
-      -webkit-appearance: none;
+     -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       background-image: url('#{$images}/helper/select-dropdown.png');
       background-repeat: no-repeat;
-      background-size:auto;
+      background-size:auto; 
       font-family: 'Gotham';
           background-position: 89% 50%;
       &:active,&:focus{
@@ -128,24 +128,11 @@
     width: 100%;
     display: none;
     @include media-breakpoint-up(sm) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      row-gap: rem(35);
+           row-gap: rem(35);
     }
 
     @include media-breakpoint-up(md) {
       display: block;
-    }
-
-    div {
-      @include media-breakpoint-up(sm) {
-        width: 50%;
-      }
-
-      @include media-breakpoint-up(md) {
-        width: initial;
-      }
     }
 
     &-title {
@@ -173,7 +160,7 @@
     .product-offer {
       margin-top: rem(0);
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         margin-top: rem(43);
       }
     }
@@ -181,7 +168,7 @@
     .product-rating {
       margin-top: 0;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         margin-top: rem(36);
       }
     }
@@ -189,16 +176,16 @@
     .product-discount {
       margin-top: rem(0);
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         margin-top: rem(43);
       }
     }
 
     .product-search {
       width: 203px;
-      margin-top: rem(0);
+      margin-top: rem(16);
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         margin-top: rem(28);
       }
 
@@ -238,13 +225,8 @@
     }
 
     .product-color {
-      margin-top: rem(0);
-
-      @include media-breakpoint-up(md) {
         margin-top: rem(43);
-      }
-
-      &_switches {
+           &_switches {
         display: flex;
         flex-wrap: wrap;
         column-gap: rem(5);

@@ -235,17 +235,23 @@
                             </li>
                         </ul>
                         <div class="counter">
-                            <button type="button" class="btn btn--addtocart">Add to Cart</button>
-                            <div class="counter__content quantity">
-                                <div class="counter__content-value"> <input type="text" id="quantity" value="1"></div>
-                                <div> <button class=" plus-btn" title="increase the quantity"><span
-                                            class="icon-product-top-arrow"></span></button>
-                                    <button class="minus-btn disabled" title="decrease the quantity"><span
-                                            class="icon-product-bottom-arrow"></span></button></div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn--addtocart">Add to Cart</button>
+
+                            <div class="counter__content qty-container">
+                                <div class="counter__content-value">
+                                    <input type="text" name="qty" value="0" class="input-qty"></div>
+                                <button type="button" class="qty-btn-plus" title="increase the quantity"><span
+                                        class="icon-product-top-arrow"></span>
+                                </button>
+
+                                <button type="button" class=" qty-btn-minus" title="decrease the quantity"><span
+                                        class="icon-product-bottom-arrow"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="right__content-socialicons">
-                            <a href="#" title="wish" class=""><span class="icon-wish"></span><span>Add to
+                            <a href="#" type="button" title="wish" class=""><span class="icon-wish"></span><span>Add to
                                     Wishlist</span></a>
                             <a href="#" title="share" class=""><span class="icon-product-share"></span><span>Share
                                     this</span></a>
@@ -253,6 +259,63 @@
                     </div>
                 </div>
                 <!-- right area end -->
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog inner__modal">
+                        <div class="modal-content  inner__modal-content">
+                            <div class="modal-header inner__modal-header">
+                                <h1 class="modal-title inner__modal-title" id="exampleModalLabel"> Product successfully
+                                    added to your shopping cart</h1>
+                                <button type="button" class="inner__modal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"><span class="icon-close-button"></span></button>
+                            </div>
+                            <div class="modal-body inner__modal-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="inner__modal-img">
+                                            <img src="./app/images/furniture-detail-page/check-out.png"
+                                                alt="checkout-image">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="inner__modal-info">
+                                            <h3>Armen Living Summer Chair </h3>
+                                            <ul>
+                                                <li>Item: MB494</li>
+                                                <li> Size: 40X60 cm</li>
+                                                <li>Price: <span> ₹4,499</span> ₹3,825
+                                                    <select name="product" id="product">
+                                                        <option value="qty">QTY: 1</option>
+                                                        <option value="qty2">2</option>
+                                                        <option value="qty3">3</option>
+                                                        <option value="qty4">4</option>
+                                                        <option value="qty5">5</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                            <p>Threshold Delivery - additional cost per unit: ₹400.00
+                                                In-stock Usually ships in 1-7 business days.
+                                            </p>
+                                            <p>*Price does not include shipping and processing, gift wrap, discounts or
+                                                taxes
+                                            </p>
+                                            <hr>
+                                            <div>
+                                                <a href="./product-detail.html"
+                                                    class="inner__modal-content-btn">Checkout</a>
+                                                <a href="./furniture-list.html"
+                                                    class="inner__modal-content-btn">Continue Shopping</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -462,6 +525,8 @@
     </footer>
     <!-- Footer section end -->
     <!--Js links start-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"

@@ -128,6 +128,13 @@ div.vertical-carousel .owl-nav .owl-next {
 
   &__content {
     display: inline-flex;
+    position: relative;
+
+    & .qty-btn-minus {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
 
     &-value {
       width: 47px;
@@ -143,7 +150,21 @@ div.vertical-carousel .owl-nav .owl-next {
         border: 0;
         text-align: center;
         color: $color-white;
+
+        &:focus-visible {
+          outline: 0;
+        }
       }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+
+
+      }
+
+
     }
 
     button {
@@ -343,13 +364,15 @@ div.vertical-carousel .owl-nav .owl-next {
   align-items: center;
   gap: 30px;
   flex-direction: column-reverse;
-   @include media-breakpoint-up(md){
-   flex-direction: initial;
-   justify-content: space-evenly;
-      }
-       @include media-breakpoint-up(lg){
-            justify-content: initial;
-          }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: initial;
+    justify-content: space-evenly;
+  }
+
+  @include media-breakpoint-up(lg) {
+    justify-content: initial;
+  }
 }
 
 .slider__col {
@@ -358,11 +381,12 @@ div.vertical-carousel .owl-nav .owl-next {
   align-items: center;
   margin-right: 0;
   width: 100%;
-   @include media-breakpoint-up(md){
+
+  @include media-breakpoint-up(md) {
     flex-direction: column;
     width: 150px;
     margin-right: 32px;
-      }
+  }
 
 }
 
@@ -375,12 +399,13 @@ div.vertical-carousel .owl-nav .owl-next {
   width: calc(100% - 96px);
   margin: 0 16px;
   height: auto;
- @include media-breakpoint-up(md){
-  height: calc(536px - 96px);
-  width: initial;
-  margin: initial;
-    }
- 
+
+  @include media-breakpoint-up(md) {
+    height: calc(536px - 96px);
+    width: initial;
+    margin: initial;
+  }
+
 }
 
 .slider__thumbs .slider__image:hover {
@@ -390,6 +415,7 @@ div.vertical-carousel .owl-nav .owl-next {
 .slider__images {
   border: 1px solid $color-dark;
   width: 100%;
+
   @include media-breakpoint-up(md) {
     height: 526px;
     width: initial;
@@ -423,11 +449,12 @@ div.vertical-carousel .owl-nav .owl-next {
   transform: rotate(270deg);
   cursor: pointer;
   text-align: center;
-    height: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-    span {
+
+  span {
     font-size: rem(9.5);
     color: $color-lightblack;
   }
@@ -438,3 +465,170 @@ div.vertical-carousel .owl-nav .owl-next {
   }
 }
 
+.inner__modal {
+  border-radius: rem(15);
+   @include media-breakpoint-up(lg){
+        min-width: rem(992);
+      }
+ @include media-breakpoint-up(xl){
+  min-width: rem(1000);
+
+    }
+  &-content {
+    border-radius: rem(15);
+    border: 0;
+  }
+
+  &-header {
+    background-color: $color-red;
+    color: $color-white;
+    
+  padding:0 0 0 20px;
+    position: relative;
+ @include media-breakpoint-up(lg){
+  padding: 0;
+  justify-content: center;
+
+    }
+  }
+
+  &-title {
+    font-weight: $font-weight-bold;
+    padding-block: rem(12);
+    font-size: rem(16);
+    width: 89%;
+     @include media-breakpoint-up(sm){
+          width: 100%;
+        }
+         @include media-breakpoint-up(lg){
+              width: fit-content;
+            }
+  }
+
+  &-close {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 13px;
+    top: 37%;
+    span {
+      color: $color-white;
+    }
+     @include media-breakpoint-up(sm){
+      top: 14px;
+        }
+  }
+  &-body{
+    padding: 20px;
+    @include media-breakpoint-up(sm){
+      padding: rem(37) rem(32) rem(40) rem(43);
+        }
+     @include media-breakpoint-up(lg){
+      padding: rem(67) rem(32) rem(80) rem(43);
+        }
+  }
+
+  &-img {
+    border: 1px solid $color-dark;
+    padding: rem(7) rem(6);
+    margin-bottom: rem(16);
+    img {
+      width: 100%;
+    }
+     @include media-breakpoint-up(sm){
+      width: 303px;
+        }
+         @include media-breakpoint-up(lg){
+              margin-bottom: 0;
+            }
+  }
+
+  &-info {
+     @include media-breakpoint-up(lg){
+          padding-left: rem(19);
+        }
+    h3 {
+      font-size: rem(16);
+      font-weight: $font-weight-medium;
+      margin-bottom: rem(14);
+    }
+
+    ul {
+      margin-bottom: rem(32);
+      li {
+        font-size: rem(16);
+        font-weight: $font-weight-medium;
+        margin-bottom: rem(8);
+
+        span {
+          text-decoration: line-through;
+          color: $color-dark;
+        }
+
+        select {
+          margin-left: rem(13);
+          font-size: rem(12);
+          font-weight: 600;
+          padding-left: 8px;
+          padding-block: 3.5px;
+          color: $color-lightgrey;
+          background-color: $color-pinkgrey;
+          border-radius: 2px;
+          width: 71px;
+          border-color: transparent;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-image: url('#{$images}/helper/select-dropdown.png');
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: 90% 50%;
+
+          &:focus-visible {
+            outline-color: $color-darkred;
+          }
+        }
+      }
+    }
+    p{
+      font-size: rem(12);
+      color: $color-grey;
+      margin-bottom: rem(14);
+    }
+    hr{
+      opacity: 1;
+      border: 1px solid $color-black;
+      margin-top: 0;
+    }
+    .inner__modal-content-btn{
+      background-color: $color-red;
+      color: $color-white;
+      padding-block: rem(8.5);
+      display: block;
+      font-size: rem(14);
+      font-weight: $font-weight-normal;
+      margin-bottom: 14px;
+      color: $color-darkwhite;
+      border-radius: 2px;
+      border: 1px solid $color-red;
+      text-align: center;
+      &:hover{
+        background-color: transparent;
+        
+        color: $color-red;
+      }
+      &:last-child{
+        background-color: transparent;
+        
+        color: $color-red;
+        &:hover{
+          background-color: $color-red;
+      color: $color-white;
+        }
+      }
+       @include media-breakpoint-up(lg){
+        width: 321px;
+          }
+    }
+  }
+}

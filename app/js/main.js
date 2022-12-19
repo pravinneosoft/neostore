@@ -116,7 +116,7 @@ $('.store-carousel').owlCarousel({
 
 $(document).ready(function () {
   $(".open-header").click(function(e){ 
-    $("#mySidenav").addClass('humbergerg');
+    $("#mySidenav").toggleClass('humbergerg');
       
   });
  $(".header__center-close").click(function(e){ 

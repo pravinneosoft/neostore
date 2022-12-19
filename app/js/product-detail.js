@@ -11,26 +11,56 @@ $(document).ready(function() {
   });
 
 // increment and decrement counter code start 
-document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
-var valueCount
-document.querySelector(".plus-btn").addEventListener("click", function() {
-           valueCount = document.getElementById("quantity").value;
-     valueCount++;
-    document.getElementById("quantity").value = valueCount;
+// document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+// var valueCount=document.querySelector(".plus-btn").addEventListener("click", function( ) {
+//            valueCount = document.getElementById("quantity").value;
+//      if(valueCount++ && valueCount==11){
+//       valueCount--
+//        }
+//        else{
+//         valueCount
+//        }
+//     document.getElementById("quantity").value = valueCount;
+//     console.log( valueCount);
 
-    if (valueCount > 1) {
-        document.querySelector(".minus-btn").removeAttribute("disabled");
-        document.querySelector(".minus-btn").classList.remove("disabled")
-    }
-})
-document.querySelector(".minus-btn").addEventListener("click", function() {
-   valueCount = document.getElementById("quantity").value;
-    valueCount--;
-    document.getElementById("quantity").value = valueCount
-    if (valueCount == 1) {
-        document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
-    }
-})
+
+//   //  let totalmaxqty= document.getAttribute('max');
+//   //   console.log(totalmaxqty);
+//     if (valueCount > 1)  {
+//         document.querySelector(".minus-btn").removeAttribute("disabled");
+//         document.querySelector(".minus-btn").classList.remove("disabled")
+//     }
+// })
+// document.querySelector(".minus-btn").addEventListener("click", function() {
+//    valueCount = document.getElementById("quantity").value;
+//     valueCount--;
+//     document.getElementById("quantity").value = valueCount
+//     if (valueCount == 1) {
+//         document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+//     }
+// })
+
+var buttonPlus  = $(".qty-btn-plus");
+var buttonMinus = $(".qty-btn-minus");
+
+var incrementPlus = buttonPlus.click(function() {
+  console.log('inc');
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  $n.val(Number($n.val())+1 );
+});
+
+var incrementMinus = buttonMinus.click(function() {
+  console.log('dec');
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  var amount = Number($n.val());
+  if (amount > 0) {
+    $n.val(amount-1);
+  }
+});
 // increment and decrement counter code end
 
 
@@ -102,41 +132,41 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 
 
 // image zoom js 
-let zoomer = function (){
-  document.querySelector('#img-zoomer-box')
-    .addEventListener('mousemove', function(e) {
+// let zoomer = function (){
+//   document.querySelector('#img-zoomer-box')
+//     .addEventListener('mousemove', function(e) {
 
-    let original = document.querySelector('#img-1'),
-        magnified = document.querySelector('#img-2'),
-        style = magnified.style,
-        x = e.pageX - this.offsetLeft,
-        y = e.pageY - this.offsetTop,
-        imgWidth = original.offsetWidth,
-        imgHeight = original.offsetHeight,
-        xperc = ((x/imgWidth) * 100),
-        yperc = ((y/imgHeight) * 100);
+//     let original = document.querySelector('#img-1'),
+//         magnified = document.querySelector('#img-2'),
+//         style = magnified.style,
+//         x = e.pageX - this.offsetLeft,
+//         y = e.pageY - this.offsetTop,
+//         imgWidth = original.offsetWidth,
+//         imgHeight = original.offsetHeight,
+//         xperc = ((x/imgWidth) * 100),
+//         yperc = ((y/imgHeight) * 100);
 
-        console.log('xperc',xperc);
-        console.log('yperc',yperc);
+//         console.log('xperc',xperc);
+//         console.log('yperc',yperc);
 
-    //lets user scroll past right edge of image
-    if(x > (.01 * imgWidth)) {
-      xperc += (.15 * xperc);
-    };
+//     //lets user scroll past right edge of image
+//     if(x > (.01 * imgWidth)) {
+//       xperc += (.15 * xperc);
+//     };
 
-    //lets user scroll past bottom edge of image
-    if(y >= (.01 * imgHeight)) {
-      yperc += (.15 * yperc);
-    };
+//     //lets user scroll past bottom edge of image
+//     if(y >= (.01 * imgHeight)) {
+//       yperc += (.15 * yperc);
+//     };
 
-    style.backgroundPositionX = (xperc - 9) + '%';
-    style.backgroundPositionY = (yperc - 9) + '%';
+//     style.backgroundPositionX = (xperc - 9) + '%';
+//     style.backgroundPositionY = (yperc - 9) + '%';
 
-    style.left = (x - 180) + 'px';
-    style.top = (y - 180) + 'px';
+//     style.left = (x - 180) + 'px';
+//     style.top = (y - 180) + 'px';
 
-  }, false);
-}();
+//   }, false);
+// }();
 
 
 
