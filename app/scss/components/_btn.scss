@@ -69,9 +69,10 @@
         background-color: $color-red;
         color: $color-white;
         margin-top: rem(10);
-         @include media-breakpoint-up(md){
-              margin-top: 0;
-            }
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+        }
 
     }
 
@@ -103,22 +104,73 @@
         @include media-breakpoint-up(md) {
             width: rem(271);
         }
-        &:active{
+
+        &:active {
             color: $color-white !important;
-background-color:  $color-red !important;
-border-color:transparent !important;
+            background-color: $color-red !important;
+            border-color: transparent !important;
         }
     }
-    &--addtocart{
-        width: auto;
+
+    &--addtocart {
+        width: 100%;
         border-radius: 2px;
-        &:hover,&:active,&:focus-visible{
+
+        &:hover,
+        &:active,
+        &:focus-visible {
             background-color: $color-black !important;
             color: $color-white !important;
         }
-         @include media-breakpoint-up(sm){
+
+        @include media-breakpoint-up(xl) {
             width: 321px;
-            }
+        }
+    }
+
+    &--remove {
+        border-radius: 2px;
+        background-color: $color-light;
+        font-size: rem(12);
+        color: $color-lightcharcoal;
+        padding: 7px 19px;
+        margin: 0;
+
+        &:hover,
+        &:focus-visible,
+        &:active {
+            color: $color-white;
+            background-color: $color-red;
+        }
+    }
+
+    &--wish {
+        border-radius: 2px;
+        padding: 7px 22px;
+        margin: 0;
+        font-size: rem(12);
+
+        &:hover,
+        &:focus-visible,
+        &:active {
+            color: $color-lightcharcoal;
+            background-color: $color-light;
+            text-decoration: none;
+        }
+    }
+
+    &--browse {
+        border-radius: 2px;
+        padding: 12px 0;
+        width: 321px;
+        text-align: center;
+        @include fontsize;
+        color: $color-darkwhite;
+
+        &:hover {
+            background-color: $color-darkred;
+            color: $color-white;
+        }
     }
 }
 

@@ -130,3 +130,35 @@
 }
 
 //Common section end
+
+// comman button
+.inner__modal-content-btn{
+  background-color: $color-red;
+  color: $color-white;
+  padding-block: rem(8.5);
+  display: block;
+  font-size: rem(14);
+  font-weight: $font-weight-normal;
+  margin-bottom: 14px;
+  color: $color-darkwhite;
+  border-radius: 2px;
+  border: 1px solid $color-red;
+  text-align: center;
+  &:hover{
+    background-color: transparent;
+    
+    color: $color-red;
+  }
+  &:last-child{
+    background-color: transparent;
+    
+    color: $color-red;
+    &:hover{
+      background-color: $color-red;
+  color: $color-white;
+    }
+  }
+   @include media-breakpoint-up(lg){
+    width: 321px;
+      }
+}

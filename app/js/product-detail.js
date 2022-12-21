@@ -170,7 +170,16 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 
 
 
-
+$(document).ready(function () {
+  $(".open-header").click(function(e){ 
+    $("#mySidenav").toggleClass('humbergerg');
+      
+  });
+ $(".header__center-close").click(function(e){ 
+    $("#mySidenav").removeClass('humbergerg');		
+  }
+  ); console.log("DSss")
+});
 
 
 

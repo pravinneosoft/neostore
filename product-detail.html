@@ -1,547 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product detail page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css"
+    />
 
     <link rel="stylesheet" href="app/css/style.css" />
-    <style>
+    <style></style>
+  </head>
 
-    </style>
-</head>
-
-<body>
+  <body>
     <!-- Header section start -->
     <header class="header" id="my-header">
-        <!--Header top area start-->
-        <div class="header__top">
-            <div class="container">
-                <h3><strong> MARKDOWNS</strong>: <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a></h3>
+      <!--Header top area start-->
+      <div class="header__top">
+        <div class="container">
+          <h3>
+            <strong> MARKDOWNS</strong>:
+            <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a>
+          </h3>
+        </div>
+      </div>
+      <!--Header top area end-->
+      <!--Header bottom area start-->
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__nav">
+            <!-- Brand logo start -->
+            <a class="navbar-brand" href="#"
+              ><img src="./app/images/logo.png" alt="neostore logo"
+            /></a>
+            <!-- Brand logo end -->
+            <!-- Site navigations center -->
+            <div class="header__center" id="mySidenav">
+              <ul>
+                <li>
+                  <a class="#" href="#">Home</a>
+                  <a href="javascript:void(0)" class="header__center-close"
+                    >&times;</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Furniture</a>
+                </li>
+                <li>
+                  <a href="#">Home Decore</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Sales</a>
+                </li>
+              </ul>
             </div>
-        </div>
-        <!--Header top area end-->
-        <!--Header bottom area start-->
-        <div class="header__bottom">
-            <div class="container">
-                <nav class="header__nav">
-                    <!-- Brand logo start -->
-                    <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="neostore logo"></a>
-                    <!-- Brand logo end -->
-                    <!-- Site navigations center -->
-                    <div class="header__center" id="mySidenav">
-                        <ul>
-                            <li>
-                                <a class="#" href="#">Home</a>
-                                <a href="javascript:void(0)" class="header__center-center"
-                                    onclick="closeNav()">&times;</a>
-                            </li>
-                            <li>
-                                <a href="#">Furniture</a>
-                            </li>
-                            <li>
-                                <a href="#">Home Decore</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Sales</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Site navigations center -->
-                    <!-- Header right area start -->
-                    <div class="header__right">
-                        <form class="d-flex header__form" role="search">
-                            <input class="form-control" type="text" placeholder="Search ..." aria-label="Search">
-                            <button class=" btn--search btn" type="button"><span class="icon-search"></span></button>
-                        </form>
-                        <ul class="header__icons">
-                            <li><a href="javascript:void(0)" title="contact"><span class="icon-home"></span></a></li>
-                            <li><a href="javascript:void(0)" title="wish"><span class="icon-wish"></span></a></li>
-                            <li><a href="javascript:void(0)" title="add to cart"><span class="icon-cart1"></span></a>
-                            </li>
-                            <li> <button class="navbar-toggler" type="button" onclick="openNav()">
-                                    <i class="fa-solid fa-bars"></i>
-                                </button></li>
-                        </ul>
-                    </div>
-                    <!-- Header right area end -->
-                </nav>
+            <!-- Site navigations center -->
+            <!-- Header right area start -->
+            <div class="header__right">
+              <form class="d-flex header__form" role="search">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search ..."
+                  aria-label="Search"
+                />
+                <button class="btn--search btn" type="button">
+                  <span class="icon-search"></span>
+                </button>
+              </form>
+              <ul class="header__icons">
+                <li>
+                  <a href="javascript:void(0)" title="contact"
+                    ><span class="icon-home"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="wish"
+                    ><span class="icon-wish"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="add to cart"
+                    ><span class="icon-cart1"></span
+                  ></a>
+                </li>
+                <li>
+                  <button class="navbar-toggler open-header" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </li>
+              </ul>
             </div>
+            <!-- Header right area end -->
+          </nav>
         </div>
-        </div>
-        <!--Header bottom area end-->
+      </div>
+
+      <!--Header bottom area end-->
     </header>
     <!-- Header section end -->
     <!-- Banner section start -->
     <section class="inner-banner">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="./index.html" title="home page">Home</a></li>
-                    <li class="breadcrumb-item breadcrumb-active" aria-current="page">Armen Living Summer Chair</li>
-                </ol>
-            </nav>
-        </div>
-        <div class="inner-banner-overlay">
-        </div>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item">
+              <a href="./index.html" title="home page">Home</a>
+            </li>
+            <li class="breadcrumb-item breadcrumb-active" aria-current="page">
+              Armen Living Summer Chair
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="inner-banner-overlay"></div>
     </section>
     <!-- Banner section end -->
     <!-- Main section start -->
     <!-- Inner detail section start -->
     <section class="inner-detail">
-        <div class="container">
-            <!-- main row start -->
-            <div class="row">
-                <!-- left area start -->
-                <div class="col-md-12 col-lg-7  col-xl-7">
-                    <!-- vertical carousel start -->
-                    <div class="slider">
-                        <div class="slider__flex">
-                            <div class="slider__col">
-                                <div class="slider__prev"><span class="icon-product-top-arrow"></span></div>
-                                <div class="slider__thumbs">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="slider__image"><img
-                                                        src="./app/images/furniture-detail-page/back-chair.jpg"
-                                                        alt="" /></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slider__image"><img
-                                                        src="./app/images/furniture-detail-page/side-chair.jpg"
-                                                        alt="" /></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slider__image"><img
-                                                        src="./app/images/furniture-detail-page/front-chair.jpg"
-                                                        alt="" /></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slider__image"><img
-                                                        src="./app/images/furniture-detail-page/side-chair.jpg"
-                                                        alt="" /></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slider__image"><img
-                                                        src="./app/images/furniture-detail-page/back-chair.jpg"
-                                                        alt="" /></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__next"> <span class="icon-product-bottom-arrow"></span></div>
-                            </div>
-                            <div class="slider__images">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"><img
-                                                    src="./app/images/furniture-detail-page/middel-image.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"><img
-                                                    src="./app/images/furniture-detail-page/middel-image.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"><img
-                                                    src="./app/images/furniture-detail-page/middel-image.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"><img
-                                                    src="./app/images/furniture-detail-page/middel-image.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"><img
-                                                    src="./app/images/furniture-detail-page/middel-image.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+      <div class="container">
+        <!-- main row start -->
+        <div class="row">
+          <!-- left area start -->
+          <div class="col-md-12 col-lg-7 col-xl-7">
+            <!-- vertical carousel start -->
+            <div class="slider">
+              <div class="slider__flex">
+                <div class="slider__col">
+                  <div class="slider__prev">
+                    <span class="icon-product-top-arrow"></span>
+                  </div>
+                  <div class="slider__thumbs">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="./app/images/furniture-detail-page/back-chair.jpg"
+                              alt=""
+                            />
+                          </div>
                         </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="./app/images/furniture-detail-page/side-chair.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="./app/images/furniture-detail-page/front-chair.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="./app/images/furniture-detail-page/side-chair.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="./app/images/furniture-detail-page/back-chair.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- vertical carousel end -->
+                  </div>
+                  <div class="slider__next">
+                    <span class="icon-product-bottom-arrow"></span>
+                  </div>
                 </div>
-                <!-- left area end -->
-                <!-- middel area start -->
-                <!-- <div class="col-md-5">
+                <div class="slider__images">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="./app/images/furniture-detail-page/middel-image.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="./app/images/furniture-detail-page/middel-image.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="./app/images/furniture-detail-page/middel-image.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="./app/images/furniture-detail-page/middel-image.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="./app/images/furniture-detail-page/middel-image.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- vertical carousel end -->
+          </div>
+          <!-- left area end -->
+          <!-- middel area start -->
+          <!-- <div class="col-md-5">
                     <div id="img-zoomer-box">
                         <img src="./app/images/furniture-detail-page/middel-image.jpg" id="img-1" alt="Zoom Image on Mouseover"/>
                         <div id="img-2"></div>
                       </div>       
                 </div> -->
-                <!-- middel area end -->
-                <!-- right area start -->
-                <div class="col-md-12 col-lg-5 col-xl-5">
-                    <div class="right__content">
-                        <div class="right__content-title">
-                            <h4>Armen Living Summer Chair</h4>
-                            <h3>₹6,450</h3>
-                            <p>Price incl. of all taxes</p>
-                        </div>
-                        <div class="detail-star">
-                            <span class="detail-star-result"></span>
-                        </div>
-                        <ul class="right__content-desc">
-                            <li>Brand: Studio Design</li>
-                            <li> Reference: demo_3</li>
-                            <li> In stock 191 Items</li>
-                        </ul>
-                        <p class="right__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <hr>
-                        <h5>Choose Color</h5>
-                        <ul class="right__content-img" id="myDIV">
-                            <li><a href="javascript:void(0)" class="btns1" title="black chair"><img
-                                        src="./app/images/furniture-detail-page/black-chair.png" alt="black chair"></a>
-                            </li>
-                            <li><a href="javascript:void(0)" class="btns1 " title="black chair"><img
-                                        src="./app/images/furniture-detail-page/marron-chair.png" alt="black chair"></a>
-                            </li>
-                            <li><a href="javascript:void(0)" class="btns1 " title="black chair"><img
-                                        src="./app/images/furniture-detail-page/white-chair.png" alt="black chair"></a>
-                            </li>
-                            <li><a href="javascript:void(0)" class="btns1 active1" title="black chair"><img
-                                        src="./app/images/furniture-detail-page/red-chair.png" alt="black chair"></a>
-                            </li>
-                        </ul>
-                        <div class="counter">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                class="btn btn--addtocart">Add to Cart</button>
+          <!-- middel area end -->
+          <!-- right area start -->
+          <div class="col-md-12 col-lg-5 col-xl-5">
+            <div class="right__content">
+              <div class="right__content-title">
+                <h4>Armen Living Summer Chair</h4>
+                <h3>₹6,450</h3>
+                <p>Price incl. of all taxes</p>
+              </div>
+              <div class="detail-star">
+                <span class="detail-star-result"></span>
+              </div>
+              <ul class="right__content-desc">
+                <li>Brand: Studio Design</li>
+                <li>Reference: demo_3</li>
+                <li>In stock 191 Items</li>
+              </ul>
+              <p class="right__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <hr />
+              <h5>Choose Color</h5>
+              <ul class="right__content-img" id="myDIV">
+                <li>
+                  <a href="javascript:void(0)" class="btns1" title="black chair"
+                    ><img
+                      src="./app/images/furniture-detail-page/black-chair.png"
+                      alt="black chair"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="btns1" title="black chair"
+                    ><img
+                      src="./app/images/furniture-detail-page/marron-chair.png"
+                      alt="black chair"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="btns1" title="black chair"
+                    ><img
+                      src="./app/images/furniture-detail-page/white-chair.png"
+                      alt="black chair"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="btns1 active1"
+                    title="black chair"
+                    ><img
+                      src="./app/images/furniture-detail-page/red-chair.png"
+                      alt="black chair"
+                  /></a>
+                </li>
+              </ul>
+              <div class="counter">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="btn btn--addtocart"
+                >
+                  Add to Cart
+                </button>
 
-                            <div class="counter__content qty-container">
-                                <div class="counter__content-value">
-                                    <input type="text" name="qty" value="0" class="input-qty"></div>
-                                <button type="button" class="qty-btn-plus" title="increase the quantity"><span
-                                        class="icon-product-top-arrow"></span>
-                                </button>
+                <div class="counter__content qty-container">
+                  <div class="counter__content-value">
+                    <input type="text" name="qty" value="0" class="input-qty" />
+                  </div>
+                  <button
+                    type="button"
+                    class="qty-btn-plus"
+                    title="increase the quantity"
+                  >
+                    <span class="icon-product-top-arrow"></span>
+                  </button>
 
-                                <button type="button" class=" qty-btn-minus" title="decrease the quantity"><span
-                                        class="icon-product-bottom-arrow"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="right__content-socialicons">
-                            <a href="#" type="button" title="wish" class=""><span class="icon-wish"></span><span>Add to
-                                    Wishlist</span></a>
-                            <a href="#" title="share" class=""><span class="icon-product-share"></span><span>Share
-                                    this</span></a>
-                        </div>
-                    </div>
+                  <button
+                    type="button"
+                    class="qty-btn-minus"
+                    title="decrease the quantity"
+                  >
+                    <span class="icon-product-bottom-arrow"></span>
+                  </button>
                 </div>
-                <!-- right area end -->
-                <!-- Button trigger modal -->
-
-                <!-- Modal -->
-                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog inner__modal">
-                        <div class="modal-content  inner__modal-content">
-                            <div class="modal-header inner__modal-header">
-                                <h1 class="modal-title inner__modal-title" id="exampleModalLabel"> Product successfully
-                                    added to your shopping cart</h1>
-                                <button type="button" class="inner__modal-close" data-bs-dismiss="modal"
-                                    aria-label="Close"><span class="icon-close-button"></span></button>
-                            </div>
-                            <div class="modal-body inner__modal-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="inner__modal-img">
-                                            <img src="./app/images/furniture-detail-page/check-out.png"
-                                                alt="checkout-image">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="inner__modal-info">
-                                            <h3>Armen Living Summer Chair </h3>
-                                            <ul>
-                                                <li>Item: MB494</li>
-                                                <li> Size: 40X60 cm</li>
-                                                <li>Price: <span> ₹4,499</span> ₹3,825
-                                                    <select name="product" id="product">
-                                                        <option value="qty">QTY: 1</option>
-                                                        <option value="qty2">2</option>
-                                                        <option value="qty3">3</option>
-                                                        <option value="qty4">4</option>
-                                                        <option value="qty5">5</option>
-                                                    </select>
-                                                </li>
-                                            </ul>
-                                            <p>Threshold Delivery - additional cost per unit: ₹400.00
-                                                In-stock Usually ships in 1-7 business days.
-                                            </p>
-                                            <p>*Price does not include shipping and processing, gift wrap, discounts or
-                                                taxes
-                                            </p>
-                                            <hr>
-                                            <div>
-                                                <a href="./product-detail.html"
-                                                    class="inner__modal-content-btn">Checkout</a>
-                                                <a href="./furniture-list.html"
-                                                    class="inner__modal-content-btn">Continue Shopping</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="right__content-socialicons">
+                <a href="#" type="button" title="wish" class=""
+                  ><span class="icon-wish"></span
+                  ><span>Add to Wishlist</span></a
+                >
+                <a href="#" title="share" class=""
+                  ><span class="icon-product-share"></span
+                  ><span>Share this</span></a
+                >
+              </div>
             </div>
+          </div>
+          <!-- right area end -->
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog inner__modal">
+              <div class="modal-content inner__modal-content">
+                <div class="modal-header inner__modal-header">
+                  <h1
+                    class="modal-title inner__modal-title"
+                    id="exampleModalLabel"
+                  >
+                    Product successfully added to your shopping cart
+                  </h1>
+                  <button
+                    type="button"
+                    class="inner__modal-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span class="icon-close-button"></span>
+                  </button>
+                </div>
+                <div class="modal-body inner__modal-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="inner__modal-img">
+                        <img
+                          src="./app/images/furniture-detail-page/check-out.png"
+                          alt="checkout-image"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="inner__modal-info">
+                        <h3>Armen Living Summer Chair</h3>
+                        <ul>
+                          <li>Item: MB494</li>
+                          <li>Size: 40X60 cm</li>
+                          <li>
+                            Price: <span> ₹4,499</span> ₹3,825
+                            <select name="product" id="product">
+                              <option value="qty">QTY: 1</option>
+                              <option value="qty2">2</option>
+                              <option value="qty3">3</option>
+                              <option value="qty4">4</option>
+                              <option value="qty5">5</option>
+                            </select>
+                          </li>
+                        </ul>
+                        <p>
+                          Threshold Delivery - additional cost per unit: ₹400.00
+                          In-stock Usually ships in 1-7 business days.
+                        </p>
+                        <p>
+                          *Price does not include shipping and processing, gift
+                          wrap, discounts or taxes
+                        </p>
+                        <hr />
+                        <div>
+                          <a
+                            href="./product-detail.html"
+                            class="inner__modal-content-btn"
+                            >Checkout</a
+                          >
+                          <a
+                            href="./furniture-list.html"
+                            class="inner__modal-content-btn"
+                            >Continue Shopping</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Inner detail section end -->
     <!-- tabs section start -->
     <section class="add-info">
-        <div class="container">
-            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link add-info-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">DESCRIPTION</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link add-info-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">ADDITIONAL INFORMATION</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link add-info-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">REVIEWS (5)</button>
-                </li>
-            </ul>
-            <hr>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active add-info-text" id="pills-home" role="tabpanel"
-                    aria-labelledby="pills-home-tab" tabindex="0">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra pharetra massa.
-                        Tincidunt augue interdum velit euismod in pellentesque massa placerat. Pharetra diam sit amet
-                        nisl suscipit adipiscing Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Nullam
-                        eget felis eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris. Facilisi nullam vehicula
-                        ipsum.</p>
-                </div>
-                <div class="tab-pane fade add-info-text" id="pills-profile" role="tabpanel"
-                    aria-labelledby="pills-profile-tab" tabindex="0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra pharetra massa.
-                        Tincidunt augue interdum velit euismod in pellentesque massa placerat. Pharetra diam sit amet
-                        nisl suscipit adipiscing Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Nullam
-                        eget felis eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris. Facilisi nullam vehicula
-                        ipsum.</p>
-                </div>
-                <div class="tab-pane fade add-info-text" id="pills-contact" role="tabpanel"
-                    aria-labelledby="pills-contact-tab" tabindex="0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra pharetra massa.
-                        Tincidunt augue interdum velit euismod in pellentesque massa placerat. Pharetra diam sit amet
-                        nisl suscipit adipiscing Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Nullam
-                        eget felis eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris. Facilisi nullam vehicula
-                        ipsum.</p>
-                </div>
-            </div>
+      <div class="container">
+        <ul
+          class="nav nav-pills justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link add-info-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              DESCRIPTION
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link add-info-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              ADDITIONAL INFORMATION
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link add-info-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              REVIEWS (5)
+            </button>
+          </li>
+        </ul>
+        <hr />
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active add-info-text"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+              egestas sed tempus urna et pharetra pharetra massa. Tincidunt
+              augue interdum velit euismod in pellentesque massa placerat.
+              Pharetra diam sit amet nisl suscipit adipiscing Ut sem viverra
+              aliquet eget sit amet tellus cras adipiscing. Nullam eget felis
+              eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris.
+              Facilisi nullam vehicula ipsum.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade add-info-text"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+              egestas sed tempus urna et pharetra pharetra massa. Tincidunt
+              augue interdum velit euismod in pellentesque massa placerat.
+              Pharetra diam sit amet nisl suscipit adipiscing Ut sem viverra
+              aliquet eget sit amet tellus cras adipiscing. Nullam eget felis
+              eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris.
+              Facilisi nullam vehicula ipsum.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade add-info-text"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
+              egestas sed tempus urna et pharetra pharetra massa. Tincidunt
+              augue interdum velit euismod in pellentesque massa placerat.
+              Pharetra diam sit amet nisl suscipit adipiscing Ut sem viverra
+              aliquet eget sit amet tellus cras adipiscing. Nullam eget felis
+              eget nunc lobortis mattis.Nisi vitae suscipit tellus mauris.
+              Facilisi nullam vehicula ipsum.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- tabs section end -->
     <!--Like section start-->
     <section class="trending section">
-        <div class="container">
-            <div class="section__heading">
-                <h2>YOU MIGHT ALSO LIKE YOU</h2>
-                <p>From glam vibes to laid-back comfort, these sofas all have one thing in common—and that’s amazing
-                    value.
-                </p>
-            </div>
-            <div class="row justify-content-center trending__wrapper">
-                <div class="col-auto trending__content">
-                    <div class="card trending__card">
-                        <a href="javascript:void(0)" title="wooden chair"> <img src="./app/images/t-chair.png"
-                                alt="chair image"></a>
-                        <div class="card-body">
-                            <a href="javascript:void(0)" title="wooden chair">
-                                <h5 class="card-title">White Wooden Chair</h5>
-                            </a>
-                            <p class="card-text">₹1200.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto trending__content">
-                    <div class="card trending__card">
-                        <a href="javascript:void(0)" title="wooden chair"> <img src="./app/images/t-sofa.png"
-                                alt="chair image"></a>
-                        <div class="card-body">
-                            <a href="javascript:void(0)" title="wooden chair">
-                                <h5 class="card-title">White Wooden Chair</h5>
-                            </a>
-                            <p class="card-text">₹1200.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto trending__content">
-                    <div class="card trending__card">
-                        <a href="javascript:void(0)" title="wooden chair"><img src="./app/images/t-seatchair.png"
-                                alt="chair image"></a>
-                        <div class="card-body">
-                            <a href="javascript:void(0)" title="wooden chair">
-                                <h5 class="card-title">White Wooden Chair</h5>
-                            </a>
-                            <p class="card-text">₹1200.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto trending__content">
-                    <div class="card trending__card">
-                        <a href="javascript:void(0)" title="wooden chair"> <img src="./app/images/t-watch.png"
-                                alt="chair image"></a>
-                        <div class="card-body">
-                            <a href="javascript:void(0)" title="wooden chair">
-                                <h5 class="card-title">White Wooden Chair</h5>
-                            </a>
-                            <p class="card-text">₹1200.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto trending__content">
-                    <div class="card trending__card">
-                        <a href="javascript:void(0)" title="wooden chair"> <img src="./app/images/t-lamp.png"
-                                alt="chair image"></a>
-                        <div class="card-body">
-                            <a href="javascript:void(0)" title="wooden chair">
-                                <h5 class="card-title">White Wooden Chair</h5>
-                            </a>
-                            <p class="card-text">₹1200.00</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section__heading">
+          <h2>YOU MIGHT ALSO LIKE YOU</h2>
+          <p>
+            From glam vibes to laid-back comfort, these sofas all have one thing
+            in common—and that’s amazing value.
+          </p>
         </div>
+        <div class="row justify-content-center trending__wrapper">
+          <div class="col-auto trending__content">
+            <div class="card trending__card">
+              <a href="javascript:void(0)" title="wooden chair">
+                <img src="./app/images/t-chair.png" alt="chair image"
+              /></a>
+              <div class="card-body">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <h5 class="card-title">White Wooden Chair</h5>
+                </a>
+                <p class="card-text">₹1200.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto trending__content">
+            <div class="card trending__card">
+              <a href="javascript:void(0)" title="wooden chair">
+                <img src="./app/images/t-sofa.png" alt="chair image"
+              /></a>
+              <div class="card-body">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <h5 class="card-title">White Wooden Chair</h5>
+                </a>
+                <p class="card-text">₹1200.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto trending__content">
+            <div class="card trending__card">
+              <a href="javascript:void(0)" title="wooden chair"
+                ><img src="./app/images/t-seatchair.png" alt="chair image"
+              /></a>
+              <div class="card-body">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <h5 class="card-title">White Wooden Chair</h5>
+                </a>
+                <p class="card-text">₹1200.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto trending__content">
+            <div class="card trending__card">
+              <a href="javascript:void(0)" title="wooden chair">
+                <img src="./app/images/t-watch.png" alt="chair image"
+              /></a>
+              <div class="card-body">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <h5 class="card-title">White Wooden Chair</h5>
+                </a>
+                <p class="card-text">₹1200.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto trending__content">
+            <div class="card trending__card">
+              <a href="javascript:void(0)" title="wooden chair">
+                <img src="./app/images/t-lamp.png" alt="chair image"
+              /></a>
+              <div class="card-body">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <h5 class="card-title">White Wooden Chair</h5>
+                </a>
+                <p class="card-text">₹1200.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--Like section end-->
     <!-- Main section end -->
     <!-- Footer section start -->
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
-                    <a class="navbar-brand" href="#"><img src="./app/images/logo.png" alt="header logo"></a>
-                    <form action="" class="footer__form">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Youre Email address" class="footer__form-input" required>
-                        <button type="submit" value="send" class="btn btn--subscribe">Subscribe</button>
-                    </form>
-                    <div class="footer__info">
-                        <p>Contact Info</p>
-                        <div class="d-flex gap-4">
-                            <a href="tel:+4733378901">+47 333 78 901</a>|<a href="tel:+4733378901">+47 333 78 901</a>
-                        </div>
-                        <address>
-                            17 Princess Road, London, Greater London NW1 8JR, UK
-                        </address>
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0)" title="facebook"><i
-                                        class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li><a href="" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 footer__categories">
-                    <div>
-                        <h2 class="footer__title ">Categories</h2>
-                        <ul class="footer__list">
-                            <li><a href="javascript:void(0)"> Popular</a></li>
-                            <li><a href="javascript:void(0)"> Chair</a></li>
-                            <li><a href="javascript:void(0)"> sofa</a></li>
-                            <li><a href="javascript:void(0)"> cupboard</a></li>
-                            <li><a href="javascript:void(0)"> Lamp</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <h2 class="footer__title">Customer servise</h2>
-                    <ul class="footer__list">
-                        <li><a href="javascript:void(0)"> my account</a></li>
-                        <li><a href="javascript:void(0)"> Discount</a></li>
-                        <li><a href="javascript:void(0)"> Return</a></li>
-                        <li><a href="javascript:void(0)"> Order history</a></li>
-                        <li><a href="javascript:void(0)"> order tracking</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <h2 class="footer__title">Furniture</h2>
-                    <ul class="footer__list">
-                        <li><a href="javascript:void(0)"> Living Room Furniture</a></li>
-                        <li><a href="javascript:void(0)"> Bar Furniture</a></li>
-                        <li><a href="javascript:void(0)"> Bedroom Furniture</a></li>
-                        <li><a href="javascript:void(0)"> Kids Furniture</a></li>
-                        <li><a href="javascript:void(0)"> Accent Furniture</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <h2 class="footer__title">Useful Links</h2>
-                    <ul class="footer__list">
-                        <li><a href="javascript:void(0)"> Promotions</a></li>
-                        <li><a href="javascript:void(0)"> Sitemap</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
+            <a class="navbar-brand" href="#"
+              ><img src="./app/images/logo.png" alt="header logo"
+            /></a>
+            <form action="" class="footer__form">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Youre Email address"
+                class="footer__form-input"
+                required
+              />
+              <button type="submit" value="send" class="btn btn--subscribe">
+                Subscribe
+              </button>
+            </form>
+            <div class="footer__info">
+              <p>Contact Info</p>
+              <div class="d-flex gap-4">
+                <a href="tel:+4733378901">+47 333 78 901</a>|<a
+                  href="tel:+4733378901"
+                  >+47 333 78 901</a
+                >
+              </div>
+              <address>
+                17 Princess Road, London, Greater London NW1 8JR, UK
+              </address>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" title="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" title="instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" title="twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 footer__categories">
+            <div>
+              <h2 class="footer__title">Categories</h2>
+              <ul class="footer__list">
+                <li><a href="javascript:void(0)"> Popular</a></li>
+                <li><a href="javascript:void(0)"> Chair</a></li>
+                <li><a href="javascript:void(0)"> sofa</a></li>
+                <li><a href="javascript:void(0)"> cupboard</a></li>
+                <li><a href="javascript:void(0)"> Lamp</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Customer servise</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> my account</a></li>
+              <li><a href="javascript:void(0)"> Discount</a></li>
+              <li><a href="javascript:void(0)"> Return</a></li>
+              <li><a href="javascript:void(0)"> Order history</a></li>
+              <li><a href="javascript:void(0)"> order tracking</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Furniture</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> Living Room Furniture</a></li>
+              <li><a href="javascript:void(0)"> Bar Furniture</a></li>
+              <li><a href="javascript:void(0)"> Bedroom Furniture</a></li>
+              <li><a href="javascript:void(0)"> Kids Furniture</a></li>
+              <li><a href="javascript:void(0)"> Accent Furniture</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Useful Links</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> Promotions</a></li>
+              <li><a href="javascript:void(0)"> Sitemap</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__copyright">
-            <a href="javascript:void(0)">©Neostore - All Rights Reserved</a>
-        </div>
+      </div>
+      <div class="footer__copyright">
+        <a href="javascript:void(0)">©Neostore - All Rights Reserved</a>
+      </div>
     </footer>
     <!-- Footer section end -->
     <!--Js links start-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="./app/js/product-detail.js"></script>
 
-    <script>
-
-    </script>
+    <script></script>
     <!--Js links end-->
-</body>
-
+  </body>
 </html>

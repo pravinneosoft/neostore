@@ -8,3 +8,14 @@
     // background-image: url('#{$images}/svg_icons/delete-button.svg');
     background: transparent url('#{$images}/svg_icons/delete-button.svg') center/1em auto no-repeat;
 }
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+     color: #fff; 
+     background-color: $color-red; 
+     border-color: transparent; 
+}
+.btn:focus-visible {
+    color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow:none;
+}

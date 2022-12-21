@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css"
+    />
+
+    <link rel="stylesheet" href="app/css/style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Header section start -->
+    <header class="header" id="my-header">
+      <!--Header top area start-->
+      <div class="header__top">
+        <div class="container">
+          <h3>
+            <strong> MARKDOWNS</strong>:
+            <a href="javascript:void(0)"> UP TO 70% OFF Shop Now</a>
+          </h3>
+        </div>
+      </div>
+      <!--Header top area end-->
+      <!--Header bottom area start-->
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__nav">
+            <!-- Brand logo start -->
+            <a class="navbar-brand" href="#"
+              ><img src="./app/images/logo.png" alt="neostore logo"
+            /></a>
+            <!-- Brand logo end -->
+            <!-- Site navigations center -->
+            <div class="header__center" id="mySidenav">
+              <ul>
+                <li>
+                  <a class="#" href="#">Home</a>
+                  <a href="javascript:void(0)" class="header__center-close"
+                    >&times;</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Furniture</a>
+                </li>
+                <li>
+                  <a href="#">Home Decore</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Sales</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Site navigations center -->
+            <!-- Header right area start -->
+            <div class="header__right">
+              <form class="d-flex header__form" role="search">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search ..."
+                  aria-label="Search"
+                />
+                <button class="btn--search btn" type="button">
+                  <span class="icon-search"></span>
+                </button>
+              </form>
+              <ul class="header__icons">
+                <li>
+                  <a href="javascript:void(0)" title="contact"
+                    ><span class="icon-home"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="wish"
+                    ><span class="icon-wish"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" title="add to cart"
+                    ><span class="icon-cart1"></span
+                  ></a>
+                </li>
+                <li>
+                  <button class="navbar-toggler open-header" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- Header right area end -->
+          </nav>
+        </div>
+      </div>
+
+      <!--Header bottom area end-->
+    </header>
+    <!-- Header section end -->
+    <!-- Main section start -->
+    <main>
+      <!-- Banner section start -->
+      <section class="inner-banner">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item">
+                <a href="./index.html" title="home page">Home</a>
+              </li>
+              <li class="breadcrumb-item breadcrumb-active" aria-current="page">
+                Cart
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="inner-banner-overlay"></div>
+      </section>
+      <!-- Banner section end -->
+      <section class="cart">
+        <div class="container">
+          <div class="row cart-wrapper">
+            <!-- cart left area start -->
+            <div class="col-md-8">
+              <div class="cart__left">
+                <div class="card cart__card">
+                  <div class="row no-gutters">
+                    <div class="col-sm-6 col-md-5 col-lg-3">
+                      <img
+                        src="./app/images/cart/cart-bg.jpg"
+                        class="w-100"
+                        alt="cart img"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-9">
+                      <div class="card-body">
+                        <h5 class="card-title cart__card-title">
+                          Minimal Stand
+                        </h5>
+                        <div class="cart__card-price">
+                          <span>₹4,499</span><span>₹3,825</span>
+                        </div>
+                        <p class="card-text">you save: ₹674 (20% )</p>
+                        <div class="cart__card-wish">
+                          <select name="product" id="product">
+                            <option value="qty">QTY: 1</option>
+                            <option value="qty2">2</option>
+                            <option value="qty3">3</option>
+                            <option value="qty4">4</option>
+                            <option value="qty5">5</option>
+                          </select>
+                          <a href="#" class="cart__card-link"
+                            ><span class="icon-product-wish"></span> Move to
+                            Wishlist</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="cart__card-close"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    title="close the card"
+                  >
+                    <span class="icon-close-button"></span>
+                  </button>
+                </div>
+                <div class="card cart__card">
+                  <div class="row no-gutters">
+                    <div class="col-sm-6 col-md-5 col-lg-3">
+                      <img
+                        src="./app/images/cart/cart-bg.jpg"
+                        class="w-100"
+                        alt="cart img"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-9">
+                      <div class="card-body cart__card-body">
+                        <h5 class="card-title cart__card-title">
+                          Minimal Stand
+                        </h5>
+                        <div class="cart__card-price">
+                          <span>₹4,499</span><span>₹3,825</span>
+                        </div>
+                        <p class="card-text">you save: ₹674 (20% )</p>
+                        <div class="cart__card-wish">
+                          <select name="product" id="product">
+                            <option value="qty">QTY: 1</option>
+                            <option value="qty2">2</option>
+                            <option value="qty3">3</option>
+                            <option value="qty4">4</option>
+                            <option value="qty5">5</option>
+                          </select>
+                          <a href="#" class="cart__card-link"
+                            ><span class="icon-product-wish"></span> Move to
+                            Wishlist</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="cart__card-close"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    title="close the card"
+                  >
+                    <span class="icon-close-button"></span>
+                  </button>
+                </div>
+                <div class="card cart__card" id="hide">
+                  <div class="row no-gutters">
+                    <div class="col-sm-6 col-md-5 col-lg-3">
+                      <img
+                        src="./app/images/cart/cart-bg.jpg"
+                        class="w-100"
+                        alt="cart img"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-9">
+                      <div class="card-body cart__card-body">
+                        <h5 class="card-title cart__card-title">
+                          Minimal Stand
+                        </h5>
+                        <div class="cart__card-price">
+                          <span>₹4,499</span><span>₹3,825</span>
+                        </div>
+                        <p class="card-text">you save: ₹674 (20% )</p>
+                        <div class="cart__card-wish">
+                          <select name="product" id="product">
+                            <option value="qty">QTY: 1</option>
+                            <option value="qty2">2</option>
+                            <option value="qty3">3</option>
+                            <option value="qty4">4</option>
+                            <option value="qty5">5</option>
+                          </select>
+                          <a href="#" class="cart__card-link"
+                            ><span class="icon-product-wish"></span> Move to
+                            Wishlist</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="cart__card-close"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    title="close the card"
+                  >
+                    <span class="icon-close-button"></span>
+                  </button>
+                </div>
+                <div class="card cart__card" id="hide">
+                  <div class="row no-gutters">
+                    <div class="col-sm-6 col-md-5 col-lg-3">
+                      <img
+                        src="./app/images/cart/cart-bg.jpg"
+                        class="w-100"
+                        alt="cart img"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-9">
+                      <div class="card-body cart__card-body">
+                        <h5 class="card-title cart__card-title">
+                          Minimal Stand
+                        </h5>
+                        <div class="cart__card-price">
+                          <span>₹4,499</span><span>₹3,825</span>
+                        </div>
+                        <p class="card-text">you save: ₹674 (20% )</p>
+                        <div class="cart__card-wish">
+                          <select name="product" id="product">
+                            <option value="qty">QTY: 1</option>
+                            <option value="qty2">2</option>
+                            <option value="qty3">3</option>
+                            <option value="qty4">4</option>
+                            <option value="qty5">5</option>
+                          </select>
+                          <a href="#" class="cart__card-link"
+                            ><span class="icon-product-wish"></span> Move to
+                            Wishlist</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="cart__card-close"
+                    title="close the card"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <span class="icon-close-button"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- cart left area end -->
+            <!-- cart right area start -->
+            <div class="col-md-4">
+              <div class="cart__right">
+                <div class="checkout-card">
+                  <h5>Apply coupon</h5>
+                  <div class="checkout-card_details">
+                    <ul>
+                      <li class="checkout-card_list">
+                        <span>Apply Coupon</span> <a href="#">View Coupon</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h5>Price Detail</h5>
+                  <div class="checkout-card_details">
+                    <ul>
+                      <li><span>Total Price</span><span>₹4,650</span></li>
+                      <li><span>Discount on Price</span><span>-₹674</span></li>
+                      <li><span>Coupon</span><span>₹0.00</span></li>
+                      <li><span>Shipping Charges</span><span>₹0.00</span></li>
+                    </ul>
+                    <button class="checkout-card_total">
+                      <span>Total</span><span>₹4,650</span>
+                    </button>
+                  </div>
+                  <div>
+                    <a
+                      href="./product-detail.html"
+                      class="inner__modal-content-btn w-100"
+                      >Checkout</a
+                    >
+                    <a
+                      href="./furniture-list.html"
+                      class="inner__modal-content-btn w-100"
+                      >Continue Shopping</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cart right area end -->
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog bg-transparent">
+            <div class="modal-content cart__modal-content">
+              <div class="modal-header cart__modal-header">
+                <button
+                  type="button"
+                  class="cart__card-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="icon-close-button"></span>
+                </button>
+              </div>
+              <div class="modal-body cart__modal-body">
+                <img
+                  src="./app/images/cart/cart-modal.jpg"
+                  alt="cart-madal-image"
+                />
+                <div class="cart__modal-text">
+                  <p>Remove from cart?</p>
+                  <p>You can save product to your wishlist to use later.</p>
+                </div>
+              </div>
+              <div class="modal-footer cart__modal-footer">
+                <button
+                  type="button"
+                  onclick="hidecard()"
+                  class="btn btn--remove"
+                >
+                  Remove
+                </button>
+                <a href="#" class="btn btn--wish">Move to wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending section start -->
+      <section class="trending section">
+        <div class="container">
+          <div class="section__heading">
+            <h2>YOU MIGHT ALSO LIKE YOU</h2>
+            <p>
+              From glam vibes to laid-back comfort, these sofas all have one
+              thing in common—and that’s amazing value.
+            </p>
+          </div>
+          <div class="row justify-content-center trending__wrapper">
+            <div class="col-auto trending__content">
+              <div class="card trending__card">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/t-chair.png" alt="chair image"
+                /></a>
+                <div class="card-body">
+                  <a href="javascript:void(0)" title="wooden chair">
+                    <h5 class="card-title">White Wooden Chair</h5>
+                  </a>
+                  <p class="card-text">₹1200.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto trending__content">
+              <div class="card trending__card">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/t-sofa.png" alt="chair image"
+                /></a>
+                <div class="card-body">
+                  <a href="javascript:void(0)" title="wooden chair">
+                    <h5 class="card-title">White Wooden Chair</h5>
+                  </a>
+                  <p class="card-text">₹1200.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto trending__content">
+              <div class="card trending__card">
+                <a href="javascript:void(0)" title="wooden chair"
+                  ><img src="./app/images/t-seatchair.png" alt="chair image"
+                /></a>
+                <div class="card-body">
+                  <a href="javascript:void(0)" title="wooden chair">
+                    <h5 class="card-title">White Wooden Chair</h5>
+                  </a>
+                  <p class="card-text">₹1200.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto trending__content">
+              <div class="card trending__card">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/t-watch.png" alt="chair image"
+                /></a>
+                <div class="card-body">
+                  <a href="javascript:void(0)" title="wooden chair">
+                    <h5 class="card-title">White Wooden Chair</h5>
+                  </a>
+                  <p class="card-text">₹1200.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto trending__content">
+              <div class="card trending__card">
+                <a href="javascript:void(0)" title="wooden chair">
+                  <img src="./app/images/t-lamp.png" alt="chair image"
+                /></a>
+                <div class="card-body">
+                  <a href="javascript:void(0)" title="wooden chair">
+                    <h5 class="card-title">White Wooden Chair</h5>
+                  </a>
+                  <p class="card-text">₹1200.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending section end -->
+    </main>
+    <!-- Main section end -->
+    <!-- Footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
+            <a class="navbar-brand" href="#"
+              ><img src="./app/images/logo.png" alt="header logo"
+            /></a>
+            <form action="" class="footer__form">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Youre Email address"
+                class="footer__form-input"
+                required
+              />
+              <button type="submit" value="send" class="btn btn--subscribe">
+                Subscribe
+              </button>
+            </form>
+            <div class="footer__info">
+              <p>Contact Info</p>
+              <div class="d-flex gap-4">
+                <a href="tel:+4733378901">+47 333 78 901</a>|<a
+                  href="tel:+4733378901"
+                  >+47 333 78 901</a
+                >
+              </div>
+              <address>
+                17 Princess Road, London, Greater London NW1 8JR, UK
+              </address>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" title="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" title="instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" title="twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 footer__categories">
+            <div>
+              <h2 class="footer__title">Categories</h2>
+              <ul class="footer__list">
+                <li><a href="javascript:void(0)"> Popular</a></li>
+                <li><a href="javascript:void(0)"> Chair</a></li>
+                <li><a href="javascript:void(0)"> sofa</a></li>
+                <li><a href="javascript:void(0)"> cupboard</a></li>
+                <li><a href="javascript:void(0)"> Lamp</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Customer servise</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> my account</a></li>
+              <li><a href="javascript:void(0)"> Discount</a></li>
+              <li><a href="javascript:void(0)"> Return</a></li>
+              <li><a href="javascript:void(0)"> Order history</a></li>
+              <li><a href="javascript:void(0)"> order tracking</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Furniture</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> Living Room Furniture</a></li>
+              <li><a href="javascript:void(0)"> Bar Furniture</a></li>
+              <li><a href="javascript:void(0)"> Bedroom Furniture</a></li>
+              <li><a href="javascript:void(0)"> Kids Furniture</a></li>
+              <li><a href="javascript:void(0)"> Accent Furniture</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h2 class="footer__title">Useful Links</h2>
+            <ul class="footer__list">
+              <li><a href="javascript:void(0)"> Promotions</a></li>
+              <li><a href="javascript:void(0)"> Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <a href="javascript:void(0)">©Neostore - All Rights Reserved</a>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <!--Js links start-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="./app/js/cart.js"></script>
+
+    <script></script>
+    <!--Js links end-->
+  </body>
+</html>
