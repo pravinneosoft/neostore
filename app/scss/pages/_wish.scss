@@ -40,6 +40,11 @@
         button {
             background-color: transparent;
             border: 0;
+            &:hover{
+                span{
+                    color: $color-darkred;
+                }
+            }
         }
     }
 

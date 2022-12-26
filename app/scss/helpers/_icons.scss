@@ -409,3 +409,23 @@
     content: $icon-down; 
   }
 }
+.icon-address {
+  &:before {
+    content: $icon-address; 
+  }
+}
+.icon-payment {
+  &:before {
+    content: $icon-payment; 
+  }
+}
+.icon-billings {
+  &:before {
+    content: $icon-billings; 
+  }
+}
+.icon-shipping {
+  &:before {
+    content: $icon-shipping; 
+  }
+}
