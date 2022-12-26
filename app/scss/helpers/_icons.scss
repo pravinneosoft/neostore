@@ -1,17 +1,19 @@
-//icomoon icons start
+
+
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?i3ey36');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?i3ey36#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?i3ey36') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?i3ey36') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?i3ey36##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gg5log');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gg5log#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gg5log') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gg5log') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gg5log##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
   font-style: normal;
@@ -19,11 +21,32 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-address {
+  &:before {
+    content: $icon-address; 
+  }
+}
+.icon-payment {
+  &:before {
+    content: $icon-payment; 
+  }
+}
+.icon-billings {
+  &:before {
+    content: $icon-billings; 
+  }
+}
+.icon-shipping1 {
+  &:before {
+    content: $icon-shipping1; 
+  }
+}
 .icon-product-grid {
   &:before {
     content: $icon-product-grid;     
@@ -184,248 +207,4 @@
     color: #fff;
   }
 }
-.icon-location {
-  &:before {
-    content: $icon-location; 
-  }
-}
-.icon-private {
-  &:before {
-    content: $icon-private; 
-  }
-}
-.icon-gift-registry {
-  &:before {
-    content: $icon-gift-registry; 
-  }
-}
-.icon-present {
-  &:before {
-    content: $icon-present; 
-  }
-}
-.icon-star-empty {
-  &:before {
-    content: $icon-star-empty; 
-  }
-}
-.icon-download {
-  &:before {
-    content: $icon-download; 
-  }
-}
-.icon-undo {
-  &:before {
-    content: $icon-undo; 
-  }
-}
-.icon-print {
-  &:before {
-    content: $icon-print; 
-  }
-}
-.icon-help {
-  &:before {
-    content: $icon-help; 
-  }
-}
-.icon-success {
-  &:before {
-    content: $icon-success; 
-  }
-}
-.icon-error {
-  &:before {
-    content: $icon-error; 
-  }
-}
-.icon-account {
-  &:before {
-    content: $icon-account; 
-  }
-}
-.icon-edit {
-  &:before {
-    content: $icon-edit; 
-  }
-}
-.icon-wishlist-full {
-  &:before {
-    content: $icon-wishlist-full; 
-  }
-}
-.icon-warning {
-  &:before {
-    content: $icon-warning; 
-  }
-}
-.icon-update {
-  &:before {
-    content: $icon-update; 
-  }
-}
-.icon-trash {
-  &:before {
-    content: $icon-trash; 
-  }
-}
-.icon-star {
-  &:before {
-    content: $icon-star; 
-  }
-}
-.icon-settings {
-  &:before {
-    content: $icon-settings; 
-  }
-}
-.icon-pointer-down {
-  &:before {
-    content: $icon-pointer-down; 
-  }
-}
-.icon-next {
-  &:before {
-    content: $icon-next; 
-  }
-}
-.icon-menu {
-  &:before {
-    content: $icon-menu; 
-  }
-}
-.icon-location1 {
-  &:before {
-    content: $icon-location1; 
-  }
-}
-.icon-list {
-  &:before {
-    content: $icon-list; 
-  }
-}
-.icon-info {
-  &:before {
-    content: $icon-info; 
-  }
-}
-.icon-grid {
-  &:before {
-    content: $icon-grid; 
-  }
-}
-.icon-minus {
-  &:before {
-    content: $icon-minus; 
-  }
-}
-.icon-checkmark {
-  &:before {
-    content: $icon-checkmark; 
-  }
-}
-.icon-cart {
-  &:before {
-    content: $icon-cart; 
-  }
-}
-.icon-calendar {
-  &:before {
-    content: $icon-calendar; 
-  }
-}
-.icon-arrow-up {
-  &:before {
-    content: $icon-arrow-up; 
-  }
-}
-.icon-arrow-down {
-  &:before {
-    content: $icon-arrow-down; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
-  }
-}
-.icon-remove {
-  &:before {
-    content: $icon-remove; 
-  }
-}
-.icon-prev {
-  &:before {
-    content: $icon-prev; 
-  }
-}
-.icon-pointer-up {
-  &:before {
-    content: $icon-pointer-up; 
-  }
-}
-.icon-pointer-right {
-  &:before {
-    content: $icon-pointer-right; 
-  }
-}
-.icon-pointer-left {
-  &:before {
-    content: $icon-pointer-left; 
-  }
-}
-.icon-flag {
-  &:before {
-    content: $icon-flag; 
-  }
-}
-.icon-expand {
-  &:before {
-    content: $icon-expand; 
-  }
-}
-.icon-envelope {
-  &:before {
-    content: $icon-envelope; 
-  }
-}
-.icon-compare-full {
-  &:before {
-    content: $icon-compare-full; 
-  }
-}
-.icon-comment {
-  &:before {
-    content: $icon-comment; 
-  }
-}
-.icon-up {
-  &:before {
-    content: $icon-up; 
-  }
-}
-.icon-down {
-  &:before {
-    content: $icon-down; 
-  }
-}
-.icon-address {
-  &:before {
-    content: $icon-address; 
-  }
-}
-.icon-payment {
-  &:before {
-    content: $icon-payment; 
-  }
-}
-.icon-billings {
-  &:before {
-    content: $icon-billings; 
-  }
-}
-.icon-shipping {
-  &:before {
-    content: $icon-shipping; 
-  }
-}
+

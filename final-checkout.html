@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout page</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -131,147 +131,210 @@
     </section>
     <section class="address">
       <div class="container">
-      <header>
-        <nav class="address__nav">
-          <ul>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-address"></span>
-              </div>
-              <span>Address</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-shipping1"></span>
-              </div>
-              <span>Shipping</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-billings"></span>
-              </div>
-              <span>Billing</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-payment"></span>
-              </div>
-              <span>Payment</span>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+          <nav class="address__nav">
+            <ul>
+              <li>
+                <div class="address__nav-icons">
+                  <span class="icon-address"></span>
+                </div>
+                <span>Address</span>
+              </li>
+              <li>
+                <div class="address__nav-icons">
+                  <span class="icon-shipping1"></span>
+                </div>
+                <span>Shipping</span>
+              </li>
+              <li>
+                <div class="address__nav-icons">
+                  <span class="icon-billings"></span>
+                </div>
+                <span>Billing</span>
+              </li>
+              <li>
+                <div class="address__nav-icons">
+                  <span class="icon-payment"></span>
+                </div>
+                <span>Payment</span>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-      <div class="row cart-wrapper">
-        <!-- cart left area start -->
-        <div class="col-md-8">
-          <ul>
-            <li>
-         <div class="address__left">
-          <div class="address__shipping">
-            <div class="address__shipping-title"><h3>1. Shipping address</h3></div>
-            <form class="address__shipping-form">
-              <div class="row">
-              <div class="col-md-6 form-field">
-                <input type="text" class="form-control"placeholder="Enter full name" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="number" class="form-control"placeholder="Enter Phone no" id="exampleInputPassword1">
-              </div>
-              <div class="col-md-12 form-field">
-                <input type="text" class="form-control"placeholder="Enter Address line 1" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text"placeholder="Enter Landmark" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text" class="form-control"placeholder="Enter City" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="number" class="form-control"placeholder="Enter Pincode" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text"placeholder="Enter State" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="col-md-12">
-                <button id="buttonID"class="get-location"title="current location" onClick="getLocation()">
-                  <i class="fa-solid fa-location-dot"></i>Locate on map
-            </button>
+        <div class="row cart-wrapper">
+          <!-- cart left area start -->
+          <div class="col-md-8">
+            <ul>
+              <li>
+                <div class="address__left">
+                  <div class="address__shipping">
+                    <div class="address__shipping-title">
+                      <h3>1. Shipping address</h3>
+                    </div>
+                    <div class="address__shipping-detail">
+                      <address>
+                        111, Rustomjee Tower, Near Inorbit mall ,Malad - west.
+                        Mumbai - 400064.
+                      </address>
+                      <button>
+                        <i class="fa-sharp fa-solid fa-pen"></i> Edit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="address__shipping">
+                  <div class="address__shipping-title">
+                    <h3>2. Shipping method</h3>
+                  </div>
+                  <div class="card cart__card ps-0 border-0">
+                    <div class="row no-gutters">
+                      <div class="col-sm-6 col-md-5 col-lg-3">
+                        <img
+                          src="./app/images/cart/cart-bg.jpg"
+                          class="w-100"
+                          alt="cart img"
+                        />
+                      </div>
+                      <div class="col-sm-6 col-md-7 col-lg-5">
+                        <div class="card-body ps-0">
+                          <h5 class="card-title cart__card-title">
+                            Minimal Stand
+                          </h5>
+                          <div class="cart__card-price">
+                            <span>₹4,499</span><span>₹3,825</span>
+                          </div>
+                          <p class="card-text">you save: ₹674 (20% )</p>
+                          <div class="address__shipping-select">
+                            <select name="product" id="product">
+                              <option value="qty">QTY: 1</option>
+                              <option value="qty2">2</option>
+                              <option value="qty3">3</option>
+                              <option value="qty4">4</option>
+                              <option value="qty5">5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <form action="" class="address__shipping-form">
+                          <label for="dilevery-option"
+                            >Select a Delivery option</label
+                          >
+                          <select name="dilevery-option" id="dilevery-option">
+                            <option value="qty">Home Delivery</option>
+                            <option value="qty2">office Delivery</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="address__shipping">
+                  <div class="address__shipping-title">
+                    <h3>3. Billing address</h3>
+                  </div>
+                  <div class="address__shipping-detail">
+                    <form>
+                      <address>
+                        111, Rustomjee Tower, Near Inorbit mall ,Malad - west.
+                        Mumbai - 400064.
+                      </address>
+                      <div class="inner-checkbox">
+                        <input type="checkbox" id="shipping-address" />
+                        <label for="shipping-address">
+                            Same as Shipping Address
+                        </label>
+                      </div>
+                      <div class="address__shipping-form">
+                      <div class="row">
+                        <div class="col-md-6 form-field">
+                          <input type="text" class="form-control"placeholder="Enter full name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 form-field">
+                          <input type="number" class="form-control"placeholder="Enter Phone no" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-md-12 form-field">
+                          <input type="text" class="form-control"placeholder="Enter Address line 1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 form-field">
+                          <input type="text"placeholder="Enter Landmark" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 form-field">
+                          <input type="text" class="form-control"placeholder="Enter City" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 form-field">
+                          <input type="number" class="form-control"placeholder="Enter Pincode" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 form-field">
+                          <input type="text"placeholder="Enter State" class="form-control" id="exampleInputPassword1">
+                        </div>
+                       
+                      </div>
+                      </div>
+                    </form>
+                                     </div>
+                </div>
+              </li>
+              <li>
+                <div class="address__shipping">
+                  <div class="address__shipping-title"><h3>4. Payment</h3></div>
+<div class="payment">
+    
+</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- cart left area end -->
+          <!-- cart right area start -->
+          <div class="col-md-4">
+            <div class="cart__right">
+              <div class="checkout-card">
+                <h5>Apply coupon</h5>
+                <div class="checkout-card_details">
+                  <ul>
+                    <li class="checkout-card_list">
+                      <span>Apply Coupon</span> <a href="#">View Coupon</a>
+                    </li>
+                  </ul>
+                </div>
+                <h5>Price Detail</h5>
+                <div class="checkout-card_details">
+                  <ul>
+                    <li><span>Total Price</span><span>₹4,650</span></li>
+                    <li><span>Discount on Price</span><span>-₹674</span></li>
+                    <li><span>Coupon</span><span>₹0.00</span></li>
+                    <li><span>Shipping Charges</span><span>₹0.00</span></li>
+                  </ul>
+                  <button class="checkout-card_total">
+                    <span>Total</span><span>₹4,650</span>
+                  </button>
+                </div>
+                <div>
+                  <a
+                    href="./furniture-list.html"
+                    class="inner__modal-content-btn w-100 m-0"
+                    >Back to Shopping Cart</a
+                  >
+                </div>
               </div>
             </div>
-                      </form>
           </div>
-         </div>
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>2. Shipping method</h3></div>
-              </div>
-              
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>3. Billing address</h3></div>
-              </div>
-             
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>4. Payment</h3></div>
-              </div>
-           
-        </li>
-      </ul>
+          <!-- cart right area end -->
         </div>
-        <!-- cart left area end -->
-        <!-- cart right area start -->
-        <div class="col-md-4">
-          <div class="cart__right">
-            <div class="checkout-card">
-              <h5>Apply coupon</h5>
-              <div class="checkout-card_details">
-                <ul>
-                  <li class="checkout-card_list">
-                    <span>Apply Coupon</span> <a href="#">View Coupon</a>
-                  </li>
-                </ul>
-              </div>
-              <h5>Price Detail</h5>
-              <div class="checkout-card_details">
-                <ul>
-                  <li><span>Total Price</span><span>₹4,650</span></li>
-                  <li><span>Discount on Price</span><span>-₹674</span></li>
-                  <li><span>Coupon</span><span>₹0.00</span></li>
-                  <li><span>Shipping Charges</span><span>₹0.00</span></li>
-                </ul>
-                <button class="checkout-card_total">
-                  <span>Total</span><span>₹4,650</span>
-                </button>
-              </div>
-              <div>
-               
-                <a
-                  href="./furniture-list.html"
-                  class="inner__modal-content-btn w-100 m-0"
-                  >Back to Shopping Cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- cart right area end -->
       </div>
-    </div>
     </section>
     <!-- Banner section end -->
     <!-- Browse Now section start -->
-    
+
     <!-- Browse Now section end -->
     <!-- favourite list section start -->
- 
+
     <!-- favourite list section end -->
 
     <!-- Main section end -->

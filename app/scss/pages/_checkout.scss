@@ -1,0 +1,187 @@
+.address {
+  &__nav {
+    margin: 43px 0;
+    &-icons {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px dashed $color-black;
+      @include flex-center;
+      span {
+        font-size: 23px;
+      }
+    }
+    ul {
+      display: flex;
+
+      justify-content: space-between;
+      gap: 19px;
+      flex-wrap: wrap;
+      @include media-breakpoint-up(md) {
+        justify-content: flex-end;
+        gap: 41px;
+      }
+      li {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: rem(16);
+        color: color-grey;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+
+  &__shipping {
+    border: 1px solid $color-dark;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(sm) {
+      padding: 20px;
+    }
+    @include media-breakpoint-up(md) {
+      padding: 30px;
+    }
+    &-title {
+      h3 {
+        font-size: rem(16);
+        font-weight: $font-weight-medium;
+        color: $color-black;
+      }
+    }
+    &-form {
+      margin-top: 17px;
+      .form-field {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 13px 15px;
+        font-size: rem(15);
+        font-weight: $font-weight-normal;
+        color: $color-dark;
+        &::placeholder {
+          font-size: rem(15);
+          font-weight: $font-weight-normal;
+          color: $color-dark;
+        }
+      }
+      .get-location {
+        float: right;
+        background-color: transparent;
+        border: 0;
+        font-size: rem(14);
+        font-weight: $font-weight-medium;
+        color: $color-lightgrey;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+    &-detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      address {
+        width: 40%;
+        font-size: rem(15);
+        font-weight: $font-weight-normal;
+        color: $color-lightgrey;
+        margin-top: 15px;
+      }
+      button {
+        background-color: $color-light;
+        border-radius: 3px;
+        border: 0;
+        font-size: rem(14);
+        font-weight: $font-weight-medium;
+        color: $color-lightgrey;
+        padding: 10px 0;
+        width: 93px;
+        i {
+          color: $color-lightgrey;
+          margin-right: 10px;
+        }
+      }
+      form{
+        .inner-checkbox {
+            @include switchbox;
+            width: fit-content;
+            label{
+                font-size: rem(14);
+                color: $color-black;
+                font-weight: $font-weight-normal;
+            }
+            label:before {
+              background-color:transparent;
+              border-color:$color-darkred;
+              margin-right: rem(5);
+            }
+    
+            input:checked + label:before {
+              background-color:$color-darkred;
+            }
+          }
+      }
+    }
+    &-select {
+      select {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: rem(12);
+        font-weight: 600;
+        padding-left: 8px;
+        padding-block: 3.5px;
+        color: $color-lightgrey;
+        background-color: $color-pinkgrey;
+        border-radius: 2px;
+        width: 71px;
+        border-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 90% 50%;
+
+        &:focus-visible {
+          outline-color: $color-darkred;
+        }
+      }
+    }
+    &-form {
+      text-align: end;
+      label {
+        font-size: rem(14);
+        font-weight: $font-weight-medium;
+        color: $color-whitesmoke;
+      }
+      select {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: rem(12);
+        font-weight: $font-weight-normal;
+        padding-left: 14px;
+        padding-block: 10px;
+        color: $color-black;
+        background-color: $color-pinkgrey;
+        width: 169px;
+        background-image: url("#{$images}/helper/dropdown-arrow.png");
+        border-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 90% 50%;
+        margin-top: rem(8);
+
+        &:focus-visible {
+          outline-color: $color-darkred;
+        }
+      }
+     
+    }
+  }
+  &__opacity {
+    opacity: 0.25;
+  }
+}
