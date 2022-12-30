@@ -247,45 +247,135 @@
                       <div class="inner-checkbox">
                         <input type="checkbox" id="shipping-address" />
                         <label for="shipping-address">
-                            Same as Shipping Address
+                          Same as Shipping Address
                         </label>
                       </div>
                       <div class="address__shipping-form">
-                      <div class="row">
-                        <div class="col-md-6 form-field">
-                          <input type="text" class="form-control"placeholder="Enter full name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="row">
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter full name"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Enter Phone no"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
+                          <div class="col-md-12 form-field">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter Address line 1"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="text"
+                              placeholder="Enter Landmark"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter City"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Enter Pincode"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="col-md-6 form-field">
+                            <input
+                              type="text"
+                              placeholder="Enter State"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
                         </div>
-                        <div class="col-md-6 form-field">
-                          <input type="number" class="form-control"placeholder="Enter Phone no" id="exampleInputPassword1">
-                        </div>
-                        <div class="col-md-12 form-field">
-                          <input type="text" class="form-control"placeholder="Enter Address line 1" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col-md-6 form-field">
-                          <input type="text"placeholder="Enter Landmark" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col-md-6 form-field">
-                          <input type="text" class="form-control"placeholder="Enter City" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col-md-6 form-field">
-                          <input type="number" class="form-control"placeholder="Enter Pincode" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="col-md-6 form-field">
-                          <input type="text"placeholder="Enter State" class="form-control" id="exampleInputPassword1">
-                        </div>
-                       
-                      </div>
                       </div>
                     </form>
-                                     </div>
+                  </div>
                 </div>
               </li>
               <li>
                 <div class="address__shipping">
                   <div class="address__shipping-title"><h3>4. Payment</h3></div>
-<div class="payment">
-    
-</div>
+                  <div class="payment">
+                    <h4 class="payment-title">Saved payment option</h4>
+                    <div class="payment-visa payment-btn">  
+                      <div class="payment-innercontent">
+                         <input type="radio" name="radio-btn">
+                                     <p>SC Debit card  <br> <span>****2111</span></p>
+                      </div>
+                      <div class="payment-innertext">
+                       <h6 class="fw-bold">Visa</h6>
+                       <p>Name of Customer</p>
+                      </div>
+                    </div>
+                    <h4 class="payment-title">Other payment option</h4>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed payment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Credit / Debit card
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed payment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Phonepe/Googlepay/BHIM UPI
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed payment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Netbanking
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        
+                          <button class="accordion-button collapsed payment-btn payment-btn-icon" type="button">
+                            Cash on Delivery
+                          </button>
+                        </h2>
+                       
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -318,14 +408,35 @@
                 <div>
                   <a
                     href="./furniture-list.html"
-                    class="inner__modal-content-btn w-100 m-0"
-                    >Back to Shopping Cart</a
+                    class="inner__modal-content-btn btn-transparent w-100 m-0"data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    >Continue to pay</a
                   >
                 </div>
               </div>
             </div>
           </div>
           <!-- cart right area end -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog checkout__modal">
+    <div class="modal-content checkout__modal-content">
+      <div class="modal-header checkout__modal-header">
+        <h1 class="modal-title" id="exampleModalLabel"></h1>
+        <button type="button" class="icon-close-button checkout__modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body checkout__modal-body">
+        <h4>Woohoo!</h4>
+        <p>Your order has been placed and you will get a shipping confirmation soon.</p>
+      </div>
+      <div class="modal-footer checkout__modal-footer">
+        <a href="furniture-list.html"title="Back To Shopping">Continue Shopping</a>
+        <button type="button" class="btn btn--shop m-0">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End -->
         </div>
       </div>
     </section>

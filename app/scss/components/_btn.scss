@@ -172,6 +172,21 @@
             color: $color-white;
         }
     }
+    &--view{
+        border-radius: 2px;
+        font-size: rem(14);
+        font-weight: $font-weight-medium;
+        width: auto;
+        text-align: center;
+
+        &:hover{
+            background-color: $color-black;
+            color: $color-white;
+        }
+         @include media-breakpoint-up(sm){
+            width: 132px;
+            }
+    }
 }
 
 //Button utility end

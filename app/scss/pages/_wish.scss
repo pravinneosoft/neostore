@@ -1,137 +1,216 @@
 .browse {
-    display: none !important;
-    min-height: rem(300);
-    @include flex-center;
+  display: none !important;
+  min-height: rem(300);
+  @include flex-center;
 
-    @include media-breakpoint-up(lg) {
-        min-height: rem(554);
-        display: none;
+  @include media-breakpoint-up(lg) {
+    min-height: rem(554);
+    display: none;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: rem(20);
+      font-weight: $font-weight-medium;
+      color: $color-grey;
+      text-align: center;
     }
 
-    &-info {
+    p {
+      font-size: rem(16);
+      font-weight: $font-weight-normal;
+      color: $color-grey;
+      text-align: center;
+      margin: rem(36) 0;
+    }
+  }
+}
+
+.favourite {
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(20);
+    margin: rem(36) 0;
+
+    button {
+      background-color: transparent;
+      border: 0;
+      &:hover {
+        span {
+          color: $color-darkred;
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: rem(35);
+
+    &-card {
+      border: 1px solid $color-dark;
+      padding: rem(6);
+      margin-bottom: rem(26);
+
+      .card_img {
         display: flex;
         flex-direction: column;
         align-items: center;
 
+        @include media-breakpoint-up(lg) {
+          display: block;
+        }
+      }
+
+      .card_body {
+        text-align: center;
+        padding-top: rem(12);
+
+        @include media-breakpoint-up(sm) {
+          text-align: start;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding-left: 68px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          padding-left: 10px;
+          display: grid;
+          place-content: center;
+        }
+
         h3 {
-            font-size: rem(20);
-            font-weight: $font-weight-medium;
-            color: $color-grey;
-            text-align: center;
+          font-size: rem(16);
+          font-weight: $font-weight-medium;
+          margin-bottom: rem(14);
         }
 
-        p {
+        ul {
+          margin-bottom: rem(26);
+
+          li {
             font-size: rem(16);
-            font-weight: $font-weight-normal;
-            color: $color-grey;
-            text-align: center;
-            margin: rem(36) 0;
+            font-weight: $font-weight-medium;
+            margin-bottom: rem(8);
+
+            span {
+              text-decoration: line-through;
+              color: $color-dark;
+            }
+
+            select {
+              font-family: "Nunito Sans", sans-serif;
+              font-size: rem(12);
+              font-weight: 600;
+              padding-left: 8px;
+              padding-block: 3.5px;
+              color: $color-lightgrey;
+              background-color: $color-pinkgrey;
+              border-radius: 2px;
+              width: 71px;
+              border-color: transparent;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background-image: url("#{$images}/helper/select-dropdown.png");
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: 90% 50%;
+              margin-left: rem(13);
+
+              &:focus-visible {
+                outline-color: $color-darkred;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
+.popup {
+  &-dialog {
+    max-width: 1034px;
+    background-color: transparent;
+  }
 
-.favourite {
-    &__nav {
-        display: flex;
-        justify-content: flex-end;
-        gap: rem(20);
-        margin: rem(36) 0;
-
-        button {
-            background-color: transparent;
-            border: 0;
-            &:hover{
-                span{
-                    color: $color-darkred;
-                }
-            }
-        }
+  &-content {
+    border-radius: 15px;
+    position: relative;
+  }
+  &-img {
+    padding: 15px;
+    display: grid;
+    place-content: center;
+    img{display: inline-block;
+        max-width: 100%;
+        width: auto;
+        height: 100%;
     }
-
-    &__content {
-
-        margin-bottom: rem(35);
-
-        &-card {
-            border: 1px solid $color-dark;
-            padding: rem(6);
-            margin-bottom: rem(26);
-
-            .card_img {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                @include media-breakpoint-up(lg) {
-                    display: block;
-                }
-            }
-
-            .card_body {
-                text-align: center;
-                padding-top: rem(12);
-
-                @include media-breakpoint-up(sm) {
-                    text-align: start;
-                }
-
-                @include media-breakpoint-up(lg) {
-                    padding-left: 68px;
-                }
-
-                @include media-breakpoint-up(xl) {
-                    padding-left: 10px;
-                    display: grid;
-                    place-content: center;
-                }
-
-                h3 {
-                    font-size: rem(16);
-                    font-weight: $font-weight-medium;
-                    margin-bottom: rem(14);
-                }
-
-                ul {
-                    margin-bottom: rem(26);
-
-                    li {
-                        font-size: rem(16);
-                        font-weight: $font-weight-medium;
-                        margin-bottom: rem(8);
-
-                        span {
-                            text-decoration: line-through;
-                            color: $color-dark;
-                        }
-
-                        select {
-
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-size: rem(12);
-                            font-weight: 600;
-                            padding-left: 8px;
-                            padding-block: 3.5px;
-                            color: $color-lightgrey;
-                            background-color: $color-pinkgrey;
-                            border-radius: 2px;
-                            width: 71px;
-                            border-color: transparent;
-                            -webkit-appearance: none;
-                            -moz-appearance: none;
-                            appearance: none;
-                            background-image: url('#{$images}/helper/select-dropdown.png');
-                            background-repeat: no-repeat;
-                            background-size: auto;
-                            background-position: 90% 50%;
-                            margin-left: rem(13);
-
-                            &:focus-visible {
-                                outline-color: $color-darkred;
-                            }
-                        }
-                    }
-                }
-            }
+     @include media-breakpoint-up(lg){
+          display: block;
         }
+  }
+  &__desc{    color: $color-grey;  
+    @include flex-center;
+    flex-direction: column;text-align: center;
+    height: 100%;
+    h2{
+        font-size: rem(30);
+        font-weight: $font-weight-bold;
+    
     }
+    p{
+        font-size: rem(12);
+        font-weight: $font-weight-normal;
+        margin-top: 16px;
+        margin-bottom: 33px;
+        width:66%;
+         @include media-breakpoint-up(md){
+              width: 60%;
+            }
+    }
+    button{width: 290px;
+         @include media-breakpoint-up(md){
+              width: 321px;
+            }
+    }
+    &-close {
+        position: absolute;
+        color: $color-red;
+        background-color: transparent;
+        border: 0;
+        font-size: rem(14);
+        top: 17px;
+        right: 58px;
+        width: unset !important;
+        display: none;
+         @include media-breakpoint-up(sm){
+              display: block;
+            }
+      }
+      &-close2{
+ 
+        margin-bottom: 14px;
+        font-size: rem(14);
+        font-weight: $font-weight-medium;
+                color: $color-lightblack;
+                text-decoration: underline;
+      @include bg-hide;
+      &:hover{
+        color: $color-red;
+        text-decoration: none;
+      }
+       @include media-breakpoint-up(lg){
+        margin-top: 44px;
+        margin-bottom: initial;
+          }
+            }
+  }
+ 
 }

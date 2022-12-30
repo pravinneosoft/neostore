@@ -7,7 +7,10 @@
     font-size: rem(20);
     font-weight: $font-weight-medium;
 }
-
+@mixin bg-hide{
+    background-color: transparent;
+        border: 0;
+}
 @mixin center {
     text-align: center;
 }

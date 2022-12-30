@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout page</title>
+    <title>Order page</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+   
     <link rel="stylesheet" href="app/css/style.css" />
   </head>
 
@@ -112,7 +113,7 @@
     </header>
     <!-- Header section end -->
     <!-- Main section start -->
-
+  
     <!-- Banner section start -->
     <section class="inner-banner">
       <div class="container">
@@ -122,157 +123,210 @@
               <a href="./index.html" title="home page">Home</a>
             </li>
             <li class="breadcrumb-item breadcrumb-active" aria-current="page">
-              Checkout
+              Order Summery
             </li>
           </ol>
         </nav>
       </div>
       <div class="inner-banner-overlay"></div>
     </section>
-    <section class="address">
+    <section class="order">
       <div class="container">
-      <header>
-        <nav class="address__nav">
-          <ul>
-            <li class="address__active">
-              <div class="address__nav-icons">
-                <span class="icon-address"></span>
+        <header>
+          <nav class="order__filter">
+            <ul>
+              <li>
+                <span class="icon-search1"></span>
+                <input type="search" class="order__filter-input" />
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                Filter
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- modal block start -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog bg-transparent">
+            <div class="modal-content order__modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="icon-close-button"
+                  title="clode the popup"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-              <span>Address</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-shipping1"></span>
-              </div>
-              <span>Shipping</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-billings"></span>
-              </div>
-              <span>Billing</span>
-            </li>
-            <li>
-              <div class="address__nav-icons">
-                <span class="icon-payment"></span>
-              </div>
-              <span>Payment</span>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="row cart-wrapper">
-        <!-- cart left area start -->
-        <div class="col-md-8">
-          <ul>
-            <li>
-         <div class="address__left">
-          <div class="address__shipping">
-            <div class="address__shipping-title"><h3>1. Shipping address</h3></div>
-            <form class="address__shipping-form">
-              <div class="row">
-              <div class="col-md-6 form-field">
-                <input type="text" class="form-control"placeholder="Enter full name" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="number" class="form-control"placeholder="Enter Phone no" id="exampleInputPassword1">
-              </div>
-              <div class="col-md-12 form-field">
-                <input type="text" class="form-control"placeholder="Enter Address line 1" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text"placeholder="Enter Landmark" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text" class="form-control"placeholder="Enter City" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="number" class="form-control"placeholder="Enter Pincode" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="col-md-6 form-field">
-                <input type="text"placeholder="Enter State" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="col-md-12">
-                <button id="buttonID"class="get-location"title="current location" onClick="getLocation()">
-                  <i class="fa-solid fa-location-dot"></i>Locate on map
-            </button>
-              </div>
-            </div>
-                      </form>
-          </div>
-         </div>
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>2. Shipping method</h3></div>
-              </div>
-              
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>3. Billing address</h3></div>
-              </div>
-             
-        </li>
-        <li>
-         
-            <div class="address__shipping address__opacity">
-              <div class="address__shipping-title"><h3>4. Payment</h3></div>
-              </div>
-           
-        </li>
-      </ul>
-        </div>
-        <!-- cart left area end -->
-        <!-- cart right area start -->
-        <div class="col-md-4">
-          <div class="cart__right">
-            <div class="checkout-card">
-              <h5>Apply coupon</h5>
-              <div class="checkout-card_details">
+              <div class="modal-body order__modal-body">
+                <h5>Order type</h5>
                 <ul>
-                  <li class="checkout-card_list">
-                    <span>Apply Coupon</span> <a href="#">View Coupon</a>
+                  <li>
+                    <input type="radio" name="dilevered" /><label
+                      for="dilevered"
+                      >Delivered</label
+                    >
+                  </li>
+                  <li>
+                    <input type="radio" name="Cancelled" /><label
+                      for="Cancelled"
+                      >Cancelled</label
+                    >
+                  </li>
+                </ul>
+                <h5>Order time</h5>
+                <ul>
+                  <li>
+                    <input type="radio" name="6-months" /><label for="6-months"
+                      >6 months</label
+                    >
+                  </li>
+                  <li>
+                    <input type="radio" name="20-year" /><label for="20-year"
+                      >2020</label
+                    >
+                  </li>
+                  <li>
+                    <input type="radio" name="19-year" /><label for="19-years"
+                      >2019</label
+                    >
+                  </li>
+                  <li>
+                    <input type="radio" name="18-year" /><label for="18-year"
+                      >2018</label
+                    >
                   </li>
                 </ul>
               </div>
-              <h5>Price Detail</h5>
-              <div class="checkout-card_details">
-                <ul>
-                  <li><span>Total Price</span><span>₹4,650</span></li>
-                  <li><span>Discount on Price</span><span>-₹674</span></li>
-                  <li><span>Coupon</span><span>₹0.00</span></li>
-                  <li><span>Shipping Charges</span><span>₹0.00</span></li>
-                </ul>
-                <button class="checkout-card_total">
-                  <span>Total</span><span>₹4,650</span>
+              <div class="modal-footer order__modal-footer">
+                <button type="button" title="clear the selections">
+                  Clear
                 </button>
-              </div>
-              <div>
-               
-                <a
-                  href="./furniture-list.html"
-                  class="inner__modal-content-btn w-100 m-0"
-                  >Back to Shopping Cart</a
-                >
+                <button type="button" class="btn btn--view">
+                  Apply Filter
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <!-- cart right area end -->
+        <!-- modal block end -->
+        <div class="order-content">
+          <div class="order__card">
+            <div class="order__card-left">
+              <div class="card-image">
+                <img
+                  src="./app/images/order-page/order-pink-chair.png"
+                  alt="pink chair"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Armen Living Summer Chair</h3>
+                <ul>
+                  <li>Item : MB494</li>
+                  <li>40X60</li>
+                </ul>
+                <button type="button" title="product Quantity">Qty:1</button>
+              </div>
+            </div>
+            <div class="order__card-right">
+              <span class="delivery-status">On the way</span>
+              <span>2 sep </span>
+              <p>Total Amount <span class="price">₹3,825</span></p>
+              <button class="btn btn--view">View Details</button>
+            </div>
+          </div>
+          <div class="order__card">
+            <div class="order__card-left">
+              <div class="card-image">
+                <img
+                  src="./app/images/order-page/order-lamp.png"
+                  alt="pink chair"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Armen Living Summer Chair</h3>
+                <ul>
+                  <li>Item : MB494</li>
+                  <li>40X60</li>
+                </ul>
+                <button type="button" title="product Quantity">Qty:1</button>
+              </div>
+            </div>
+            <div class="order__card-right">
+              <span class="delivery-status">On the way</span>
+              <span>2 sep </span>
+              <p>Total Amount <span class="price">₹3,825</span></p>
+              <button class="btn btn--view">View Details</button>
+            </div>
+          </div>
+          <div class="order__card">
+            <div class="order__card-left">
+              <div class="card-image">
+                <img
+                  src="./app/images/order-page/order-black-chair.png"
+                  alt="pink chair"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Armen Living Summer Chair</h3>
+                <ul>
+                  <li>Item : MB494</li>
+                  <li>40X60</li>
+                </ul>
+                <button type="button" title="product Quantity">Qty:1</button>
+              </div>
+            </div>
+            <div class="order__card-right">
+              <span class="delivery-status">On the way</span>
+              <span>2 sep </span>
+              <p>Total Amount <span class="price">₹3,825</span></p>
+              <button class="btn btn--view">View Details</button>
+            </div>
+          </div>
+          <div class="order__card">
+            <div class="order__card-left">
+              <div class="card-image">
+                <img
+                  src="./app/images/order-page/order-whitechair.png"
+                  alt="pink chair"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Armen Living Summer Chair</h3>
+                <ul>
+                  <li>Item : MB494</li>
+                  <li>40X60</li>
+                </ul>
+                <button type="button" title="product Quantity">Qty:1</button>
+              </div>
+            </div>
+            <div class="order__card-right">
+              <span class="delivery-status">On the way</span>
+              <span>2 sep </span>
+              <p>Total Amount <span class="price">₹3,825</span></p>
+              <button class="btn btn--view">View Details</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </section>
     <!-- Banner section end -->
     <!-- Browse Now section start -->
-    
+
     <!-- Browse Now section end -->
-    <!-- favourite list section start -->
- 
-    <!-- favourite list section end -->
+    <!-- order-card section start -->
+
+    <!-- order-card section end -->
 
     <!-- Main section end -->
     <!-- Footer section start -->
@@ -372,7 +426,6 @@
     </footer>
     <!-- Footer section end -->
     <!--Js links start-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
