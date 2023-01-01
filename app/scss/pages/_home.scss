@@ -859,6 +859,42 @@
 //Blog section end 
 //Store section start
 .store {
+   
+   &__overlay{
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         width: 20px;
+height: 100%;
+background: linear-gradient(270deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+transform: rotate(180deg);
+z-index: 4;
+ @include media-breakpoint-up(sm){
+   width: 110px;
+    }
+    @include media-breakpoint-up(md){
+      width: 189px;
+    }
+      }
+      &::after{
+         content: '';
+        position:absolute;
+        top: 0;
+        right: 0;
+         width: 20px;
+height: 100%;
+background: linear-gradient(270deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
+transform: rotate(0deg);
+z-index: 4; 
+@include media-breakpoint-up(sm){
+   width: 110px;
+    }
+    @include media-breakpoint-up(md){
+      width: 189px;
+    }
+      }
+   }
    &-content {
       position: relative;
 
