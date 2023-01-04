@@ -13,3 +13,17 @@ $(document).ready(function () {
     let a=document.getElementById('hide').style.display='none';
   console.log(a);
   }
+
+  function headerScroll() {
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector(".header__bottom");
+      const windowScrollY = window.scrollY;
+      const SCROLL_HEIGHT = 50;
+      if (windowScrollY < SCROLL_HEIGHT) {
+        header.classList.remove("scrolleffect");
+      } else {
+        header.classList.add("scrolleffect");
+      }
+    });
+  };
+  headerScroll();

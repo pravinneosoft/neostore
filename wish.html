@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favourite</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,7 +39,7 @@
         <div class="container">
           <nav class="header__nav">
             <!-- Brand logo start -->
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="./index.html"
               ><img src="./app/images/logo.png" alt="neostore logo"
             /></a>
             <!-- Brand logo end -->
@@ -184,7 +184,9 @@
                         </select>
                       </li>
                     </ul>
-                    <a href="./cart.html" class="btn btn--addtocart">Add To Cart</a>
+                    <a href="./cart.html" class="btn btn--addtocart"
+                      >Add To Cart</a
+                    >
                   </div>
                 </div>
               </div>
@@ -215,7 +217,10 @@
                         </select>
                       </li>
                     </ul>
-                    <a href="./cart.html" class="btn btn--addtocart">Add To Cart</a>                  </div>
+                    <a href="./cart.html" class="btn btn--addtocart"
+                      >Add To Cart</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,7 +250,9 @@
                         </select>
                       </li>
                     </ul>
-                    <a href="./cart.html" class="btn btn--addtocart">Add To Cart</a>
+                    <a href="./cart.html" class="btn btn--addtocart"
+                      >Add To Cart</a
+                    >
                   </div>
                 </div>
               </div>
@@ -288,14 +295,23 @@
                     Sign up for newsletter to receive special offers and
                     exclusive news.
                   </p>
-                  <button class="inner__modal-content-btn" type="button">Enter Your Email</button>
+                  <form action="">
+                    <input
+                      type="email"
+                      name="email"
+                      class="popup__desc-email"
+                      placeholder="Enter youre mail "
+                      required
+                    />
+                    <button
+                      type="submit"
+                      class="inner__modal-content-btn btn-transparent"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
                   <button
-                    type="button"
-                    class="inner__modal-content-btn btn-transparent"
-                  >
-                    Subscribe
-                  </button>
-                  <button class="popup__desc-close2"
+                    class="popup__desc-close2"
                     type="button"
                     data-bs-dismiss="modal"
                     aria-label="Close"
@@ -315,7 +331,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="./index.html"
               ><img src="./app/images/logo.png" alt="header logo"
             /></a>
             <form action="" class="footer__form">

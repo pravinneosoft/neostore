@@ -147,70 +147,88 @@
     padding: 15px;
     display: grid;
     place-content: center;
-    img{display: inline-block;
-        max-width: 100%;
-        width: auto;
-        height: 100%;
+    img {
+      display: inline-block;
+      max-width: 100%;
+      width: auto;
+      height: 100%;
     }
-     @include media-breakpoint-up(lg){
-          display: block;
-        }
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
   }
-  &__desc{    color: $color-grey;  
+  &__desc {
+    color: $color-grey;
     @include flex-center;
-    flex-direction: column;text-align: center;
+    flex-direction: column;
+    text-align: center;
     height: 100%;
-    h2{
-        font-size: rem(30);
-        font-weight: $font-weight-bold;
-    
+    h2 {
+      font-size: rem(30);
+      font-weight: $font-weight-bold;
     }
-    p{
-        font-size: rem(12);
-        font-weight: $font-weight-normal;
-        margin-top: 16px;
-        margin-bottom: 33px;
-        width:66%;
-         @include media-breakpoint-up(md){
-              width: 60%;
-            }
+    p {
+      font-size: rem(12);
+      font-weight: $font-weight-normal;
+      margin-top: 16px;
+      margin-bottom: 33px;
+      width: 66%;
+      @include media-breakpoint-up(md) {
+        width: 60%;
+      }
     }
-    button{width: 290px;
-         @include media-breakpoint-up(md){
-              width: 321px;
-            }
+    &-email {
+      width: 290px;
+      padding: 8.5px 18px;
+      border-radius: 2px;
+      border: 1px solid $color-red;
+      color: $color-white;
+      font-weight: $font-weight-normal;
+      background-color: $color-red;
+      margin-bottom: 14px;
+      &::placeholder {
+        text-align: center;
+        color: $color-white;
+      }
+      @include media-breakpoint-up(md) {
+        width: 321px;
+      }
+    }
+    button {
+      width: 290px;
+      @include media-breakpoint-up(md) {
+        width: 321px;
+      }
     }
     &-close {
-        position: absolute;
-        color: $color-red;
-        background-color: transparent;
-        border: 0;
-        font-size: rem(14);
-        top: 17px;
-        right: 58px;
-        width: unset !important;
-        display: none;
-         @include media-breakpoint-up(sm){
-              display: block;
-            }
+      position: absolute;
+      color: $color-red;
+      background-color: transparent;
+      border: 0;
+      font-size: rem(14);
+      top: 17px;
+      right: 28px;
+      width: unset !important;
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: block;
       }
-      &-close2{
- 
-        margin-bottom: 14px;
-        font-size: rem(14);
-        font-weight: $font-weight-medium;
-                color: $color-lightblack;
-                text-decoration: underline;
+    }
+    &-close2 {
+      margin-bottom: 14px;
+      font-size: rem(14);
+      font-weight: $font-weight-medium;
+      color: $color-lightblack;
+      text-decoration: underline;
       @include bg-hide;
-      &:hover{
+      &:hover {
         color: $color-red;
         text-decoration: none;
       }
-       @include media-breakpoint-up(lg){
+      @include media-breakpoint-up(lg) {
         margin-top: 44px;
         margin-bottom: initial;
-          }
-            }
+      }
+    }
   }
- 
 }
