@@ -209,3 +209,14 @@ for (var i = 0; i < btns.length; i++) {
 function openfilter(){
   document.getElementById('sidenav').style.display="block";
 }
+
+$(document).ready(function () {
+  $(".open-header").click(function(e){ 
+    $("#mySidenav").toggleClass('humbergerg');
+      
+  });
+ $(".header__center-close").click(function(e){ 
+    $("#mySidenav").removeClass('humbergerg');		
+  }
+  ); console.log("DSss")
+});

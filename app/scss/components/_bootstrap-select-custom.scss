@@ -9,13 +9,19 @@
     background: transparent url('#{$images}/svg_icons/delete-button.svg') center/1em auto no-repeat;
 }
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-     color: #fff; 
+     color: $color-white; 
      background-color: $color-red; 
      border-color: transparent; 
 }
 .btn:focus-visible {
-    color: #fff;
+    color: $color-white;
     border-color: transparent;
     outline: 0;
     box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: $color-pinkgrey;
+    color: $color-black;
+
 }

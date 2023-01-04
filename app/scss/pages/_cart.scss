@@ -2,19 +2,18 @@
     margin-top: rem(48);
 
     &-wrapper {
-        flex-direction: column-reverse;
 
         @include media-breakpoint-up(md) {
             flex-direction: initial;
         }
     }
 
-    &__left {}
+
 
     &__card {
 
         position: relative;
-        padding: rem(50) rem(32);
+        padding: rem(50) rem(12);
         width: 100%;
         border: 1px solid $color-dark;
         border-radius: rem(2);
@@ -40,6 +39,9 @@
             color: $color-coal;
             text-transform: capitalize;
             margin-bottom: rem(13);
+            &:hover{
+                color: $color-darkred;
+            }
         }
 
         &-price {

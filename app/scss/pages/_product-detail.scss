@@ -101,6 +101,7 @@ div.vertical-carousel .owl-nav .owl-next {
 
     @include media-breakpoint-up(xl) {
       justify-content: flex-start;
+      gap: 35px;
     }
 
     a {

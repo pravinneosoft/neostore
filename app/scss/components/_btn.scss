@@ -13,15 +13,13 @@
         }
 
         span {
-            font-size: rem(20);
+            font-size: rem(17);
             color: $color-lightblack;
             margin-top: 2px;
             display: inline-block;
         }
 
-        &:hover {
-            @include iconhover;
-        }
+      
     }
 
     &--shop {

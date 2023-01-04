@@ -207,6 +207,9 @@
       &-innercontent {
         display: flex;
         column-gap: 5px;
+        input{
+          accent-color: $color-lightcharcoal;
+        }
         @include media-breakpoint-up(sm) {
           column-gap: 21px;
         }
@@ -216,6 +219,7 @@
         @include media-breakpoint-up(sm) {
           text-align: start;
         }
+       
         p {
           font-size: rem(12);
         }
