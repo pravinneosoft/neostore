@@ -181,8 +181,7 @@
       width: 290px;
       padding: 8.5px 18px;
       border-radius: 2px;
-      border: 1px solid $color-red;
-      color: $color-white;
+      border:1px solid $color-red;
       font-weight: $font-weight-normal;
       background-color: $color-red;
       margin-bottom: 14px;
@@ -190,6 +189,15 @@
         text-align: center;
         color: $color-white;
       }
+
+      &:focus {
+        border:1px solid $color-red;
+
+        background-color: $color-white;
+        outline: 0;
+        box-shadow: none;
+      }
+
       @include media-breakpoint-up(md) {
         width: 321px;
       }
